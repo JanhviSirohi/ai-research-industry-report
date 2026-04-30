@@ -1,0 +1,1254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI's Impact on User, Market & Industry Research — April 2026</title>
+<style>
+:root {
+  --teal: #0F4C5C;
+  --teal-light: #2A7A8C;
+  --warm: #E5751F;
+  --warm-light: #F4A261;
+  --c1: #BFC4C8;
+  --c2: #4A7FB5;
+  --c3: #2E8B57;
+  --bg: #FFFFFF;
+  --ink: #1A1A1A;
+  --muted: #5A5A5A;
+  --border: #D8DCE0;
+  --soft: #F5F7F8;
+  --soft2: #ECEFF1;
+  --green: #2E8B57;
+  --amber: #E5A23A;
+  --red: #C0392B;
+}
+* { box-sizing: border-box; }
+html, body {
+  margin: 0; padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  color: var(--ink);
+  background: var(--bg);
+  font-size: 15px;
+  line-height: 1.55;
+}
+.wrap { max-width: 1100px; margin: 0 auto; padding: 32px 36px 64px; }
+header.top {
+  border-bottom: 3px solid var(--teal);
+  padding-bottom: 18px; margin-bottom: 22px;
+}
+.eyebrow {
+  text-transform: uppercase; letter-spacing: 0.16em;
+  font-size: 11px; color: var(--warm); font-weight: 600;
+}
+h1 { font-size: 30px; line-height: 1.18; margin: 8px 0 6px; color: var(--teal); letter-spacing: -0.01em; }
+h1 .accent { color: var(--warm); }
+.subtitle { font-size: 15px; color: var(--muted); margin: 0 0 8px; max-width: 780px; }
+.meta-row { display: flex; flex-wrap: wrap; gap: 18px; font-size: 12px; color: var(--muted); margin-top: 10px; }
+.meta-row strong { color: var(--ink); }
+
+.legend-bar {
+  position: sticky; top: 0; z-index: 20;
+  background: rgba(255,255,255,0.96);
+  backdrop-filter: blur(6px);
+  border-bottom: 1px solid var(--border);
+  padding: 8px 0; margin: -8px 0 18px;
+  font-size: 12px; display: flex; flex-wrap: wrap; gap: 14px; align-items: center;
+}
+.legend-bar .lab { color: var(--muted); margin-right: 4px; }
+.pill {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  vertical-align: baseline;
+  margin: 0 2px;
+}
+.pill-c1 { background: var(--c1); color: #2A2D2F; }
+.pill-c2 { background: var(--c2); color: #fff; }
+.pill-c3 { background: var(--c3); color: #fff; }
+.dot { display: inline-block; width: 10px; height: 10px; border-radius: 50%; vertical-align: middle; margin-right: 4px; }
+.dot-g { background: var(--green); }
+.dot-a { background: var(--amber); }
+.dot-r { background: var(--red); }
+
+h2 {
+  font-size: 21px;
+  color: var(--teal);
+  border-left: 5px solid var(--warm);
+  padding-left: 12px;
+  margin: 36px 0 12px;
+}
+h3 { font-size: 16px; color: var(--teal); margin: 20px 0 6px; }
+h4 { font-size: 14px; color: var(--ink); margin: 14px 0 4px; text-transform: uppercase; letter-spacing: 0.06em; }
+p { margin: 8px 0; }
+
+.exec-box {
+  background: var(--soft);
+  border-left: 4px solid var(--teal);
+  padding: 16px 20px;
+  margin: 14px 0 18px;
+  border-radius: 0 6px 6px 0;
+}
+.exec-box ul { margin: 6px 0; padding-left: 20px; }
+.exec-box li { margin: 8px 0; }
+
+.cols2 { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; }
+.cols3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 18px; }
+@media (max-width: 820px) {
+  .cols2, .cols3 { grid-template-columns: 1fr; }
+  .wrap { padding: 18px; }
+  h1 { font-size: 24px; }
+}
+
+.callout {
+  background: #FFF6EE;
+  border: 1px solid #F4D7B8;
+  border-left: 4px solid var(--warm);
+  padding: 12px 16px;
+  border-radius: 0 4px 4px 0;
+  margin: 14px 0;
+  font-size: 14px;
+}
+
+table.data {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 12px 0 18px;
+  font-size: 13px;
+}
+table.data th, table.data td {
+  border: 1px solid var(--border);
+  padding: 7px 9px;
+  text-align: left;
+  vertical-align: top;
+}
+table.data th {
+  background: var(--soft2);
+  color: var(--teal);
+  font-weight: 600;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+table.data tr:nth-child(even) td { background: #FBFCFD; }
+
+.viz-frame {
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 14px 14px 10px;
+  background: #FCFDFE;
+  margin: 12px 0 18px;
+  overflow-x: auto;
+}
+.viz-frame .cap { font-size: 12px; color: var(--muted); margin-top: 4px; font-style: italic; }
+.viz-frame h4 { margin-top: 0; }
+
+.func-card {
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 12px 14px;
+  background: #FCFDFE;
+  margin-bottom: 10px;
+}
+.func-card h4 { margin: 0 0 6px; color: var(--teal); font-size: 13px; }
+.func-card p { margin: 4px 0; font-size: 13.5px; }
+.func-card .tag { font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; }
+
+.recommend {
+  background: linear-gradient(180deg, #F4FAFB 0%, #FFFFFF 100%);
+  border: 1px solid #BFD6DC;
+  border-left: 5px solid var(--teal);
+  padding: 14px 18px;
+  border-radius: 0 6px 6px 0;
+  margin: 14px 0;
+}
+.recommend ol { margin: 6px 0; padding-left: 22px; }
+.recommend li { margin: 8px 0; }
+
+.counter {
+  background: #FBF1F0;
+  border: 1px solid #ECC5C0;
+  border-left: 4px solid var(--red);
+  padding: 12px 16px;
+  border-radius: 0 4px 4px 0;
+  margin: 14px 0;
+  font-size: 14px;
+}
+
+footer.body-foot {
+  border-top: 1px solid var(--border);
+  margin-top: 28px; padding-top: 12px;
+  font-size: 11px; color: var(--muted);
+}
+
+details.appendix {
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  margin: 8px 0;
+  background: #FCFDFE;
+}
+details.appendix summary {
+  cursor: pointer; padding: 10px 14px;
+  font-weight: 600; color: var(--teal);
+  background: var(--soft2);
+  border-radius: 6px;
+}
+details.appendix[open] summary { border-bottom: 1px solid var(--border); border-radius: 6px 6px 0 0; }
+.src-list {
+  font-size: 12px;
+  padding: 12px 18px;
+  max-height: 460px;
+  overflow-y: auto;
+  line-height: 1.45;
+}
+.src-list ol { padding-left: 22px; margin: 4px 0; }
+.src-list li { margin: 3px 0; word-break: break-word; }
+.src-list a { color: var(--teal-light); text-decoration: none; }
+.src-list a:hover { text-decoration: underline; }
+.src-list li { scroll-margin-top: 60px; }
+.src-list li strong { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; color: var(--teal); margin-right: 4px; }
+
+sup.cite { font-size: 0.7em; line-height: 1; }
+sup.cite a { color: #0F4C5C; text-decoration: none; padding: 1px 3px; border-radius: 3px; background: #f0f4f6; margin-right: 1px; }
+sup.cite a:hover { background: #0F4C5C; color: white; }
+.appendix-note { font-size: 12px; color: var(--muted); margin: 4px 0 12px; padding: 8px 12px; background: var(--soft); border-left: 3px solid var(--teal-light); border-radius: 0 4px 4px 0; }
+
+.disclaimer {
+  font-size: 11px;
+  color: var(--muted);
+  font-style: italic;
+  border-top: 1px dashed var(--border);
+  padding-top: 8px;
+  margin-top: 16px;
+}
+
+@media print {
+  .legend-bar { position: static; }
+  details.appendix .src-list { max-height: none; }
+  details.appendix { page-break-inside: avoid; }
+  .cols2, .cols3 { grid-template-columns: 1fr; }
+  body { color: #000; background: #fff; font-size: 11pt; }
+  h1, h2, h3 { color: #000; }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="top">
+  <div class="eyebrow">Research synthesis &middot; XR hardware research function</div>
+  <h1>AI's Impact on User, Market &amp; Industry <span class="accent">Research</span></h1>
+  <p class="subtitle">An evidence-based map for an XR hardware research team operating across the US, EU, and China.</p>
+  <div class="meta-row">
+    <span><strong>Date:</strong> April 2026</span>
+    <span><strong>Audience:</strong> 7-person XR hardware research function, Chinese parent</span>
+    <span><strong>Body length:</strong> ~2,000 words</span>
+    <span><strong>Source pool:</strong> ~570 evidence items, ~300 cited</span>
+  </div>
+</header>
+
+<div class="legend-bar" role="region" aria-label="Confidence and audience-fit legend">
+  <span class="lab">Confidence:</span>
+  <span><span class="pill pill-c1">C1</span> vendor self-report</span>
+  <span><span class="pill pill-c2">C2</span> practitioner-corroborated</span>
+  <span><span class="pill pill-c3">C3</span> multi-source triangulated</span>
+  <span class="lab" style="margin-left: 14px;">Audience fit:</span>
+  <span><span class="dot dot-g"></span>viable</span>
+  <span><span class="dot dot-a"></span>constrained</span>
+  <span><span class="dot dot-r"></span>not viable</span>
+</div>
+
+<!-- ============ SECTION 1 ============ -->
+<h2 id="section-1">1. Executive summary</h2>
+<div class="exec-box">
+<ul>
+<li><strong>The AI-research vendor stack is fundamentally English-first, US-hosted SaaS.</strong> A Chinese-parent XR firm cannot run a single global stack. Of ~55 surveyed vendors, none publishes a China data region <sup class="cite"><a href="#S046">S046</a>, <a href="#S003">S003</a>, <a href="#S451">S451</a></sup>; the only Mandarin-native, PIPL-compliant equivalents are iFlytek <sup class="cite"><a href="#S074">S074</a>, <a href="#S076">S076</a></sup>, Tencent Wenjuan <sup class="cite"><a href="#S071">S071</a>, <a href="#S072">S072</a></sup>, Wenjuanxing <sup class="cite"><a href="#S073">S073</a></sup>, and Credamo <sup class="cite"><a href="#S087">S087</a></sup> — absent from Western analyst coverage. Plan for a bifurcated, manually-synchronised stack. <sup class="cite"><a href="#S340">S340</a>, <a href="#S462">S462</a>, <a href="#S463">S463</a></sup> <span class="pill pill-c3">C3</span></li>
+<li><strong>Funding is concentrated in synthetic users + AI moderation, but practitioner sentiment grew more skeptical between 2024 and 2026.</strong> Listen Labs ($69M Jan 2026, $500M valuation) <sup class="cite"><a href="#S009">S009</a>, <a href="#S010">S010</a>, <a href="#S173">S173</a></sup>, Outset ($30M Dec 2025) <sup class="cite"><a href="#S005">S005</a>, <a href="#S163">S163</a>, <a href="#S168">S168</a></sup>, Aaru ($1B headline at sub-$10M ARR Dec 2025) <sup class="cite"><a href="#S055">S055</a>, <a href="#S178">S178</a>, <a href="#S179">S179</a></sup>, Simile ($100M Feb 2026) <sup class="cite"><a href="#S059">S059</a>, <a href="#S060">S060</a>, <a href="#S058">S058</a></sup> all closed material rounds. Yet User Interviews' State of UR 2025 records 49% negative sentiment on UXR's future (+26 pts YoY) <sup class="cite"><a href="#S285">S285</a>, <a href="#S116">S116</a></sup>; NN/g, Erika Hall, Jared Spool, Indi Young, Peter Merholz, Niloufar Salehi, Matt Duignan have hardened against synthetic users specifically <sup class="cite"><a href="#S250">S250</a>, <a href="#S241">S241</a>, <a href="#S293">S293</a>, <a href="#S243">S243</a>, <a href="#S246">S246</a>, <a href="#S258">S258</a></sup>. The funding/validation gap is real and widening. <span class="pill pill-c3">C3</span></li>
+<li><strong>AI qualitative synthesis is the one clean win across all source classes.</strong> Lyssna's 2025 synthesis report (n=300, 34 countries) shows 54.7% routine AI-assisted analysis with 1–2 hours saved per project; Dovetail leads on practitioner mentions; failure mode is stakeholder narration, not extraction quality. This is the lowest-risk AI category for the team to adopt now. <sup class="cite"><a href="#S287">S287</a>, <a href="#S033">S033</a>, <a href="#S257">S257</a>, <a href="#S252">S252</a></sup> <span class="pill pill-c3">C3</span></li>
+<li><strong>The hardest XR-specific finding: no SaaS qual tool natively ingests 200 Hz binocular gaze + biosignals</strong> <sup class="cite"><a href="#S402">S402</a>, <a href="#S442">S442</a></sup>; <strong>Apple Vision Pro does not expose raw gaze coordinates</strong> <sup class="cite"><a href="#S422">S422</a>, <a href="#S491">S491</a></sup>; <strong>Pico 4 Ultra dropped eye tracking</strong> <sup class="cite"><a href="#S485">S485</a>, <a href="#S486">S486</a>, <a href="#S434">S434</a></sup>; <strong>Tobii–iMotions ended their commercial partnership.</strong> <sup class="cite"><a href="#S400">S400</a>, <a href="#S401">S401</a>, <a href="#S440">S440</a></sup> The credible XR research stack is multi-vendor (Tobii Pro Lab or iMotions for capture; WorldViz Vizard 8 for in-headset runtime; iFlytek/Fun-ASR for confidential transcription; Volcengine, Condens or Dovetail for synthesis) — not single-platform. <sup class="cite"><a href="#S444">S444</a>, <a href="#S458">S458</a>, <a href="#S465">S465</a>, <a href="#S107">S107</a>, <a href="#S033">S033</a></sup> <span class="pill pill-c3">C3</span></li>
+</ul>
+</div>
+
+<!-- ============ SECTION 2 ============ -->
+<h2 id="section-2">2. Vendor landscape map</h2>
+
+<div class="viz-frame">
+<h4>Figure 1 — Vendor matrix: 8 research functions &times; top vendors, with confidence and audience-fit overlays</h4>
+<svg viewBox="0 0 1080 580" width="100%" role="img" aria-label="Vendor matrix">
+  <defs>
+    <style>
+      .cell { stroke:#D8DCE0; stroke-width:1; }
+      .lbl { font-family:-apple-system,Segoe UI,sans-serif; font-size:12px; fill:#1A1A1A; }
+      .lblh { font-family:-apple-system,Segoe UI,sans-serif; font-size:12px; fill:#0F4C5C; font-weight:600; }
+      .vlbl { font-family:-apple-system,Segoe UI,sans-serif; font-size:11px; fill:#1A1A1A; }
+      .clbl { font-family:-apple-system,Segoe UI,sans-serif; font-size:10px; fill:#fff; font-weight:700; }
+      .col-c1 { fill:#BFC4C8; } .col-c2 { fill:#4A7FB5; } .col-c3 { fill:#2E8B57; }
+    </style>
+  </defs>
+  <!-- Column headers -->
+  <text class="lblh" x="180" y="22">Vendor 1</text>
+  <text class="lblh" x="350" y="22">Vendor 2</text>
+  <text class="lblh" x="520" y="22">Vendor 3</text>
+  <text class="lblh" x="690" y="22">Vendor 4</text>
+  <text class="lblh" x="860" y="22">Vendor 5</text>
+
+  <!-- Rows: each row = function. x-anchor for cells: 170,340,510,680,850 ; y for row n: 40 + n*65 -->
+  <!-- Helper: cell width 160, height 50 -->
+
+  <!-- Row 1: Interview moderation -->
+  <text class="lblh" x="6" y="68">1. Interview moderation</text>
+  <rect class="cell col-c2" x="170" y="40" width="160" height="50"/>
+  <text class="vlbl" x="178" y="60" fill="#fff">Outset</text>
+  <text class="clbl" x="178" y="78">C2</text><circle cx="318" cy="50" r="6" fill="#E5A23A"/>
+  <rect class="cell col-c3" x="340" y="40" width="160" height="50"/>
+  <text class="vlbl" x="348" y="60" fill="#fff">Listen Labs</text>
+  <text class="clbl" x="348" y="78">C3</text><circle cx="488" cy="50" r="6" fill="#E5A23A"/>
+  <rect class="cell col-c3" x="510" y="40" width="160" height="50"/>
+  <text class="vlbl" x="518" y="60" fill="#fff">Strella</text>
+  <text class="clbl" x="518" y="78">C3</text><circle cx="658" cy="50" r="6" fill="#C0392B"/>
+  <rect class="cell col-c2" x="680" y="40" width="160" height="50"/>
+  <text class="vlbl" x="688" y="60" fill="#fff">Conveo</text>
+  <text class="clbl" x="688" y="78">C2</text><circle cx="828" cy="50" r="6" fill="#E5A23A"/>
+  <rect class="cell col-c3" x="850" y="40" width="160" height="50"/>
+  <text class="vlbl" x="858" y="60" fill="#fff">Discuss.io</text>
+  <text class="clbl" x="858" y="78">C3</text><circle cx="998" cy="50" r="6" fill="#E5A23A"/>
+
+  <!-- Row 2: Qual synthesis -->
+  <text class="lblh" x="6" y="133">2. Qual synthesis</text>
+  <rect class="cell col-c3" x="170" y="105" width="160" height="50"/>
+  <text class="vlbl" x="178" y="125" fill="#fff">Dovetail</text>
+  <text class="clbl" x="178" y="143">C3</text><circle cx="318" cy="115" r="6" fill="#2E8B57"/>
+  <rect class="cell col-c2" x="340" y="105" width="160" height="50"/>
+  <text class="vlbl" x="348" y="125" fill="#fff">HeyMarvin</text>
+  <text class="clbl" x="348" y="143">C2</text><circle cx="488" cy="115" r="6" fill="#E5A23A"/>
+  <rect class="cell col-c2" x="510" y="105" width="160" height="50"/>
+  <text class="vlbl" x="518" y="125" fill="#fff">Reduct</text>
+  <text class="clbl" x="518" y="143">C2</text><circle cx="658" cy="115" r="6" fill="#E5A23A"/>
+  <rect class="cell col-c2" x="680" y="105" width="160" height="50"/>
+  <text class="vlbl" x="688" y="125" fill="#fff">Notably</text>
+  <text class="clbl" x="688" y="143">C2</text><circle cx="828" cy="115" r="6" fill="#C0392B"/>
+  <rect class="cell col-c2" x="850" y="105" width="160" height="50"/>
+  <text class="vlbl" x="858" y="125" fill="#fff">Condens</text>
+  <text class="clbl" x="858" y="143">C2</text><circle cx="998" cy="115" r="6" fill="#2E8B57"/>
+
+  <!-- Row 3: Synthetic users -->
+  <text class="lblh" x="6" y="198">3. Synthetic users</text>
+  <rect class="cell col-c3" x="170" y="170" width="160" height="50"/>
+  <text class="vlbl" x="178" y="190" fill="#fff">Qualtrics Edge</text>
+  <text class="clbl" x="178" y="208">C3</text><circle cx="318" cy="180" r="6" fill="#E5A23A"/>
+  <rect class="cell col-c3" x="340" y="170" width="160" height="50"/>
+  <text class="vlbl" x="348" y="190" fill="#fff">Aaru</text>
+  <text class="clbl" x="348" y="208">C3</text><circle cx="488" cy="180" r="6" fill="#C0392B"/>
+  <rect class="cell col-c3" x="510" y="170" width="160" height="50"/>
+  <text class="vlbl" x="518" y="190" fill="#fff">Simile</text>
+  <text class="clbl" x="518" y="208">C3</text><circle cx="658" cy="180" r="6" fill="#C0392B"/>
+  <rect class="cell col-c2" x="680" y="170" width="160" height="50"/>
+  <text class="vlbl" x="688" y="190" fill="#fff">Synthetic Users</text>
+  <text class="clbl" x="688" y="208">C2</text><circle cx="828" cy="180" r="6" fill="#C0392B"/>
+  <rect class="cell col-c3" x="850" y="170" width="160" height="50"/>
+  <text class="vlbl" x="858" y="190" fill="#fff">Yabble (YouGov)</text>
+  <text class="clbl" x="858" y="208">C3</text><circle cx="998" cy="180" r="6" fill="#E5A23A"/>
+
+  <!-- Row 4: Survey + quant -->
+  <text class="lblh" x="6" y="263">4. Survey &amp; quant</text>
+  <rect class="cell col-c3" x="170" y="235" width="160" height="50"/>
+  <text class="vlbl" x="178" y="255" fill="#fff">Qualtrics</text>
+  <text class="clbl" x="178" y="273">C3</text><circle cx="318" cy="245" r="6" fill="#E5A23A"/>
+  <rect class="cell col-c3" x="340" y="235" width="160" height="50"/>
+  <text class="vlbl" x="348" y="255" fill="#fff">Medallia</text>
+  <text class="clbl" x="348" y="273">C3</text><circle cx="488" cy="245" r="6" fill="#C0392B"/>
+  <rect class="cell col-c3" x="510" y="235" width="160" height="50"/>
+  <text class="vlbl" x="518" y="255" fill="#fff">Suzy</text>
+  <text class="clbl" x="518" y="273">C3</text><circle cx="658" cy="245" r="6" fill="#C0392B"/>
+  <rect class="cell col-c3" x="680" y="235" width="160" height="50"/>
+  <text class="vlbl" x="688" y="255" fill="#fff">iFlytek</text>
+  <text class="clbl" x="688" y="273">C3</text><circle cx="828" cy="245" r="6" fill="#2E8B57"/>
+  <rect class="cell col-c3" x="850" y="235" width="160" height="50"/>
+  <text class="vlbl" x="858" y="255" fill="#fff">Tencent Wenjuan</text>
+  <text class="clbl" x="858" y="273">C3</text><circle cx="998" cy="245" r="6" fill="#2E8B57"/>
+
+  <!-- Row 5: Recruit + vetting -->
+  <text class="lblh" x="6" y="328">5. Recruit + vetting</text>
+  <rect class="cell col-c3" x="170" y="300" width="160" height="50"/>
+  <text class="vlbl" x="178" y="320" fill="#fff">User Interviews</text>
+  <text class="clbl" x="178" y="338">C3</text><circle cx="318" cy="310" r="6" fill="#E5A23A"/>
+  <rect class="cell col-c3" x="340" y="300" width="160" height="50"/>
+  <text class="vlbl" x="348" y="320" fill="#fff">Prolific</text>
+  <text class="clbl" x="348" y="338">C3</text><circle cx="488" cy="310" r="6" fill="#E5A23A"/>
+  <rect class="cell col-c3" x="510" y="300" width="160" height="50"/>
+  <text class="vlbl" x="518" y="320" fill="#fff">dscout</text>
+  <text class="clbl" x="518" y="338">C3</text><circle cx="658" cy="310" r="6" fill="#2E8B57"/>
+  <rect class="cell col-c2" x="680" y="300" width="160" height="50"/>
+  <text class="vlbl" x="688" y="320" fill="#fff">CleverX</text>
+  <text class="clbl" x="688" y="338">C2</text><circle cx="828" cy="310" r="6" fill="#E5A23A"/>
+  <rect class="cell col-c2" x="850" y="300" width="160" height="50"/>
+  <text class="vlbl" x="858" y="320" fill="#fff">Credamo</text>
+  <text class="clbl" x="858" y="338">C2</text><circle cx="998" cy="310" r="6" fill="#2E8B57"/>
+
+  <!-- Row 6: Fraud detection -->
+  <text class="lblh" x="6" y="393">6. Fraud detection</text>
+  <rect class="cell col-c3" x="170" y="365" width="160" height="50"/>
+  <text class="vlbl" x="178" y="385" fill="#fff">Research Defender</text>
+  <text class="clbl" x="178" y="403">C3</text><circle cx="318" cy="375" r="6" fill="#E5A23A"/>
+  <rect class="cell col-c3" x="340" y="365" width="160" height="50"/>
+  <text class="vlbl" x="348" y="385" fill="#fff">Imperium</text>
+  <text class="clbl" x="348" y="403">C3</text><circle cx="488" cy="375" r="6" fill="#E5A23A"/>
+  <rect class="cell col-c3" x="510" y="365" width="160" height="50"/>
+  <text class="vlbl" x="518" y="385" fill="#fff">IPQS</text>
+  <text class="clbl" x="518" y="403">C3</text><circle cx="658" cy="375" r="6" fill="#E5A23A"/>
+  <rect class="cell col-c2" x="680" y="365" width="160" height="50"/>
+  <text class="vlbl" x="688" y="385" fill="#fff">Centiment</text>
+  <text class="clbl" x="688" y="403">C2</text><circle cx="828" cy="375" r="6" fill="#E5A23A"/>
+  <rect class="cell col-c3" x="850" y="365" width="160" height="50"/>
+  <text class="vlbl" x="858" y="385" fill="#fff">HUMAN Sec.</text>
+  <text class="clbl" x="858" y="403">C3</text><circle cx="998" cy="375" r="6" fill="#E5A23A"/>
+
+  <!-- Row 7: Transcription -->
+  <text class="lblh" x="6" y="458">7. Transcription</text>
+  <rect class="cell col-c3" x="170" y="430" width="160" height="50"/>
+  <text class="vlbl" x="178" y="450" fill="#fff">iFlytek</text>
+  <text class="clbl" x="178" y="468">C3</text><circle cx="318" cy="440" r="6" fill="#2E8B57"/>
+  <rect class="cell col-c3" x="340" y="430" width="160" height="50"/>
+  <text class="vlbl" x="348" y="450" fill="#fff">Whisper (self-host)</text>
+  <text class="clbl" x="348" y="468">C3</text><circle cx="488" cy="440" r="6" fill="#2E8B57"/>
+  <rect class="cell col-c3" x="510" y="430" width="160" height="50"/>
+  <text class="vlbl" x="518" y="450" fill="#fff">Speechmatics</text>
+  <text class="clbl" x="518" y="468">C3</text><circle cx="658" cy="440" r="6" fill="#2E8B57"/>
+  <rect class="cell col-c3" x="680" y="430" width="160" height="50"/>
+  <text class="vlbl" x="688" y="450" fill="#fff">Notta</text>
+  <text class="clbl" x="688" y="468">C3</text><circle cx="828" cy="440" r="6" fill="#E5A23A"/>
+  <rect class="cell col-c3" x="850" y="430" width="160" height="50"/>
+  <text class="vlbl" x="858" y="450" fill="#fff">Otter / Descript</text>
+  <text class="clbl" x="858" y="468">C3</text><circle cx="998" cy="440" r="6" fill="#C0392B"/>
+
+  <!-- Row 8: Knowledge / ResearchOps -->
+  <text class="lblh" x="6" y="523">8. Knowledge / ResOps</text>
+  <rect class="cell col-c3" x="170" y="495" width="160" height="50"/>
+  <text class="vlbl" x="178" y="515" fill="#fff">Dovetail</text>
+  <text class="clbl" x="178" y="533">C3</text><circle cx="318" cy="505" r="6" fill="#E5A23A"/>
+  <rect class="cell col-c3" x="340" y="495" width="160" height="50"/>
+  <text class="vlbl" x="348" y="515" fill="#fff">Stravito</text>
+  <text class="clbl" x="348" y="533">C3</text><circle cx="488" cy="505" r="6" fill="#E5A23A"/>
+  <rect class="cell col-c3" x="510" y="495" width="160" height="50"/>
+  <text class="vlbl" x="518" y="515" fill="#fff">Glean</text>
+  <text class="clbl" x="518" y="533">C3</text><circle cx="658" cy="505" r="6" fill="#E5A23A"/>
+  <rect class="cell col-c2" x="680" y="495" width="160" height="50"/>
+  <text class="vlbl" x="688" y="515" fill="#fff">Condens</text>
+  <text class="clbl" x="688" y="533">C2</text><circle cx="828" cy="505" r="6" fill="#2E8B57"/>
+  <rect class="cell col-c3" x="850" y="495" width="160" height="50"/>
+  <text class="vlbl" x="858" y="515" fill="#fff">Great Question</text>
+  <text class="clbl" x="858" y="533">C3</text><circle cx="998" cy="505" r="6" fill="#E5A23A"/>
+
+  <!-- Inline legend strip -->
+  <g transform="translate(170,560)">
+    <rect width="14" height="12" class="col-c1"/><text class="lbl" x="20" y="11">C1</text>
+    <rect x="50" width="14" height="12" class="col-c2"/><text class="lbl" x="70" y="11">C2</text>
+    <rect x="100" width="14" height="12" class="col-c3"/><text class="lbl" x="120" y="11">C3</text>
+    <circle cx="170" cy="6" r="6" fill="#2E8B57"/><text class="lbl" x="180" y="11">viable</text>
+    <circle cx="240" cy="6" r="6" fill="#E5A23A"/><text class="lbl" x="250" y="11">constrained (cross-border / Mandarin gap)</text>
+    <circle cx="490" cy="6" r="6" fill="#C0392B"/><text class="lbl" x="500" y="11">not viable for this audience</text>
+  </g>
+</svg>
+<div class="cap">Cell color = confidence in vendor's AI claims (C1/C2/C3). Dot = audience fit after applying Mandarin / PRC residency / XR-fit filters from Phase 1 scope.</div>
+</div>
+
+<p>The matrix surfaces three structural patterns. <strong>First</strong>, confidence concentrates in incumbents with patent depth (Qualtrics has 6 published filings 2025–26; Tobii holds the deep XR sensing IP) <sup class="cite"><a href="#S117">S117</a>, <a href="#S118">S118</a>, <a href="#S119">S119</a>, <a href="#S120">S120</a>, <a href="#S121">S121</a>, <a href="#S122">S122</a>, <a href="#S127">S127</a>, <a href="#S128">S128</a>, <a href="#S138">S138</a></sup> <span class="pill pill-c3">C3</span>; the AI-research startups have effectively no defensible IP and compete on data, distribution, prompt design <sup class="cite"><a href="#S152">S152</a>, <a href="#S153">S153</a>, <a href="#S046">S046</a></sup> <span class="pill pill-c3">C3</span>. <strong>Second</strong>, audience-fit collapses harshly in the upper rows — only Discuss.io's translation overlay, Listen Labs' explicit Mandarin voice claim, and Conveo's 50-language probing reach amber for Mandarin moderation; none clears PIPL data residency. <sup class="cite"><a href="#S029">S029</a>, <a href="#S011">S011</a>, <a href="#S024">S024</a>, <a href="#S340">S340</a></sup> <strong>Third</strong>, the only fully-green column for this audience runs through transcription (iFlytek, Speechmatics on-prem, self-hosted Whisper) and the Chinese survey stack — exactly the layers Western analyst coverage under-discusses <sup class="cite"><a href="#S074">S074</a>, <a href="#S106">S106</a>, <a href="#S099">S099</a>, <a href="#S071">S071</a>, <a href="#S073">S073</a></sup> <span class="pill pill-c3">C3</span>.</p>
+
+<!-- ============ SECTION 3 ============ -->
+<h2 id="section-3">3. Functional deep-dives</h2>
+
+<div class="cols2">
+
+<div class="func-card">
+<h4>1. Interview moderation</h4>
+<p><strong>Working:</strong> Outset <sup class="cite"><a href="#S298">S298</a>, <a href="#S002">S002</a>, <a href="#S005">S005</a></sup>, Listen Labs <sup class="cite"><a href="#S299">S299</a>, <a href="#S009">S009</a>, <a href="#S175">S175</a></sup> and Strella <sup class="cite"><a href="#S172">S172</a>, <a href="#S171">S171</a>, <a href="#S013">S013</a></sup> have Fortune-500 logos (Microsoft, Amazon, Nestlé, Duolingo, Chobani, WeightWatchers); an Outset customer cites "120 hours saved on a single project" <sup class="cite"><a href="#S001">S001</a>, <a href="#S166">S166</a></sup> <span class="pill pill-c3">C3</span>.</p>
+<p><strong>Overhyped:</strong> "1,000 parallel interviews" is irrelevant for XR's N=8 lab studies <sup class="cite"><a href="#S008">S008</a>, <a href="#S007">S007</a></sup>; Maria Rosala's NN/g study found only 3 of 10 participants felt the AI conversation "felt natural" <sup class="cite"><a href="#S251">S251</a>, <a href="#S255">S255</a>, <a href="#S295">S295</a></sup> <span class="pill pill-c3">C3</span>.</p>
+<p><strong>Audience:</strong> Mandarin probing parity unverified across the cohort <sup class="cite"><a href="#S011">S011</a>, <a href="#S024">S024</a></sup>; none publishes a China region <sup class="cite"><a href="#S003">S003</a>, <a href="#S451">S451</a></sup>. Treat as B2C-only. <sup class="cite"><a href="#S299">S299</a></sup> <span class="pill pill-c2">C2</span></p>
+</div>
+
+<div class="func-card">
+<h4>2. Qualitative synthesis</h4>
+<p><strong>Working:</strong> Dovetail's 82-language transcription (via AssemblyAI) <sup class="cite"><a href="#S036">S036</a>, <a href="#S035">S035</a>, <a href="#S039">S039</a></sup> and Magic Cluster save 1–2 hours/project per Looppanel's review <sup class="cite"><a href="#S257">S257</a>, <a href="#S033">S033</a>, <a href="#S034">S034</a></sup>; Lyssna 2025 reports 54.7% routine adoption <sup class="cite"><a href="#S287">S287</a>, <a href="#S481">S481</a></sup> <span class="pill pill-c3">C3</span>.</p>
+<p><strong>Overhyped:</strong> Failure mode is stakeholder narrative and quote hallucination <sup class="cite"><a href="#S252">S252</a>, <a href="#S253">S253</a></sup> — Lexi Brights (Workday) reports the "LLM just generated quotes" <sup class="cite"><a href="#S259">S259</a>, <a href="#S294">S294</a></sup> <span class="pill pill-c2">C2</span>.</p>
+<p><strong>Audience:</strong> Dovetail is the only vendor here with an explicit, published Mandarin transcription path <sup class="cite"><a href="#S035">S035</a>, <a href="#S036">S036</a></sup>. Pair with on-prem ASR for unreleased-HW work <sup class="cite"><a href="#S458">S458</a>, <a href="#S099">S099</a>, <a href="#S457">S457</a></sup> <span class="pill pill-c2">C2</span></p>
+</div>
+
+<div class="func-card">
+<h4>3. Synthetic users / panels</h4>
+<p><strong>Working:</strong> Qualtrics Edge Audiences (panel-grounded; ROI Rocket B2B partnership Jan 2026) <sup class="cite"><a href="#S063">S063</a>, <a href="#S064">S064</a></sup> and Evidenza (BlackRock, Microsoft, JPM, profitable on $0 VC) <sup class="cite"><a href="#S056">S056</a>, <a href="#S057">S057</a>, <a href="#S197">S197</a></sup> demonstrate panel-grounded synthetic can deliver value for B2B concept screening <sup class="cite"><a href="#S198">S198</a>, <a href="#S199">S199</a>, <a href="#S312">S312</a></sup> <span class="pill pill-c3">C3</span>.</p>
+<p><strong>Overhyped:</strong> Aaru's $1B headline at sub-$10M ARR <sup class="cite"><a href="#S055">S055</a>, <a href="#S179">S179</a>, <a href="#S178">S178</a></sup>; pure-LLM synthetic users disavowed by NN/g <sup class="cite"><a href="#S250">S250</a></sup>, Hall <sup class="cite"><a href="#S241">S241</a></sup>, Spool <sup class="cite"><a href="#S293">S293</a></sup>, Merholz <sup class="cite"><a href="#S243">S243</a></sup>, Salehi <sup class="cite"><a href="#S246">S246</a></sup>, Young <sup class="cite"><a href="#S242">S242</a></sup>, Travis <sup class="cite"><a href="#S248">S248</a></sup>, Duignan <sup class="cite"><a href="#S258">S258</a>, <a href="#S291">S291</a></sup> <span class="pill pill-c3">C3</span>.</p>
+<p><strong>Audience:</strong> No vendor has published Chinese-consumer fidelity validation <sup class="cite"><a href="#S046">S046</a>, <a href="#S388">S388</a></sup>. For XR concept work, hypothesis generation only — never go/no-go. <sup class="cite"><a href="#S448">S448</a>, <a href="#S449">S449</a>, <a href="#S256">S256</a></sup> <span class="pill pill-c3">C3</span></p>
+</div>
+
+<div class="func-card">
+<h4>4. Survey design &amp; quant</h4>
+<p><strong>Working:</strong> Qualtrics has 6 published AI patent applications 2025–26 (fraud, follow-up probe, agent orchestration, sentiment) <sup class="cite"><a href="#S117">S117</a>, <a href="#S118">S118</a>, <a href="#S119">S119</a>, <a href="#S120">S120</a>, <a href="#S121">S121</a>, <a href="#S122">S122</a></sup>; Suzy Decision Engine launched 2 Apr 2026 <sup class="cite"><a href="#S067">S067</a>, <a href="#S066">S066</a></sup> <span class="pill pill-c3">C3</span>.</p>
+<p><strong>Overhyped:</strong> Medallia's 2026 GenAI multilingual list excludes Mandarin (only EN/FR/DE/ES) <sup class="cite"><a href="#S065">S065</a>, <a href="#S157">S157</a></sup>; Thoma Bravo handing Medallia to lenders Apr 2026 with $5.1B equity wipeout <sup class="cite"><a href="#S214">S214</a>, <a href="#S216">S216</a>, <a href="#S217">S217</a>, <a href="#S215">S215</a></sup> <span class="pill pill-c3">C3</span>.</p>
+<p><strong>Audience:</strong> For PRC-resident workloads the credible answers are iFlytek <sup class="cite"><a href="#S074">S074</a></sup>, Tencent Wenjuan <sup class="cite"><a href="#S071">S071</a>, <a href="#S072">S072</a></sup>, Wenjuanxing <sup class="cite"><a href="#S073">S073</a></sup>, SurveyPlus <sup class="cite"><a href="#S230">S230</a></sup> — missing from Western rankings entirely. <sup class="cite"><a href="#S322">S322</a>, <a href="#S321">S321</a></sup> <span class="pill pill-c3">C3</span></p>
+</div>
+
+<div class="func-card">
+<h4>5. Recruitment &amp; vetting</h4>
+<p><strong>Working:</strong> Prolific's 50-step verification + Jan 2026 audit (&lt;0.8% AI-generated content) is the integrity gold standard <sup class="cite"><a href="#S082">S082</a>, <a href="#S083">S083</a>, <a href="#S081">S081</a></sup>; dscout's diary missions are an underrated XR fit for "live-with-it" hardware studies <sup class="cite"><a href="#S456">S456</a>, <a href="#S085">S085</a>, <a href="#S084">S084</a></sup> <span class="pill pill-c3">C3</span>.</p>
+<p><strong>Overhyped:</strong> User Interviews acquired by UserTesting Jan 2026 — independent roadmap uncertain <sup class="cite"><a href="#S079">S079</a>, <a href="#S211">S211</a></sup>; consolidation reduces leverage <sup class="cite"><a href="#S210">S210</a>, <a href="#S212">S212</a>, <a href="#S045">S045</a></sup> <span class="pill pill-c3">C3</span>.</p>
+<p><strong>Audience:</strong> US/EU panels give negligible Chinese consumer reach <sup class="cite"><a href="#S077">S077</a>, <a href="#S081">S081</a></sup>; supplement with Credamo + WeChat-mini-program agencies <sup class="cite"><a href="#S087">S087</a>, <a href="#S076">S076</a></sup>. <span class="pill pill-c2">C2</span></p>
+</div>
+
+<div class="func-card">
+<h4>6. Fraud detection</h4>
+<p><strong>Working:</strong> Research Defender's published library of generative-AI text patterns (294M+ flagged in 12 months) <sup class="cite"><a href="#S088">S088</a>, <a href="#S156">S156</a></sup> plus Qualtrics' US20260065298A1 LLM-hybrid fraud patent <sup class="cite"><a href="#S117">S117</a></sup> show genuine technical depth alongside Imperium and HUMAN Security <sup class="cite"><a href="#S089">S089</a>, <a href="#S092">S092</a>, <a href="#S142">S142</a></sup> <span class="pill pill-c3">C3</span>.</p>
+<p><strong>Overhyped:</strong> Calibration is overwhelmingly English-trained <sup class="cite"><a href="#S088">S088</a>, <a href="#S089">S089</a></sup> — open-end LLM-detection on Qwen/DeepSeek/Doubao output is published nowhere <sup class="cite"><a href="#S385">S385</a>, <a href="#S386">S386</a>, <a href="#S387">S387</a>, <a href="#S388">S388</a></sup> <span class="pill pill-c2">C2</span>.</p>
+<p><strong>Audience:</strong> For in-China surveys, manual native-speaker open-end review remains the only defensible AI-fraud check today. <sup class="cite"><a href="#S388">S388</a>, <a href="#S089">S089</a></sup> <span class="pill pill-c2">C2</span></p>
+</div>
+
+<div class="func-card">
+<h4>7. Transcription</h4>
+<p><strong>Working:</strong> iFlytek (sub-3% Mandarin WER, China-native) <sup class="cite"><a href="#S074">S074</a>, <a href="#S075">S075</a>, <a href="#S076">S076</a></sup>, Speechmatics on-prem <sup class="cite"><a href="#S105">S105</a>, <a href="#S106">S106</a></sup>, and self-hosted Whisper-large-v3 + AISHELL6 fine-tunes all clear Mandarin and PRC residency cleanly <sup class="cite"><a href="#S099">S099</a>, <a href="#S100">S100</a>, <a href="#S459">S459</a>, <a href="#S101">S101</a></sup> <span class="pill pill-c3">C3</span>.</p>
+<p><strong>Overhyped:</strong> Otter.ai supports only EN/FR/ES <sup class="cite"><a href="#S094">S094</a>, <a href="#S093">S093</a></sup>; Descript has no Chinese (open feature request) <sup class="cite"><a href="#S095">S095</a>, <a href="#S096">S096</a></sup>; Cantonese remains a real gap with code-switching unsolved <sup class="cite"><a href="#S389">S389</a>, <a href="#S390">S390</a>, <a href="#S392">S392</a>, <a href="#S391">S391</a>, <a href="#S460">S460</a></sup> <span class="pill pill-c3">C3</span>.</p>
+<p><strong>Audience:</strong> The single category where the audience can stand up an air-gapped, bilingual, on-prem stack today. <sup class="cite"><a href="#S458">S458</a>, <a href="#S099">S099</a>, <a href="#S106">S106</a></sup> <span class="pill pill-c3">C3</span></p>
+</div>
+
+<div class="func-card">
+<h4>8. Knowledge / ResearchOps</h4>
+<p><strong>Working:</strong> Stravito (98% accuracy claim vs 15% Copilot Studio same-source, Heineken/Coles/Shell logos) <sup class="cite"><a href="#S110">S110</a>, <a href="#S111">S111</a></sup> and Glean (100+ connectors) <sup class="cite"><a href="#S109">S109</a></sup> split the insights-vs-enterprise-search divide; Great Question shipped MCP for Claude/Cursor/ChatGPT Mar 2026 <sup class="cite"><a href="#S112">S112</a>, <a href="#S113">S113</a>, <a href="#S482">S482</a></sup> <span class="pill pill-c3">C3</span>.</p>
+<p><strong>Overhyped:</strong> "Repository answers questions" only works on pre-curated, well-tagged corpora <sup class="cite"><a href="#S253">S253</a>, <a href="#S110">S110</a></sup> — Marsh (UK MoJ): "if we don't have the data… we can't use AI to generate that data" <sup class="cite"><a href="#S266">S266</a>, <a href="#S288">S288</a></sup> <span class="pill pill-c2">C2</span>.</p>
+<p><strong>Audience:</strong> No vendor publishes Chinese-language taxonomy parity <sup class="cite"><a href="#S110">S110</a>, <a href="#S109">S109</a>, <a href="#S112">S112</a></sup>; bilingual taxonomy must be built and maintained manually <sup class="cite"><a href="#S388">S388</a>, <a href="#S483">S483</a></sup>. <span class="pill pill-c2">C2</span></p>
+</div>
+
+</div>
+
+<!-- ============ SECTION 4 ============ -->
+<h2 id="section-4">4. B2C vs B2B and regional cuts</h2>
+
+<div class="viz-frame">
+<h4>Figure 2 — B2C vs B2B fit per AI-research category</h4>
+<svg viewBox="0 0 1080 290" width="100%" role="img" aria-label="B2C vs B2B fit by category">
+  <defs>
+    <style>
+      .hd { font-family:-apple-system,Segoe UI,sans-serif; font-size:13px; fill:#0F4C5C; font-weight:700; }
+      .rl { font-family:-apple-system,Segoe UI,sans-serif; font-size:12px; fill:#1A1A1A; }
+      .nt { font-family:-apple-system,Segoe UI,sans-serif; font-size:10px; fill:#fff; font-weight:600; }
+    </style>
+  </defs>
+  <text class="hd" x="20" y="22">Category</text>
+  <text class="hd" x="430" y="22">B2C consumer (XR end-users)</text>
+  <text class="hd" x="780" y="22">B2B enterprise (XR pilots)</text>
+
+  <!-- rows -->
+  <g font-size="12">
+  <text class="rl" x="20" y="60">AI moderation (structured)</text>
+  <rect x="430" y="40" width="320" height="30" fill="#2E8B57"/><text class="nt" x="445" y="60">Green — Indeed/Microsoft/Nestlé in production</text>
+  <rect x="780" y="40" width="280" height="30" fill="#E5A23A"/><text class="nt" x="795" y="60">Amber — works for predictable B2B (lawyers, eng.)</text>
+
+  <text class="rl" x="20" y="100">AI moderation (discovery)</text>
+  <rect x="430" y="80" width="320" height="30" fill="#C0392B"/><text class="nt" x="445" y="100">Red — NN/g 3/10 felt natural; sycophancy</text>
+  <rect x="780" y="80" width="280" height="30" fill="#C0392B"/><text class="nt" x="795" y="100">Red — relationship + trust dimension fails</text>
+
+  <text class="rl" x="20" y="140">Synthetic users</text>
+  <rect x="430" y="120" width="320" height="30" fill="#C0392B"/><text class="nt" x="445" y="140">Red — disavowed across senior UX voices</text>
+  <rect x="780" y="120" width="280" height="30" fill="#E5A23A"/><text class="nt" x="795" y="140">Amber — Evidenza pattern works for some B2B</text>
+
+  <text class="rl" x="20" y="180">Qual synthesis</text>
+  <rect x="430" y="160" width="320" height="30" fill="#2E8B57"/><text class="nt" x="445" y="180">Green — Dovetail/Marvin save 1–2h/project</text>
+  <rect x="780" y="160" width="280" height="30" fill="#2E8B57"/><text class="nt" x="795" y="180">Green — quote-level analysis fits N=4–12</text>
+
+  <text class="rl" x="20" y="220">Survey + quant</text>
+  <rect x="430" y="200" width="320" height="30" fill="#2E8B57"/><text class="nt" x="445" y="220">Green — Qualtrics, Suzy, Tencent Wenjuan</text>
+  <rect x="780" y="200" width="280" height="30" fill="#E5A23A"/><text class="nt" x="795" y="220">Amber — small-N enterprise typically not survey-led</text>
+
+  <text class="rl" x="20" y="260">Fraud detection</text>
+  <rect x="430" y="240" width="320" height="30" fill="#2E8B57"/><text class="nt" x="445" y="260">Green — Research Defender, Imperium, Prolific</text>
+  <rect x="780" y="240" width="280" height="30" fill="#BFC4C8"/><text class="nt" x="795" y="260" fill="#1A1A1A">N/A — small-N panels not the threat surface</text>
+  </g>
+</svg>
+<div class="cap">Audience-fit applied: B2C row = consumer XR studies; B2B = enterprise XR pilots (Pico's 200 districts, Varjo military, surgical training).</div>
+</div>
+
+<p><strong>The B2C/B2B asymmetry is sharp.</strong> AI moderation works in B2C only when the study is structured (feedback at scale, screener-led, post-launch sentiment); for discovery it fails on both sides — practitioners report disengagement from the AI orb <sup class="cite"><a href="#S251">S251</a>, <a href="#S255">S255</a></sup>. Synthetic users invert the pattern: they are publicly disavowed for B2C UX work (Hall, Spool, Merholz, Rosala/Moran) <sup class="cite"><a href="#S241">S241</a>, <a href="#S293">S293</a>, <a href="#S250">S250</a>, <a href="#S246">S246</a></sup> yet Evidenza's profitable pattern shows synthetic-CMO/CFO personas can serve B2B media planning <sup class="cite"><a href="#S057">S057</a>, <a href="#S198">S198</a>, <a href="#S199">S199</a></sup>. Qual synthesis is the rare both-sides win; XR's small-N enterprise pilots benefit because the unit of analysis is the quote, not the aggregate <sup class="cite"><a href="#S287">S287</a>, <a href="#S033">S033</a>, <a href="#S115">S115</a></sup> <span class="pill pill-c3">C3</span>.</p>
+
+<p><strong>Regional reality is constraining and tightening, not loosening.</strong> The EU AI Act's GPAI obligations have applied since 2 Aug 2025 <sup class="cite"><a href="#S366">S366</a>, <a href="#S367">S367</a>, <a href="#S368">S368</a></sup>; the high-risk Annex III deadline of 2 Aug 2026 stands after the Digital Omnibus failed in trilogue on 28 April 2026 (two days before this report) <sup class="cite"><a href="#S369">S369</a>, <a href="#S370">S370</a>, <a href="#S371">S371</a>, <a href="#S376">S376</a></sup>. EDPB Opinion 28/2024 governs synthetic-user training data <sup class="cite"><a href="#S372">S372</a>, <a href="#S373">S373</a>, <a href="#S374">S374</a>, <a href="#S375">S375</a></sup> <span class="pill pill-c3">C3</span>. China's three-pillar cross-border framework (Security Assessment, SCC filing, PIP Certification effective 1 Jan 2026) is now operationally complete — there is no longer ambiguity about whether a route exists, only which one applies <sup class="cite"><a href="#S341">S341</a>, <a href="#S342">S342</a>, <a href="#S343">S343</a>, <a href="#S346">S346</a>, <a href="#S347">S347</a>, <a href="#S345">S345</a>, <a href="#S350">S350</a></sup>. AI-Content Labeling Measures + GB 45438-2025 (effective 1 Sept 2025) require implicit and explicit labels on AI-generated text, image, audio, video and virtual scenes — directly relevant to synthetic transcripts and stimuli in any China-facing deliverable <sup class="cite"><a href="#S358">S358</a>, <a href="#S359">S359</a>, <a href="#S360">S360</a></sup>. CCPA ADMT regulations are effective 1 Jan 2026 with ADMT-specific obligations binding 1 Jan 2027 <sup class="cite"><a href="#S381">S381</a>, <a href="#S382">S382</a>, <a href="#S384">S384</a>, <a href="#S380">S380</a></sup> <span class="pill pill-c3">C3</span>.</p>
+
+<p><strong>Mandarin is solvable on text; Cantonese is not.</strong> Per SuperCLUE Feb 2026, ByteDance Doubao, Qwen, DeepSeek, GLM and Kimi sit in the global top tier on Mandarin; the Chinese frontier trails GPT/Gemini by ~6 points at 10–15% the cost <sup class="cite"><a href="#S385">S385</a>, <a href="#S386">S386</a>, <a href="#S387">S387</a>, <a href="#S393">S393</a>, <a href="#S395">S395</a></sup>. But "Do Chinese models speak Chinese languages?" (arXiv 2504.00289) and "How Well Do LLMs Handle Cantonese?" (NAACL Findings 2025) document a systematic Cantonese performance gap, particularly with the Mandarin/English/Cantonese code-switching that defines HK fieldwork <sup class="cite"><a href="#S388">S388</a>, <a href="#S389">S389</a>, <a href="#S390">S390</a>, <a href="#S391">S391</a></sup>. GLM-ASR-Nano-2512 and fine-tuned Whisper close part of it; treat any Western "100+ languages" tool as unverified for Cantonese until tested against AISHELL6 / HKCanto-Eval <sup class="cite"><a href="#S099">S099</a>, <a href="#S459">S459</a>, <a href="#S392">S392</a>, <a href="#S391">S391</a></sup> <span class="pill pill-c3">C3</span>.</p>
+
+<div class="viz-frame">
+<h4>Figure 3 — Regional constraint map (US / EU / China)</h4>
+<svg viewBox="0 0 1080 360" width="100%" role="img" aria-label="Regional constraint map">
+  <defs><style>
+    .hh { font-family:-apple-system,Segoe UI,sans-serif; font-size:13px; fill:#0F4C5C; font-weight:700; }
+    .rr { font-family:-apple-system,Segoe UI,sans-serif; font-size:12px; fill:#1A1A1A; }
+    .ww { font-family:-apple-system,Segoe UI,sans-serif; font-size:11px; fill:#fff; font-weight:600; }
+    .kk { font-family:-apple-system,Segoe UI,sans-serif; font-size:11px; fill:#1A1A1A; }
+  </style></defs>
+  <text class="hh" x="20" y="22">Constraint</text>
+  <text class="hh" x="350" y="22">United States</text>
+  <text class="hh" x="600" y="22">European Union</text>
+  <text class="hh" x="850" y="22">China (PRC)</text>
+
+  <!-- Row: Data residency for raw recordings -->
+  <text class="rr" x="20" y="60">Raw recording residency</text>
+  <rect x="350" y="40" width="220" height="30" fill="#2E8B57"/><text class="ww" x="362" y="60">Permissive (state varies)</text>
+  <rect x="600" y="40" width="220" height="30" fill="#E5A23A"/><text class="ww" x="612" y="60">GDPR + EDPB Op 28/2024</text>
+  <rect x="850" y="40" width="200" height="30" fill="#C0392B"/><text class="ww" x="862" y="60">PIPL Art.38 + CAC route</text>
+
+  <!-- Row: AI Act / AI rules for moderators -->
+  <text class="rr" x="20" y="100">AI rules on moderators</text>
+  <rect x="350" y="80" width="220" height="30" fill="#E5A23A"/><text class="ww" x="362" y="100">FTC Sec.5 + state ADMT</text>
+  <rect x="600" y="80" width="220" height="30" fill="#C0392B"/><text class="ww" x="612" y="100">AI Act GPAI live; high-risk 2 Aug 26</text>
+  <rect x="850" y="80" width="200" height="30" fill="#C0392B"/><text class="ww" x="862" y="100">Algo + LLM filing required</text>
+
+  <!-- Row: Synthetic content labeling -->
+  <text class="rr" x="20" y="140">Synthetic content labeling</text>
+  <rect x="350" y="120" width="220" height="30" fill="#2E8B57"/><text class="ww" x="362" y="140">No federal mandate</text>
+  <rect x="600" y="120" width="220" height="30" fill="#E5A23A"/><text class="ww" x="612" y="140">AI Act transparency obl.</text>
+  <rect x="850" y="120" width="200" height="30" fill="#C0392B"/><text class="ww" x="862" y="140">GB 45438-2025 mandatory</text>
+
+  <!-- Row: Cross-border transfer -->
+  <text class="rr" x="20" y="180">Cross-border data transfer</text>
+  <rect x="350" y="160" width="220" height="30" fill="#2E8B57"/><text class="ww" x="362" y="180">Sectoral; light</text>
+  <rect x="600" y="160" width="220" height="30" fill="#E5A23A"/><text class="ww" x="612" y="180">SCC + adequacy</text>
+  <rect x="850" y="160" width="200" height="30" fill="#C0392B"/><text class="ww" x="862" y="180">3-pillar (Sec/SCC/PIP-Cert)</text>
+
+  <!-- Row: ADMT / automated decisioning -->
+  <text class="rr" x="20" y="220">Automated decisioning rules</text>
+  <rect x="350" y="200" width="220" height="30" fill="#E5A23A"/><text class="ww" x="362" y="220">CCPA ADMT eff. 2027</text>
+  <rect x="600" y="200" width="220" height="30" fill="#E5A23A"/><text class="ww" x="612" y="220">GDPR Art.22 + AI Act</text>
+  <rect x="850" y="200" width="200" height="30" fill="#C0392B"/><text class="ww" x="862" y="220">Anthropomorphic AI draft</text>
+
+  <!-- Row: Recording consent -->
+  <text class="rr" x="20" y="260">Recording consent</text>
+  <rect x="350" y="240" width="220" height="30" fill="#E5A23A"/><text class="ww" x="362" y="260">State 2-party varies</text>
+  <rect x="600" y="240" width="220" height="30" fill="#E5A23A"/><text class="ww" x="612" y="260">ePrivacy Dir. + GDPR</text>
+  <rect x="850" y="240" width="200" height="30" fill="#E5A23A"/><text class="ww" x="862" y="260">PIPL separate consent</text>
+
+  <!-- Row: Mandarin / Cantonese readiness -->
+  <text class="rr" x="20" y="300">Language coverage</text>
+  <rect x="350" y="280" width="220" height="30" fill="#2E8B57"/><text class="ww" x="362" y="300">English-native; n/a</text>
+  <rect x="600" y="280" width="220" height="30" fill="#E5A23A"/><text class="ww" x="612" y="300">EU langs solid; zh varies</text>
+  <rect x="850" y="280" width="200" height="30" fill="#E5A23A"/><text class="ww" x="862" y="300">Mandarin yes; Cantonese gap</text>
+
+  <!-- legend -->
+  <g transform="translate(20,335)">
+    <rect width="14" height="12" fill="#2E8B57"/><text class="kk" x="20" y="11">low friction</text>
+    <rect x="120" width="14" height="12" fill="#E5A23A"/><text class="kk" x="140" y="11">conditional / live</text>
+    <rect x="280" width="14" height="12" fill="#C0392B"/><text class="kk" x="300" y="11">hard constraint requiring re-architecture</text>
+  </g>
+</svg>
+<div class="cap">Snapshot at 2026-04-30. EU "high-risk" cell rated red because the proposed Digital Omnibus delay failed in trilogue on 28 Apr 2026; original 2 Aug 2026 deadline stands.</div>
+</div>
+
+<!-- ============ SECTION 5 ============ -->
+<h2 id="section-5">5. Hardware + XR-specific implications</h2>
+
+<p>XR research resists AI substitution at two layers the SaaS-qual category was never built for: <strong>multimodal capture</strong> and <strong>long-cycle field studies</strong>. No SaaS qual tool today natively ingests 200 Hz binocular gaze + EEG + GSR + hand kinematics; they are built around a single video stream of a participant's face <sup class="cite"><a href="#S402">S402</a>, <a href="#S442">S442</a>, <a href="#S034">S034</a></sup>. Tobii Pro Lab's PLOF 2.0 export remains the de facto bridge to Dovetail/Marvin/Notably — a CSV bridge, not a true integration <sup class="cite"><a href="#S443">S443</a>, <a href="#S488">S488</a>, <a href="#S442">S442</a></sup> <span class="pill pill-c2">C2</span>. The Tobii–iMotions commercial partnership ended, fragmenting the space further <sup class="cite"><a href="#S400">S400</a>, <a href="#S401">S401</a>, <a href="#S440">S440</a></sup>. Apple Vision Pro <em>does not expose raw gaze coordinates</em> to developers (confirmed by the iTrace UIST/arXiv 2025 paper, which had to substitute pinch/dwell/gamepad proxies) <sup class="cite"><a href="#S422">S422</a>, <a href="#S491">S491</a></sup>; Pico 4 Ultra dropped eye tracking entirely for cost; only Pico 4 Enterprise, Vision Pro at the developer level via workarounds, and Varjo XR-4 (200 Hz, 1° accuracy, with the new <code>XR_VARJO_eye_tracking_analytics</code> OpenXR extension) keep raw gaze open <sup class="cite"><a href="#S434">S434</a>, <a href="#S485">S485</a>, <a href="#S486">S486</a>, <a href="#S438">S438</a>, <a href="#S439">S439</a>, <a href="#S440">S440</a></sup> <span class="pill pill-c3">C3</span>. Long-cycle field studies — "does this glasses form factor still get used in week 3?" — cannot be simulated; synthetic users cannot fabricate adherence drop-off or the texture of week-3 boredom <sup class="cite"><a href="#S250">S250</a>, <a href="#S246">S246</a>, <a href="#S456">S456</a></sup> <span class="pill pill-c3">C3</span>.</p>
+
+<p>The credible 2026 stack for a Chinese-parent XR research function is <strong>four platforms, not one</strong>, drawn from Phase 5 evidence: <strong>(1) capture</strong> — Tobii Pro Lab or iMotions Lab as the primary multimodal recorder, plus Pupil Labs Neon / hmd-eyes for retrofit on Quest/Pico <sup class="cite"><a href="#S442">S442</a>, <a href="#S402">S402</a>, <a href="#S403">S403</a>, <a href="#S405">S405</a></sup>; <strong>(2) in-headset runtime</strong> — WorldViz Vizard 8 + SightLab VR Pro 2 (80+ templates, LLM-driven AI agents released Nov 2024) or build on the academic <em>Toolkit for VR Data Collection</em> + StudyVR pattern over OpenXR <sup class="cite"><a href="#S444">S444</a>, <a href="#S445">S445</a>, <a href="#S419">S419</a>, <a href="#S410">S410</a></sup>; <strong>(3) transcription</strong> — iFlytek SR502 hardware or Alibaba Fun-ASR self-hosted for confidential Mandarin/Cantonese sessions, Whisper or Speechmatics on-prem as global fallback <sup class="cite"><a href="#S074">S074</a>, <a href="#S458">S458</a>, <a href="#S099">S099</a>, <a href="#S106">S106</a>, <a href="#S457">S457</a></sup>; <strong>(4) synthesis</strong> — Volcengine (Doubao, ByteDance) for in-China workloads, Condens for EU residency, Dovetail with workspace isolation for global <sup class="cite"><a href="#S465">S465</a>, <a href="#S466">S466</a>, <a href="#S107">S107</a>, <a href="#S108">S108</a>, <a href="#S033">S033</a></sup>. <strong>Avoid Synthetic Users for any hardware decision.</strong> <sup class="cite"><a href="#S196">S196</a>, <a href="#S250">S250</a>, <a href="#S241">S241</a></sup> <span class="pill pill-c2">C2</span></p>
+
+<table class="data">
+<thead><tr><th>Workflow stage</th><th>Augment with AI today</th><th>Keep human-led</th></tr></thead>
+<tbody>
+<tr><td>Recruiting (B2C)</td><td>dscout / User Interviews + Volcengine screener gen <sup class="cite"><a href="#S084">S084</a>, <a href="#S077">S077</a>, <a href="#S465">S465</a></sup></td><td>Enterprise B2B partner sourcing</td></tr>
+<tr><td>Study design</td><td>LLM probe-generation; Vizard templates <sup class="cite"><a href="#S444">S444</a>, <a href="#S445">S445</a></sup></td><td>Multi-modal sensor protocol design <sup class="cite"><a href="#S402">S402</a></sup></td></tr>
+<tr><td>Moderation</td><td>AI co-moderator for scripted probes (B2C) <sup class="cite"><a href="#S008">S008</a>, <a href="#S172">S172</a></sup></td><td>All in-person, in-headset, comfort and B2B <sup class="cite"><a href="#S251">S251</a></sup></td></tr>
+<tr><td>Capture</td><td>Tobii / iMotions multimodal sync; auto-transcription <sup class="cite"><a href="#S442">S442</a>, <a href="#S402">S402</a>, <a href="#S488">S488</a></sup></td><td>Direct fit/comfort observation</td></tr>
+<tr><td>Transcription</td><td>iFlytek / Fun-ASR / Whisper-zh-cv11 <sup class="cite"><a href="#S074">S074</a>, <a href="#S458">S458</a>, <a href="#S459">S459</a></sup></td><td>Bilingual code-switching review <sup class="cite"><a href="#S390">S390</a>, <a href="#S392">S392</a></sup></td></tr>
+<tr><td>Coding &amp; synthesis</td><td>Dovetail / Notably / Condens / Volcengine <sup class="cite"><a href="#S033">S033</a>, <a href="#S107">S107</a>, <a href="#S465">S465</a></sup></td><td>Atypical / safety-critical / unreleased-IP findings <sup class="cite"><a href="#S252">S252</a></sup></td></tr>
+<tr><td>Reporting</td><td>LLM first-draft of executive summary <sup class="cite"><a href="#S115">S115</a>, <a href="#S481">S481</a></sup></td><td>Final judgment calls and confidence tagging</td></tr>
+<tr><td>Synthetic users</td><td>Hypothesis generation only <sup class="cite"><a href="#S046">S046</a>, <a href="#S256">S256</a></sup></td><td>Any go/no-go decision <sup class="cite"><a href="#S250">S250</a>, <a href="#S246">S246</a></sup></td></tr>
+</tbody>
+</table>
+
+<p><strong>New roles for the 7-person team:</strong> a <em>Research-AI Ops lead</em> (1 FTE, hybrid existing) owning the on-prem capture + air-gapped transcription stack and the data-residency boundary with the parent's CISO <sup class="cite"><a href="#S457">S457</a>, <a href="#S462">S462</a></sup>; a <em>multimodal-data analyst</em> (0.5–1 FTE) for PLOF 2.0/CSV pipelines, AOI definition, biosignal QA <sup class="cite"><a href="#S443">S443</a>, <a href="#S402">S402</a></sup>; a <em>prompt + protocol engineer for in-headset agents</em> (0.25 FTE, growing to 0.5 by 2027) <sup class="cite"><a href="#S418">S418</a>, <a href="#S412">S412</a></sup>; a <em>bilingual research-quality reviewer</em> (0.25 FTE) — non-negotiable given current Cantonese WER <sup class="cite"><a href="#S389">S389</a>, <a href="#S390">S390</a>, <a href="#S392">S392</a></sup>. Across all seven, the skill shift is from "moderator + write-up" to "instrument-the-study + interrogate-the-AI-output," with atomic-research repository discipline as a hiring filter rather than nice-to-have <sup class="cite"><a href="#S253">S253</a>, <a href="#S254">S254</a>, <a href="#S252">S252</a></sup> <span class="pill pill-c2">C2</span>.</p>
+
+<div class="recommend">
+<h4>Three recommendations to land in a single meeting</h4>
+<ol>
+<li><strong>Stand up the on-prem confidential-transcription stack this quarter.</strong> Procure iFlytek SR502 hardware + Alibaba Fun-ASR self-hosted as the in-China bilingual default; Whisper-large-v3 with AISHELL6 fine-tunes or Speechmatics on-prem as the global fallback. Trigger event: any unreleased-headset session from this week forward. This is the only category where the audience can clear Mandarin parity, PIPL residency, and XR confidentiality in one move. <sup class="cite"><a href="#S074">S074</a>, <a href="#S458">S458</a>, <a href="#S100">S100</a>, <a href="#S106">S106</a>, <a href="#S457">S457</a>, <a href="#S462">S462</a></sup> <span class="pill pill-c3">C3</span></li>
+<li><strong>Adopt Dovetail (global) + Volcengine/Doubao (in-China) as a paired synthesis layer; explicitly forbid Synthetic Users for go/no-go calls.</strong> Trigger event: next study kickoff. Codify in the research-ops handbook that synthetic respondents are scoped to pre-research hypothesis generation only — per NN/g, IxDF and the Phase 4 practitioner record. Add Condens as the EU-residency option for any partner study touching EU consumers post-2 Aug 2026. <sup class="cite"><a href="#S033">S033</a>, <a href="#S465">S465</a>, <a href="#S250">S250</a>, <a href="#S448">S448</a>, <a href="#S107">S107</a>, <a href="#S367">S367</a></sup> <span class="pill pill-c3">C3</span></li>
+<li><strong>Build the in-headset study runtime on WorldViz Vizard 8 + SightLab VR Pro 2 plus the academic Toolkit for VR Data Collection (OpenXR-portable across Quest, Pico, Varjo).</strong> Trigger event: the next foveation, comfort or fit study. Hire (or reassign) the multimodal-data analyst before that study fields, not after — the PLOF 2.0 → Dovetail bridge is the single biggest operational gap and will not solve itself. <sup class="cite"><a href="#S444">S444</a>, <a href="#S445">S445</a>, <a href="#S419">S419</a>, <a href="#S443">S443</a>, <a href="#S438">S438</a>, <a href="#S431">S431</a></sup> <span class="pill pill-c2">C2</span></li>
+</ol>
+</div>
+
+<!-- ============ SECTION 6 ============ -->
+<h2 id="section-6">6. Counter-narrative: what isn't working</h2>
+<div class="counter">
+<p>The 2024–2026 practitioner record does not support replacing primary research with AI-led methods for any decision a hardware team would care about. Synthetic users are publicly disavowed by NN/g (Rosala, Moran) <sup class="cite"><a href="#S250">S250</a>, <a href="#S251">S251</a></sup>, Erika Hall ("unethical, indefensible, unnecessary") <sup class="cite"><a href="#S241">S241</a>, <a href="#S297">S297</a></sup>, Jared Spool ("absolutely the wrong direction") <sup class="cite"><a href="#S293">S293</a></sup>, Peter Merholz, Indi Young ("ChatGPT does not understand meaning") <sup class="cite"><a href="#S242">S242</a>, <a href="#S243">S243</a>, <a href="#S296">S296</a></sup>, Pavel Samsonov ("the LLM can't buy your product") <sup class="cite"><a href="#S244">S244</a>, <a href="#S245">S245</a></sup>, Niloufar Salehi (UC Berkeley: "superficial, stereotype-based") <sup class="cite"><a href="#S246">S246</a></sup>, Matt Duignan (Microsoft: "the next big myth") <sup class="cite"><a href="#S258">S258</a>, <a href="#S291">S291</a></sup>, Emma Travis (Speero) <sup class="cite"><a href="#S248">S248</a></sup> and Greg Nudelman <sup class="cite"><a href="#S247">S247</a></sup> <span class="pill pill-c3">C3</span>. User Interviews' SoUR 2025 (n=485) records 49% negative sentiment on UXR's future, +26 pts YoY; 67% pessimistic on careers, +21 pts; 11% personally laid off; 21% saw researcher layoffs at their company <sup class="cite"><a href="#S285">S285</a>, <a href="#S116">S116</a></sup>. GRIT 2025 puts brand-side researcher satisfaction with GenAI at 13%, with data-quality concerns up 40% YoY <sup class="cite"><a href="#S284">S284</a>, <a href="#S302">S302</a>, <a href="#S303">S303</a>, <a href="#S304">S304</a>, <a href="#S277">S277</a></sup> <span class="pill pill-c3">C3</span>. Patent reality is harsh: Outset, Listen Labs, Strella, Genway, Conveo, Synthetic Users, Aaru, Yabble, Evidenza, Fairgen, Notably, Marvin, Reduct, Dovetail and dscout return no substantive issued or published patent on their core mechanism — moats are data, distribution and prompt design, not invention <sup class="cite"><a href="#S152">S152</a>, <a href="#S153">S153</a>, <a href="#S196">S196</a>, <a href="#S046">S046</a>, <a href="#S256">S256</a></sup> <span class="pill pill-c3">C3</span>. Wondering shut down 23 Sept 2025 (first prominent AI-research failure of the cycle) <sup class="cite"><a href="#S180">S180</a>, <a href="#S181">S181</a>, <a href="#S032">S032</a></sup>; Aaru's $1B headline sits over sub-$10M ARR <sup class="cite"><a href="#S055">S055</a>, <a href="#S179">S179</a>, <a href="#S178">S178</a></sup>; Medallia is being handed to lenders Apr 2026 with $5.1B equity wipeout, AI-substitution risk explicitly cited <sup class="cite"><a href="#S214">S214</a>, <a href="#S216">S216</a>, <a href="#S217">S217</a></sup> <span class="pill pill-c3">C3</span>. The honest picture is: AI synthesis is a real productivity gain at the inside of the workflow <sup class="cite"><a href="#S287">S287</a>, <a href="#S033">S033</a></sup>; AI moderation is in production for structured B2C work only <sup class="cite"><a href="#S298">S298</a>, <a href="#S172">S172</a>, <a href="#S299">S299</a></sup>; and synthetic respondents are the highest-variance bet in the category, ahead of outcomes by a wide margin <sup class="cite"><a href="#S256">S256</a>, <a href="#S307">S307</a></sup>.</p>
+</div>
+
+<footer class="body-foot">
+Body word count (Sections 1–6): ~2,010 words.
+<span class="disclaimer">Synthesis from publicly available evidence as of 2026-04-30. Confidence tags reflect source-class triangulation; not a substitute for vendor due diligence.</span>
+</footer>
+
+<!-- ============ SECTION 7 ============ -->
+<h2>7. Appendix — Methodology, confidence framework, sources</h2>
+
+<h3>Methodology</h3>
+<p>This report synthesises six independent evidence streams compiled across April 2026 by a single research function: a vendor matrix of ~55 vendors against eight functions; a USPTO/EPO/WIPO patent and IP scan of ~55 filings; a 24-month funding and M&amp;A trace covering ~111 sources; a practitioner-sentiment review across blogs, podcasts, conferences and three industry surveys (User Interviews SoUR, Maze, Lyssna); an analyst, regulatory and language/China ecosystem layer (Greenbook GRIT, ESOMAR, Forrester, Gartner, IDC, Quirks, MRS); and an XR/hardware-specific layer covering capture, in-headset runtime, transcription and multimodal sync. Each load-bearing claim was triangulated across at least two source classes before promotion to <span class="pill pill-c3">C3</span>; <span class="pill pill-c2">C2</span> indicates practitioner-corroborated single-source-class evidence; <span class="pill pill-c1">C1</span> denotes vendor self-report only.</p>
+
+<h3>Confidence framework</h3>
+<p><span class="pill pill-c1">C1</span> — Vendor self-report only (vendor blog, marketing site, founder LinkedIn, press release). <span class="pill pill-c2">C2</span> — Practitioner-corroborated by at least one independent practitioner write-up, podcast discussion, conference talk, or analyst note. <span class="pill pill-c3">C3</span> — Multiple independent source classes confirm; e.g. patents + funding + practitioner sentiment, or analyst + regulator + primary user data.</p>
+
+<h3>Limitations</h3>
+<ul>
+<li>No native CNIPA Chinese-language patent search was performed — Chinese-language research-methodology patents from Pico, ByteDance, Tencent, Alibaba, NetEase and iFlytek may exist but were not retrievable via Google Patents/USPTO/WIPO English search.</li>
+<li>EPO Espacenet listings could not be paged via WebFetch in the patent run; deeper pull recommended for European-only Tobii, Bosch, Apple filings.</li>
+<li>Several vendor revenue figures (Aaru sub-$10M ARR; Dovetail $4.9M 2024) come from third-party trackers (GetLatka) and are not audited.</li>
+<li>Practitioner sentiment is dominated by English-language UX/MR sources; the Chinese-language practitioner debate on AI moderators / synthetic users is a known gap and was flagged at <span class="pill pill-c1">C1</span> rather than smoothed.</li>
+<li>"100+ language" vendor claims have not been benchmarked against Chinese-consumer ground truth in this report — the academic record (arXiv 2504.00289, NAACL 2025 Cantonese, HKCanto-Eval) is used as the credible substitute.</li>
+<li>Forecasts deliberately stop at 18 months per Phase 1 scope; longer-horizon projections were excluded.</li>
+</ul>
+
+<h3>Source list</h3>
+<p>The lists below cite ~300 distinct sources, grouped by evidence stream. All URLs were accessed live on 2026-04-30. Where two phases cited the same URL, it appears once in the most relevant group.</p>
+<div class="appendix-note">Click any [S###] number in the body to jump to its source. Click the ↑ to return to the body.</div>
+
+<details class="appendix" open>
+<summary>Vendor matrix (Phase 2 — 80 sources)</summary>
+<div class="src-list">
+<ol>
+<li id="S001"><strong>S001</strong> — <a href="https://outset.ai/">outset.ai</a> — Outset platform site <a href="#section-2" title="back to body">↑</a></li>
+<li id="S002"><strong>S002</strong> — <a href="https://outset.ai/series-b">outset.ai/series-b</a> — Outset Series B announcement <a href="#section-2" title="back to body">↑</a></li>
+<li id="S003"><strong>S003</strong> — <a href="https://outset.ai/platform/security">outset.ai/platform/security</a> — Outset security &amp; compliance <a href="#section-2" title="back to body">↑</a></li>
+<li id="S004"><strong>S004</strong> — <a href="https://outset.ai/resources/faq">outset.ai/resources/faq</a> — Outset FAQ (languages) <a href="#section-2" title="back to body">↑</a></li>
+<li id="S005"><strong>S005</strong> — <a href="https://www.cmswire.com/customer-experience/outset-raises-30m-series-b-for-ai-native-cx-platform/">CMSWire</a> — Outset $30M Series B <a href="#section-2" title="back to body">↑</a></li>
+<li id="S006"><strong>S006</strong> — <a href="https://venturebeat.com/ai/outset-raises-17m-to-replace-human-interviewers-with-ai-agents-for-enterprise-research">VentureBeat</a> — Outset Series A <a href="#section-2" title="back to body">↑</a></li>
+<li id="S007"><strong>S007</strong> — <a href="https://listenlabs.ai/">listenlabs.ai</a> — Listen Labs platform <a href="#section-2" title="back to body">↑</a></li>
+<li id="S008"><strong>S008</strong> — <a href="https://listenlabs.ai/blog/research-agent">Listen Labs Research Agent launch</a> <a href="#section-2" title="back to body">↑</a></li>
+<li id="S009"><strong>S009</strong> — <a href="https://venturebeat.com/technology/listen-labs-raises-usd69m-after-viral-billboard-hiring-stunt-to-scale-ai">VentureBeat</a> — Listen Labs $69M <a href="#section-2" title="back to body">↑</a></li>
+<li id="S010"><strong>S010</strong> — <a href="https://fortune.com/article/ai-startup-listen-labs-sequoia-27-million-funding/">Fortune</a> — Listen Labs Sequoia round <a href="#section-2" title="back to body">↑</a></li>
+<li id="S011"><strong>S011</strong> — <a href="https://listenlabs-b8522a99.mintlify.app/setup-to-launch/multi-lingual-voice-interviewer">Listen Labs multilingual docs</a> <a href="#section-2" title="back to body">↑</a></li>
+<li id="S012"><strong>S012</strong> — <a href="https://www.strella.io/">strella.io</a> — Strella site <a href="#section-2" title="back to body">↑</a></li>
+<li id="S013"><strong>S013</strong> — <a href="https://www.morningstar.com/news/pr-newswire/20251016ny99165/strella-raises-14m-in-series-a-led-by-bessemer-venture-partners-to-re-design-customer-research-for-the-ai-era">Strella Series A — Morningstar</a> <a href="#section-2" title="back to body">↑</a></li>
+<li id="S014"><strong>S014</strong> — <a href="https://venturebeat.com/ai/strella-raises-4-million-to-automate-market-research-with-ai-powered-customer-interviews">VentureBeat</a> — Strella seed <a href="#section-2" title="back to body">↑</a></li>
+<li id="S015"><strong>S015</strong> — <a href="https://www.userinterviews.com/product-announcements/strella-recruitment-integration">Strella × User Interviews integration</a> <a href="#section-2" title="back to body">↑</a></li>
+<li id="S016"><strong>S016</strong> — <a href="https://www.userology.co/">userology.co</a> <a href="#section-2" title="back to body">↑</a></li>
+<li id="S017"><strong>S017</strong> — <a href="https://www.userinterviews.com/product-announcements/userology-recruitment-integration">Userology × User Interviews</a> <a href="#section-2" title="back to body">↑</a></li>
+<li id="S018"><strong>S018</strong> — <a href="https://www.crunchbase.com/organization/userology">Userology Crunchbase</a> <a href="#section-2" title="back to body">↑</a></li>
+<li id="S019"><strong>S019</strong> — <a href="https://www.genway.ai/">genway.ai</a> <a href="#section-2" title="back to body">↑</a></li>
+<li id="S020"><strong>S020</strong> — <a href="https://www.crunchbase.com/funding_round/genway-ai-seed--932a67f8">Genway $6M seed</a> <a href="#section-2" title="back to body">↑</a></li>
+<li id="S021"><strong>S021</strong> — <a href="https://aws.amazon.com/marketplace/pp/prodview-oxw2625ulcifm">Genway AWS Marketplace</a> <a href="#section-2" title="back to body">↑</a></li>
+<li id="S022"><strong>S022</strong> — <a href="https://conveo.ai/">conveo.ai</a> <a href="#section-2" title="back to body">↑</a></li>
+<li id="S023"><strong>S023</strong> — <a href="https://conveo.ai/insights/conveo-raises-5-3m-to-revolutionize-market-research-with-ai-powered-video-interviews">Conveo seed announcement</a> <a href="#section-2" title="back to body">↑</a></li>
+<li id="S024"><strong>S024</strong> — <a href="https://conveo.ai/insights/generative-user-research-tools">Conveo platform comparison</a> <a href="#section-2" title="back to body">↑</a></li>
+<li id="S025"><strong>S025</strong> — <a href="https://www.ycombinator.com/companies/versive">Versive YC profile</a> <a href="#section-2" title="back to body">↑</a></li>
+<li id="S026"><strong>S026</strong> — <a href="https://www.getversive.com/">getversive.com</a> <a href="#section-2" title="back to body">↑</a></li>
+<li id="S027"><strong>S027</strong> — <a href="https://www.discuss.io/">discuss.io</a> <a href="#section-2" title="back to body">↑</a></li>
+<li id="S028"><strong>S028</strong> — <a href="https://www.globenewswire.com/news-release/2026/01/27/3226446/0/en/Discuss-Recognized-as-a-Leader-in-Experience-Research-Platforms-Q1-2026-Report-by-Independent-Research-Firm.html">Forrester Wave Q1 2026 — Discuss leader</a> <a href="#section-2" title="back to body">↑</a></li>
+<li id="S029"><strong>S029</strong> — <a href="https://www.globenewswire.com/news-release/2026/03/03/3248267/0/en/Discuss-Introduces-Real-Time-AI-Translation-for-Observers-Making-Global-Research-Truly-Universal.html">Discuss real-time translation Mar 2026</a> <a href="#section-2" title="back to body">↑</a></li>
+<li id="S030"><strong>S030</strong> — <a href="https://www.insightplatforms.com/platforms/quester/">Quester profile</a> <a href="#section-2" title="back to body">↑</a></li>
+<li id="S031"><strong>S031</strong> — <a href="https://wondering.app/">wondering.app</a> <a href="#section-2" title="back to body">↑</a></li>
+<li id="S032"><strong>S032</strong> — <a href="https://www.letshighlight.com/blog/listenlabs-alternatives">Wondering shutdown reference</a> <a href="#section-2" title="back to body">↑</a></li>
+<li id="S033"><strong>S033</strong> — <a href="https://dovetail.com/">dovetail.com</a> <a href="#section-2" title="back to body">↑</a></li>
+<li id="S034"><strong>S034</strong> — <a href="https://docs.dovetail.com/help/dovetail-ai">Dovetail AI docs</a> <a href="#section-2" title="back to body">↑</a></li>
+<li id="S035"><strong>S035</strong> — <a href="https://docs.dovetail.com/help/transcribe-and-translate">Dovetail transcription languages</a> <a href="#section-2" title="back to body">↑</a></li>
+<li id="S036"><strong>S036</strong> — <a href="https://dovetail.com/blog/transcription-now-available-in-28-global-languages/">Dovetail 28-language launch</a> <a href="#section-2" title="back to body">↑</a></li>
+<li id="S037"><strong>S037</strong> — <a href="https://heymarvin.com/">heymarvin.com</a> <a href="#section-2" title="back to body">↑</a></li>
+<li id="S038"><strong>S038</strong> — <a href="https://www.prnewswire.com/news-releases/marvin-comes-out-of-beta-with-3-8m-in-funding-to-help-make-user-interviews-more-efficient-and-collaborative-301487858.html">Marvin $3.8M seed</a> <a href="#section-2" title="back to body">↑</a></li>
+<li id="S039"><strong>S039</strong> — <a href="https://www.assemblyai.com/blog/ai-helps-marvins-users-spend-60-less-time-analyzing-research-data">AssemblyAI / Marvin time-savings</a> <a href="#section-2" title="back to body">↑</a></li>
+<li id="S040"><strong>S040</strong> — <a href="https://martechseries.com/mts-insights/dscout-and-heymarvin-announce-integration-uniting-research-execution-ai-powered-analysis-and-insight-management/">dscout × Marvin integration</a> <a href="#section-2" title="back to body">↑</a></li>
+<li id="S041"><strong>S041</strong> — <a href="https://reduct.video/">reduct.video</a> <a href="#section-2" title="back to body">↑</a></li>
+<li id="S042"><strong>S042</strong> — <a href="https://www.looppanel.com/">looppanel.com</a> <a href="#section-2" title="back to body">↑</a></li>
+<li id="S043"><strong>S043</strong> — <a href="https://www.looppanel.com/blog/looppanel-raises-1-mn">Looppanel seed</a> <a href="#section-2" title="back to body">↑</a></li>
+<li id="S044"><strong>S044</strong> — <a href="https://www.aureliuslab.com/">aureliuslab.com</a> <a href="#section-2" title="back to body">↑</a></li>
+<li id="S045"><strong>S045</strong> — <a href="https://help.usertesting.com/hc/en-us/articles/11880326255645-Key-concepts-in-EnjoyHQ">EnjoyHQ in UserTesting</a> <a href="#section-2" title="back to body">↑</a></li>
+<li id="S046"><strong>S046</strong> — <a href="https://askditto.io/news/synthetic-research-platforms-the-2026-market-map">Ditto 2026 synthetic market map</a> <a href="#section-2" title="back to body">↑</a></li>
+<li id="S047"><strong>S047</strong> — <a href="https://www.syntheticusers.com/team">Synthetic Users team</a> <a href="#section-2" title="back to body">↑</a></li>
+<li id="S048"><strong>S048</strong> — <a href="https://lift.comcast.com/smart-insights-less-friction-synthetic-users-is-simplifying-research-w-ai-personas/">Comcast LIFT on Synthetic Users</a> <a href="#section-2" title="back to body">↑</a></li>
+<li id="S049"><strong>S049</strong> — <a href="https://www.yabble.com/">yabble.com</a> <a href="#section-2" title="back to body">↑</a></li>
+<li id="S050"><strong>S050</strong> — <a href="https://www.mrweb.com/drno/news37076.htm">YouGov acquires Yabble — MRWeb</a> <a href="#section-2" title="back to body">↑</a></li>
+<li id="S051"><strong>S051</strong> — <a href="https://www.research-live.com/article/news/yabble-uses-ai-personas-for-creative-testing-tool/id/5143433">Yabble creative testing</a> <a href="#section-2" title="back to body">↑</a></li>
+<li id="S052"><strong>S052</strong> — <a href="https://brox.ai/">brox.ai</a> <a href="#section-2" title="back to body">↑</a></li>
+<li id="S053"><strong>S053</strong> — <a href="https://www.research-live.com/article/news/broxai_raises_$19m_in_funding_round/id/5117793">Brox $1.9M</a> <a href="#section-2" title="back to body">↑</a></li>
+<li id="S054"><strong>S054</strong> — <a href="https://aaru.com/">aaru.com</a> <a href="#section-2" title="back to body">↑</a></li>
+<li id="S055"><strong>S055</strong> — <a href="https://techcrunch.com/2025/12/05/ai-synthetic-research-startup-aaru-raised-a-series-a-at-a-1b-headline-valuation/">TechCrunch — Aaru Series A</a> <a href="#section-2" title="back to body">↑</a></li>
+<li id="S056"><strong>S056</strong> — <a href="https://www.evidenza.ai/">evidenza.ai</a> <a href="#section-2" title="back to body">↑</a></li>
+<li id="S057"><strong>S057</strong> — <a href="https://fish.dog/news/evidenza-ai-review-2026-synthetic-cmos-enterprise-research-and-what-it-costs">FishDog Evidenza review</a> <a href="#section-2" title="back to body">↑</a></li>
+<li id="S058"><strong>S058</strong> — <a href="https://simile.ai/blog/the-simulation-company">Simile blog</a> <a href="#section-2" title="back to body">↑</a></li>
+<li id="S059"><strong>S059</strong> — <a href="https://www.indexventures.com/perspectives/life-the-universe-and-simile-leading-similes-series-a/">Index Ventures / Simile $100M</a> <a href="#section-2" title="back to body">↑</a></li>
+<li id="S060"><strong>S060</strong> — <a href="https://siliconangle.com/2026/02/12/ai-digital-twin-startup-simile-raises-100m-funding/">SiliconANGLE Simile</a> <a href="#section-2" title="back to body">↑</a></li>
+<li id="S061"><strong>S061</strong> — <a href="https://www.fairgen.ai/">fairgen.ai</a> <a href="#section-2" title="back to body">↑</a></li>
+<li id="S062"><strong>S062</strong> — <a href="https://www.fairgen.ai/press-releases/fairgen-raises-8m-for-statistically-accurate-ai-generated-survey-responses">Fairgen $8M</a> <a href="#section-2" title="back to body">↑</a></li>
+<li id="S063"><strong>S063</strong> — <a href="https://www.qualtrics.com/strategy/audiences/">Qualtrics Edge Audiences</a> <a href="#section-2" title="back to body">↑</a></li>
+<li id="S064"><strong>S064</strong> — <a href="https://www.qualtrics.com/articles/strategy-research/synthetic-research-breakthrough/">Qualtrics synthetic methodology</a> <a href="#section-2" title="back to body">↑</a></li>
+<li id="S065"><strong>S065</strong> — <a href="https://www.medallia.com/platform/medallia-ai/">Medallia AI</a> <a href="#section-2" title="back to body">↑</a></li>
+<li id="S066"><strong>S066</strong> — <a href="https://www.suzy.com">suzy.com</a> <a href="#section-2" title="back to body">↑</a></li>
+<li id="S067"><strong>S067</strong> — <a href="https://www.globenewswire.com/news-release/2026/04/02/3267426/0/en/Her-Name-Is-Suzy-She-s-Your-Decision-Engine.html">Suzy Decision Engine launch</a> <a href="#section-2" title="back to body">↑</a></li>
+<li id="S068"><strong>S068</strong> — <a href="https://conjointly.com/">conjointly.com</a> <a href="#section-2" title="back to body">↑</a></li>
+<li id="S069"><strong>S069</strong> — <a href="https://www.pollfish.com/">pollfish.com</a> <a href="#section-2" title="back to body">↑</a></li>
+<li id="S070"><strong>S070</strong> — <a href="https://www.voiceform.com/">voiceform.com</a> <a href="#section-2" title="back to body">↑</a></li>
+<li id="S071"><strong>S071</strong> — <a href="https://wj.qq.com/">wj.qq.com — Tencent Wenjuan</a> <a href="#section-2" title="back to body">↑</a></li>
+<li id="S072"><strong>S072</strong> — <a href="https://www.wenjuan.com/">wenjuan.com</a> <a href="#section-2" title="back to body">↑</a></li>
+<li id="S073"><strong>S073</strong> — <a href="https://www.wjx.cn/">wjx.cn — Wenjuanxing</a> <a href="#section-2" title="back to body">↑</a></li>
+<li id="S074"><strong>S074</strong> — <a href="https://www.iflytek.com/en/">iflytek.com</a> <a href="#section-2" title="back to body">↑</a></li>
+<li id="S075"><strong>S075</strong> — <a href="https://www.manilatimes.net/2026/04/29/tmt-newswire/pr-newswire/iflytek-highlights-multilingual-ai-capabilities-and-regional-growth-strategy-at-gitex-asia-2026/2331394">iFlytek GITEX Asia 2026</a> <a href="#section-2" title="back to body">↑</a></li>
+<li id="S076"><strong>S076</strong> — <a href="https://kr-asia.com/iflyteks-audio-transcription-tool-reaches-100-million-users">iFlytek 100M users</a> <a href="#section-2" title="back to body">↑</a></li>
+<li id="S077"><strong>S077</strong> — <a href="https://www.userinterviews.com/">userinterviews.com</a> <a href="#section-2" title="back to body">↑</a></li>
+<li id="S078"><strong>S078</strong> — <a href="https://www.userinterviews.com/product-announcements/ai-recruitment">UI AI recruitment</a> <a href="#section-2" title="back to body">↑</a></li>
+<li id="S079"><strong>S079</strong> — <a href="https://www.usertesting.com/company/newsroom/press-releases/usertesting-acquires-user-interviews">UserTesting acquires User Interviews</a> <a href="#section-2" title="back to body">↑</a></li>
+<li id="S080"><strong>S080</strong> — <a href="https://www.respondent.io/">respondent.io</a> <a href="#section-2" title="back to body">↑</a></li>
+<li id="S081"><strong>S081</strong> — <a href="https://www.prolific.com/">prolific.com</a> <a href="#section-2" title="back to body">↑</a></li>
+<li id="S082"><strong>S082</strong> — <a href="https://www.prolific.com/resources/how-prolific-detects-bots-and-ai-in-online-research">Prolific bot/AI detection</a> <a href="#section-2" title="back to body">↑</a></li>
+<li id="S083"><strong>S083</strong> — <a href="https://www.prolific.com/resources/introducing-authenticity-checks-beta-ensure-genuine-human-responses-in-the-age-of-ai">Prolific Authenticity Checks audit</a> <a href="#section-2" title="back to body">↑</a></li>
+<li id="S084"><strong>S084</strong> — <a href="https://dscout.com/">dscout.com</a> <a href="#section-2" title="back to body">↑</a></li>
+<li id="S085"><strong>S085</strong> — <a href="https://www.dscout.com/people-nerds/introducing-dscout-ai-studio">dscout AI Studio</a> <a href="#section-2" title="back to body">↑</a></li>
+<li id="S086"><strong>S086</strong> — <a href="https://cleverx.com/">cleverx.com</a> <a href="#section-2" title="back to body">↑</a></li>
+<li id="S087"><strong>S087</strong> — <a href="https://www.credamo.com/">credamo.com</a> <a href="#section-2" title="back to body">↑</a></li>
+<li id="S088"><strong>S088</strong> — <a href="https://repdata.com/solutions/research-defender/">Research Defender</a> <a href="#section-2" title="back to body">↑</a></li>
+<li id="S089"><strong>S089</strong> — <a href="https://www.imperium.com/">imperium.com</a> <a href="#section-2" title="back to body">↑</a></li>
+<li id="S090"><strong>S090</strong> — <a href="https://www.ipqualityscore.com">ipqualityscore.com</a> <a href="#section-2" title="back to body">↑</a></li>
+<li id="S091"><strong>S091</strong> — <a href="https://www.centiment.co/">centiment.co</a> <a href="#section-2" title="back to body">↑</a></li>
+<li id="S092"><strong>S092</strong> — <a href="https://www.humansecurity.com/applications/cyberfraud-defense/">HUMAN Sightline</a> <a href="#section-2" title="back to body">↑</a></li>
+<li id="S093"><strong>S093</strong> — <a href="https://otter.ai/">otter.ai</a> <a href="#section-2" title="back to body">↑</a></li>
+<li id="S094"><strong>S094</strong> — <a href="https://help.otter.ai/hc/en-us/articles/360047247414-Supported-languages">Otter supported languages</a> <a href="#section-2" title="back to body">↑</a></li>
+<li id="S095"><strong>S095</strong> — <a href="https://help.descript.com/hc/en-us/articles/10249408168845-Supported-transcription-languages">Descript supported languages</a> <a href="#section-2" title="back to body">↑</a></li>
+<li id="S096"><strong>S096</strong> — <a href="https://descript.canny.io/feature-requests/p/transcribe-chinesejapanesekorean">Descript Chinese feature request</a> <a href="#section-2" title="back to body">↑</a></li>
+<li id="S097"><strong>S097</strong> — <a href="https://fireflies.ai/">fireflies.ai</a> <a href="#section-2" title="back to body">↑</a></li>
+<li id="S098"><strong>S098</strong> — <a href="https://www.rev.ai/">rev.ai</a> <a href="#section-2" title="back to body">↑</a></li>
+<li id="S099"><strong>S099</strong> — <a href="https://github.com/openai/whisper">OpenAI Whisper repo</a> <a href="#section-2" title="back to body">↑</a></li>
+<li id="S100"><strong>S100</strong> — <a href="https://huggingface.co/openai/whisper-large-v3">Whisper large-v3 model card</a> <a href="#section-2" title="back to body">↑</a></li>
+<li id="S101"><strong>S101</strong> — <a href="https://github.com/sandy1990418/ChineseTaiwaneseWhisper">Chinese-Taiwanese Whisper fine-tune</a> <a href="#section-2" title="back to body">↑</a></li>
+<li id="S102"><strong>S102</strong> — <a href="https://sonix.ai/languages">Sonix 53+ languages</a> <a href="#section-2" title="back to body">↑</a></li>
+<li id="S103"><strong>S103</strong> — <a href="https://www.notta.ai/en/">notta.ai</a> <a href="#section-2" title="back to body">↑</a></li>
+<li id="S104"><strong>S104</strong> — <a href="https://support.notta.ai/hc/en-us/articles/23437010425755-Bilingual-transcription-translation-Web">Notta bilingual EN-zh</a> <a href="#section-2" title="back to body">↑</a></li>
+<li id="S105"><strong>S105</strong> — <a href="https://www.speechmatics.com/">speechmatics.com</a> <a href="#section-2" title="back to body">↑</a></li>
+<li id="S106"><strong>S106</strong> — <a href="https://www.speechmatics.com/speech-to-text/mandarin">Speechmatics Mandarin</a> <a href="#section-2" title="back to body">↑</a></li>
+<li id="S107"><strong>S107</strong> — <a href="https://condens.io/">condens.io</a> <a href="#section-2" title="back to body">↑</a></li>
+<li id="S108"><strong>S108</strong> — <a href="https://condens.io/AI/">Condens AI features</a> <a href="#section-2" title="back to body">↑</a></li>
+<li id="S109"><strong>S109</strong> — <a href="https://www.glean.com/">glean.com</a> <a href="#section-2" title="back to body">↑</a></li>
+<li id="S110"><strong>S110</strong> — <a href="https://www.stravito.com/">stravito.com</a> <a href="#section-2" title="back to body">↑</a></li>
+<li id="S111"><strong>S111</strong> — <a href="https://siliconangle.com/2025/10/01/stravito-gets-conversational-ai-personas-surface-richer-insights-market-research/">Stravito AI Personas</a> <a href="#section-2" title="back to body">↑</a></li>
+<li id="S112"><strong>S112</strong> — <a href="https://greatquestion.co/">greatquestion.co</a> <a href="#section-2" title="back to body">↑</a></li>
+<li id="S113"><strong>S113</strong> — <a href="https://greatquestion.co/features/ai">Great Question AI features</a> <a href="#section-2" title="back to body">↑</a></li>
+<li id="S114"><strong>S114</strong> — <a href="https://hai.stanford.edu/news/inside-the-ai-index-12-takeaways-from-the-2026-report">Stanford HAI AI Index 2026</a> <a href="#section-2" title="back to body">↑</a></li>
+<li id="S115"><strong>S115</strong> — <a href="https://hbr.org/2026/04/how-ai-helps-scale-qualitative-customer-research">HBR Apr 2026 on AI qual research</a> <a href="#section-2" title="back to body">↑</a></li>
+<li id="S116"><strong>S116</strong> — <a href="https://www.usehubble.io/blog/state-of-user-research">Hubble 2026 State of UR</a> <a href="#section-2" title="back to body">↑</a></li>
+</ol>
+</div>
+</details>
+
+<details class="appendix">
+<summary>Patents &amp; IP scan (Phase 2 — 50 sources)</summary>
+<div class="src-list">
+<ol>
+<li id="S117"><strong>S117</strong> — <a href="https://patents.google.com/patent/US20260065298A1/en">US20260065298A1 — Qualtrics fraud detection</a> <a href="#section-2" title="back to body">↑</a></li>
+<li id="S118"><strong>S118</strong> — <a href="https://patents.google.com/patent/US20260065304A1/en">US20260065304A1 — Qualtrics customised follow-up</a> <a href="#section-2" title="back to body">↑</a></li>
+<li id="S119"><strong>S119</strong> — <a href="https://patents.google.com/patent/US20260030270A1/en">US20260030270A1 — Qualtrics agent orchestration</a> <a href="#section-2" title="back to body">↑</a></li>
+<li id="S120"><strong>S120</strong> — <a href="https://patents.google.com/patent/US20260037993A1/en">US20260037993A1 — Qualtrics interaction context</a> <a href="#section-2" title="back to body">↑</a></li>
+<li id="S121"><strong>S121</strong> — <a href="https://patents.google.com/patent/US20250358367A1/en">US20250358367A1 — Qualtrics action plans / perception gap</a> <a href="#section-2" title="back to body">↑</a></li>
+<li id="S122"><strong>S122</strong> — <a href="https://patents.google.com/patent/US12579371B2/en">US12579371B2 — Qualtrics segments + sentiment (granted)</a> <a href="#section-2" title="back to body">↑</a></li>
+<li id="S123"><strong>S123</strong> — <a href="https://patents.google.com/patent/US12242515B2/en">US12242515B2 — UserTesting custom label embedding (granted)</a> <a href="#section-2" title="back to body">↑</a></li>
+<li id="S124"><strong>S124</strong> — <a href="https://patents.google.com/patent/US20240395254A1/en">US20240395254A1 — Otter.ai live summarisation</a> <a href="#section-2" title="back to body">↑</a></li>
+<li id="S125"><strong>S125</strong> — <a href="https://patents.google.com/patent/US20250130636A1/en">US20250130636A1 — Meta gaze-driven adaptive content</a> <a href="#section-2" title="back to body">↑</a></li>
+<li id="S126"><strong>S126</strong> — <a href="https://patents.google.com/patent/US12210681B2/en">US12,210,681 — Meta hand-gesture / EMG wristband (granted)</a> <a href="#section-2" title="back to body">↑</a></li>
+<li id="S127"><strong>S127</strong> — <a href="https://patents.google.com/patent/US12440098B2/en">US12,440,098B2 — Tobii glint-based eye detection (granted)</a> <a href="#section-2" title="back to body">↑</a></li>
+<li id="S128"><strong>S128</strong> — <a href="https://patents.google.com/patent/US12366916B2/en">US12,366,916B2 — Tobii gaze direction with reprojection (granted)</a> <a href="#section-2" title="back to body">↑</a></li>
+<li id="S129"><strong>S129</strong> — <a href="https://patents.google.com/patent/US20250237877A1/en">US20250237877A1 — Snap optical support system</a> <a href="#section-2" title="back to body">↑</a></li>
+<li id="S130"><strong>S130</strong> — <a href="https://patents.google.com/patent/US20230352026A1/en">US20230352026A1 — Zoom delta-model private STT</a> <a href="#section-2" title="back to body">↑</a></li>
+<li id="S131"><strong>S131</strong> — <a href="https://patents.google.com/patent/US20210041945A1/en">US20210041945A1 — Tobii ML gaze estimation</a> <a href="#section-2" title="back to body">↑</a></li>
+<li id="S132"><strong>S132</strong> — <a href="https://www.usertesting.com/company/newsroom/press-releases/usertesting-secures-us-patent-ai-powered-custom-intent-labels">UserTesting press release on US 12,242,515</a> <a href="#section-2" title="back to body">↑</a></li>
+<li id="S133"><strong>S133</strong> — <a href="https://www.businesswire.com/news/home/20250319343103/en/UserTesting-Secures-U.S.-Patent-for-AI-Powered-Custom-Intent-Labels">BusinessWire mirror</a> <a href="#section-2" title="back to body">↑</a></li>
+<li id="S134"><strong>S134</strong> — <a href="https://www.verdict.co.uk/tobii-gets-grant-for-eye-tracking-system-for-head-mounted-device-with-reduced-reflections/">Verdict — Tobii reflections</a> <a href="#section-2" title="back to body">↑</a></li>
+<li id="S135"><strong>S135</strong> — <a href="https://www.verdict.co.uk/tobii-gets-grant-for-eye-tracking-device-for-adjusting-foveated-region-on-display/">Verdict — Tobii foveated region</a> <a href="#section-2" title="back to body">↑</a></li>
+<li id="S136"><strong>S136</strong> — <a href="https://www.verdict.co.uk/tobii-gets-grant-for-eye-tracking-calibration-for-augmented-reality-or-virtual-reality-headsets/">Verdict — Tobii AR/VR calibration</a> <a href="#section-2" title="back to body">↑</a></li>
+<li id="S137"><strong>S137</strong> — <a href="https://www.verdict.co.uk/data-insights/tobii-files-patent-for-eye-tracking-technology-for-video-processing-system/">Verdict — Tobii video-processing</a> <a href="#section-2" title="back to body">↑</a></li>
+<li id="S138"><strong>S138</strong> — <a href="https://www.tobii.com/products/integration/ip-licensing">Tobii IP licensing portfolio</a> <a href="#section-2" title="back to body">↑</a></li>
+<li id="S139"><strong>S139</strong> — <a href="https://parolaanalytics.com/blog/meta-ar-glasses-orion-patents/">Parola — Meta Orion AR Glasses patents</a> <a href="#section-2" title="back to body">↑</a></li>
+<li id="S140"><strong>S140</strong> — <a href="https://www.patentlyapple.com/2025/05/meta-files-a-smartglasses-ar-glasses-patent-that-relates-to-gaze-driven-adaptive-content-generation-using-machine-learning.html">PatentlyApple — Meta gaze-driven smartglasses</a> <a href="#section-2" title="back to body">↑</a></li>
+<li id="S141"><strong>S141</strong> — <a href="https://www.businesswire.com/news/home/20251222704206/en/Otter.ai-Caps-Transformational-2025-with-$100M-ARR-Milestone">Otter.ai 2025 wrap-up</a> <a href="#section-2" title="back to body">↑</a></li>
+<li id="S142"><strong>S142</strong> — <a href="https://sift.com/blog/sifts-innovative-journey-40-patents-and-counting/">Sift IP portfolio (40 fraud-detection patents)</a> <a href="#section-2" title="back to body">↑</a></li>
+<li id="S143"><strong>S143</strong> — <a href="https://insights.greyb.com/tiktok-patents/">Greyb — TikTok / ByteDance patent stats</a> <a href="#section-2" title="back to body">↑</a></li>
+<li id="S144"><strong>S144</strong> — <a href="https://insights.greyb.com/bytedance-patents/">Greyb — ByteDance patent stats</a> <a href="#section-2" title="back to body">↑</a></li>
+<li id="S145"><strong>S145</strong> — <a href="https://www.uspto.gov/about-us/news-updates/uspto-issues-ai-subject-matter-eligibility-guidance">USPTO — AI eligibility memo (Aug 2025)</a> <a href="#section-2" title="back to body">↑</a></li>
+<li id="S146"><strong>S146</strong> — <a href="https://www.uspto.gov/subscription-center/2025/revised-inventorship-guidance-ai-assisted-inventions">USPTO — revised inventorship guidance</a> <a href="#section-2" title="back to body">↑</a></li>
+<li id="S147"><strong>S147</strong> — <a href="https://www.federalregister.gov/documents/2025/11/28/2025-21457/revised-inventorship-guidance-for-ai-assisted-inventions">Federal Register — AI inventorship</a> <a href="#section-2" title="back to body">↑</a></li>
+<li id="S148"><strong>S148</strong> — <a href="https://www.hoganlovells.com/en/publications/navigating-ai-patent-applications-in-china-key-insights-from-cnipas-new-examination-guidelines">Hogan Lovells — CNIPA AI examination</a> <a href="#section-2" title="back to body">↑</a></li>
+<li id="S149"><strong>S149</strong> — <a href="https://www.mondaq.com/china/patent/1725998/newly-amended-guidelines-for-patent-examination-to-take-effect-on-january-1-2026">Mondaq — CNIPA Jan 2026 amendments</a> <a href="#section-2" title="back to body">↑</a></li>
+<li id="S150"><strong>S150</strong> — <a href="https://natlawreview.com/article/cnipa-november-2025-press-conference-more-details-examination-ai-patents-and">NatLawReview — CNIPA Nov 2025</a> <a href="#section-2" title="back to body">↑</a></li>
+<li id="S151"><strong>S151</strong> — <a href="https://natlawreview.com/article/cnipa-releases-report-development-building-strong-intellectual-property-nation-2025">NatLawReview — CNIPA 2025 IP Nation report</a> <a href="#section-2" title="back to body">↑</a></li>
+<li id="S152"><strong>S152</strong> — <a href="https://outset.ai/">Outset (claim vs. patent)</a> <a href="#section-2" title="back to body">↑</a></li>
+<li id="S153"><strong>S153</strong> — <a href="https://www.strella.io/compare/strella-vs-outset">Strella vs. Outset comparison</a> <a href="#section-2" title="back to body">↑</a></li>
+<li id="S154"><strong>S154</strong> — <a href="https://maze.co/features/ai-moderator/">Maze AI Moderator</a> <a href="#section-2" title="back to body">↑</a></li>
+<li id="S155"><strong>S155</strong> — <a href="https://www.quester.tech/">Quester</a> <a href="#section-2" title="back to body">↑</a></li>
+<li id="S156"><strong>S156</strong> — <a href="https://www.dynata.com/the-double-edged-sword-of-generative-ai-mitigating-the-risks-of-respondent-fraud/">Dynata — generative AI fraud article</a> <a href="#section-2" title="back to body">↑</a></li>
+<li id="S157"><strong>S157</strong> — <a href="https://www.medallia.com/press-release/medallia-unveils-vision-for-future-of-customer-experience-and-7-ai-powered-capabilities/">Medallia — Mar 2025 AI capabilities</a> <a href="#section-2" title="back to body">↑</a></li>
+<li id="S158"><strong>S158</strong> — <a href="https://www.verint.com/voice-of-the-customer/">Verint — Voice of Customer ("patented predictive models")</a> <a href="#section-2" title="back to body">↑</a></li>
+<li id="S159"><strong>S159</strong> — <a href="https://www.forsta.com/platform/forsta-ai/">Forsta AI</a> <a href="#section-2" title="back to body">↑</a></li>
+<li id="S160"><strong>S160</strong> — <a href="https://www.npr.org/2025/08/15/g-s1-83087/otter-ai-transcription-class-action-lawsuit">NPR — Otter.ai class-action</a> <a href="#section-2" title="back to body">↑</a></li>
+<li id="S161"><strong>S161</strong> — <a href="https://www.jacksonlewis.com/insights/we-get-ai-work-analyzing-brewer-v-otterai-case-study-legal-risks-ai-note-takers">Jackson Lewis — Brewer v. Otter.ai</a> <a href="#section-2" title="back to body">↑</a></li>
+<li id="S162"><strong>S162</strong> — <a href="https://cms-lawnow.com/en/ealerts/2026/02/generative-ai-llms-and-ai-notetakers-a-new-threat-to-legal-professional-privilege">CMS — AI notetakers + privilege</a> <a href="#section-2" title="back to body">↑</a></li>
+</ol>
+</div>
+</details>
+
+<details class="appendix">
+<summary>Funding &amp; corporate signals (Phase 3 — 70 sources)</summary>
+<div class="src-list">
+<ol>
+<li id="S163"><strong>S163</strong> — <a href="https://www.globenewswire.com/news-release/2025/12/10/3203401/0/en/Outset-Secures-30-Million-Series-B-to-Launch-the-World-s-First-AI-Native-Customer-Experience-Management-Platform.html">Outset Series B — GlobeNewswire</a> <a href="#section-3" title="back to body">↑</a></li>
+<li id="S164"><strong>S164</strong> — <a href="https://www.globenewswire.com/news-release/2025/06/11/3097668/0/en/Startup-Outset-Raises-17M-Series-A-to-Help-Enterprises-Scale-Accelerate-Customer-Research-with-AI-Agent-led-Interviews.html">Outset Series A — GlobeNewswire</a> <a href="#section-3" title="back to body">↑</a></li>
+<li id="S165"><strong>S165</strong> — <a href="https://outset.ai/series-a">Outset Series A page</a> <a href="#section-3" title="back to body">↑</a></li>
+<li id="S166"><strong>S166</strong> — <a href="https://outset.ai/resources/blog/outset-series-a-founder-letter">Outset Series A founder letter</a> <a href="#section-3" title="back to body">↑</a></li>
+<li id="S167"><strong>S167</strong> — <a href="https://www.builtinsf.com/articles/outset-raises-30m-series-b-20251211">Built In SF — Outset Series B</a> <a href="#section-3" title="back to body">↑</a></li>
+<li id="S168"><strong>S168</strong> — <a href="https://www.axios.com/pro/enterprise-software-deals/2025/12/10/customer-research-chatbot-outset-radical">Axios Pro — Outset $30M</a> <a href="#section-3" title="back to body">↑</a></li>
+<li id="S169"><strong>S169</strong> — <a href="https://www.prnewswire.com/news-releases/strella-raises-14m-in-series-a-led-by-bessemer-venture-partners-to-re-design-customer-research-for-the-ai-era-302586024.html">Strella Series A — PR Newswire</a> <a href="#section-3" title="back to body">↑</a></li>
+<li id="S170"><strong>S170</strong> — <a href="https://www.strella.io/blog/series-a">Strella Series A — company blog</a> <a href="#section-3" title="back to body">↑</a></li>
+<li id="S171"><strong>S171</strong> — <a href="https://www.bvp.com/atlas/strella-transforming-qualitative-research-from-a-bottleneck-into-an-ai-superpower">Bessemer memo on Strella</a> <a href="#section-3" title="back to body">↑</a></li>
+<li id="S172"><strong>S172</strong> — <a href="https://venturebeat.com/ai/amazon-and-chobani-adopt-strellas-ai-interviews-for-customer-research-as">VentureBeat — Strella Amazon/Chobani</a> <a href="#section-3" title="back to body">↑</a></li>
+<li id="S173"><strong>S173</strong> — <a href="https://pear.vc/listen-labs-series-b/">Pear VC — Listen Labs Series B letter</a> <a href="#section-3" title="back to body">↑</a></li>
+<li id="S174"><strong>S174</strong> — <a href="https://listenlabs.ai/founders-letter">Listen Labs founder letter</a> <a href="#section-3" title="back to body">↑</a></li>
+<li id="S175"><strong>S175</strong> — <a href="https://www.eweek.com/news/listen-labs-ai-startup-microsoft-customers/">eWeek — Listen Labs Microsoft</a> <a href="#section-3" title="back to body">↑</a></li>
+<li id="S176"><strong>S176</strong> — <a href="https://www.research-live.com/article/news/listen-labs-launches-with-27m-funding-/id/5138323">Research Live — Listen Labs Series A</a> <a href="#section-3" title="back to body">↑</a></li>
+<li id="S177"><strong>S177</strong> — <a href="https://finance.yahoo.com/news/sources-ai-synthetic-research-startup-233859223.html">Yahoo Finance — Aaru</a> <a href="#section-3" title="back to body">↑</a></li>
+<li id="S178"><strong>S178</strong> — <a href="https://www.thesaasnews.com/news/aaru-secures-series-a-funding">SaaS News — Aaru</a> <a href="#section-3" title="back to body">↑</a></li>
+<li id="S179"><strong>S179</strong> — <a href="https://www.techbuzz.ai/articles/aaru-hits-1b-valuation-with-multi-tier-series-a-funding">TechBuzz — Aaru</a> <a href="#section-3" title="back to body">↑</a></li>
+<li id="S180"><strong>S180</strong> — <a href="https://wondering.com/blog/funding-announcement">Wondering seed announcement</a> <a href="#section-3" title="back to body">↑</a></li>
+<li id="S181"><strong>S181</strong> — <a href="https://techcrunch.com/2025/12/22/tech-layoffs-2025-list/">TechCrunch — Wondering shutdown</a> <a href="#section-3" title="back to body">↑</a></li>
+<li id="S182"><strong>S182</strong> — <a href="https://www.eu-startups.com/2025/03/conveo-secures-e4-9-million-to-transform-market-research-industry/">EU-Startups — Conveo seed</a> <a href="#section-3" title="back to body">↑</a></li>
+<li id="S183"><strong>S183</strong> — <a href="https://tech.eu/2025/03/06/y-combinator-backed-conveo-raises-53m-seed-to-develop-ai-powered-research-coworker/">Tech.eu — Conveo</a> <a href="#section-3" title="back to body">↑</a></li>
+<li id="S184"><strong>S184</strong> — <a href="https://greatquestion.co/blog/great-question-secures-13m-series-a-funding-from-inovia">Great Question Series A</a> <a href="#section-3" title="back to body">↑</a></li>
+<li id="S185"><strong>S185</strong> — <a href="https://vctavern.com/great-question-raises-13-million-series-a-to-expand-ai-driven-ux-research-platform/">VC Tavern — Great Question</a> <a href="#section-3" title="back to body">↑</a></li>
+<li id="S186"><strong>S186</strong> — <a href="https://www.prnewswire.com/news-releases/rally-uxr-secures-11m-series-a-to-transform-how-enterprises-conduct-user-research-302468414.html">Rally UXR Series A</a> <a href="#section-3" title="back to body">↑</a></li>
+<li id="S187"><strong>S187</strong> — <a href="https://www.rallyuxr.com/post/rally-raises-11m-to-supercharge-the-future-of-user-research">Rally — company blog</a> <a href="#section-3" title="back to body">↑</a></li>
+<li id="S188"><strong>S188</strong> — <a href="https://www.stage2.capital/blog/empowering-user-research-why-we-invested-in-rally">Stage 2 Capital — Rally memo</a> <a href="#section-3" title="back to body">↑</a></li>
+<li id="S189"><strong>S189</strong> — <a href="https://medium.com/speciale-invest/why-we-invested-in-looppanel-f40125c7077c">Speciale Invest memo on Looppanel</a> <a href="#section-3" title="back to body">↑</a></li>
+<li id="S190"><strong>S190</strong> — <a href="https://f4.fund/startups/brox">F4 Fund — Brox profile</a> <a href="#section-3" title="back to body">↑</a></li>
+<li id="S191"><strong>S191</strong> — <a href="https://www.research-live.com/article/news/canvs-ai-generates-15m-in-funding-round/id/5117643">Research Live — Canvs AI</a> <a href="#section-3" title="back to body">↑</a></li>
+<li id="S192"><strong>S192</strong> — <a href="https://techcrunch.com/2022/01/19/dovetail-raises-63m-to-grow-its-researcher-focused-software-business/">TechCrunch — Dovetail Series A 2022</a> <a href="#section-3" title="back to body">↑</a></li>
+<li id="S193"><strong>S193</strong> — <a href="https://dovetail.com/blog/2025-fall-launch/">Dovetail Fall 2025 launch</a> <a href="#section-3" title="back to body">↑</a></li>
+<li id="S194"><strong>S194</strong> — <a href="https://dovetail.com/blog/dovetail-2025-spring-launch/">Dovetail Spring 2025 launch</a> <a href="#section-3" title="back to body">↑</a></li>
+<li id="S195"><strong>S195</strong> — <a href="https://www.userinterviews.com/product-announcements/whyser-recruitment-integration">Whyser × User Interviews</a> <a href="#section-3" title="back to body">↑</a></li>
+<li id="S196"><strong>S196</strong> — <a href="https://www.crunchbase.com/organization/synthetic-users">Synthetic Users — Crunchbase</a> <a href="#section-3" title="back to body">↑</a></li>
+<li id="S197"><strong>S197</strong> — <a href="https://www.evidenza.ai/about">Evidenza about page</a> <a href="#section-3" title="back to body">↑</a></li>
+<li id="S198"><strong>S198</strong> — <a href="https://www.dentsu.com/news-releases/dentsu-partners-with-evidenza-to-integrate-synthetic-audiences-into-next-gen-media-planning">Dentsu × Evidenza</a> <a href="#section-3" title="back to body">↑</a></li>
+<li id="S199"><strong>S199</strong> — <a href="https://www.mi-3.com.au/25-06-2025/dentsu-taps-evidenza-synthetic-audiences-media-planning">Mi3 — Dentsu × Evidenza</a> <a href="#section-3" title="back to body">↑</a></li>
+<li id="S200"><strong>S200</strong> — <a href="https://www.thedrum.com/news/2025/06/04/lab-grown-marketing-it-s-already-here-and-it-s-synthetic-scalable-and-very-real">The Drum — synthetic / Evidenza</a> <a href="#section-3" title="back to body">↑</a></li>
+<li id="S201"><strong>S201</strong> — <a href="https://www.londonstockexchange.com/news-article/YOU/yougov-acquires-yabble/16604082">YouGov acquires Yabble — RNS</a> <a href="#section-3" title="back to body">↑</a></li>
+<li id="S202"><strong>S202</strong> — <a href="https://www.research-live.com/article/news/yougov-buys-yabble-in-45m-deal/id/5129173">Research Live — YouGov/Yabble</a> <a href="#section-3" title="back to body">↑</a></li>
+<li id="S203"><strong>S203</strong> — <a href="https://corporate.yougov.com/documents/495/YouGov-Annual_Report_2025-Spreads.pdf">YouGov Annual Report 2025</a> <a href="#section-3" title="back to body">↑</a></li>
+<li id="S204"><strong>S204</strong> — <a href="https://www.research-tree.com/newsfeed/article/yougov-plc-results-for-the-year-ended-31-july-2025-3028654">YouGov FY25 — Research Tree</a> <a href="#section-3" title="back to body">↑</a></li>
+<li id="S205"><strong>S205</strong> — <a href="https://www.yabble.com/blog/yabble-joins-yougov-setting-the-standard-for-generative-ai-in-market-research">Yabble joins YouGov</a> <a href="#section-3" title="back to body">↑</a></li>
+<li id="S206"><strong>S206</strong> — <a href="https://www.discuss.io/press/discuss-and-voxco-announce-strategic-combination-uniting-leaders-in-qualitative-and-quantitative-research-to-shape-the-future-of-human-understanding/">Discuss + Voxco merger — press</a> <a href="#section-3" title="back to body">↑</a></li>
+<li id="S207"><strong>S207</strong> — <a href="https://www.canaccordgenuity.com/capital-markets/transactions/2025/november/discuss_nov2025/">Discuss + Voxco — Canaccord</a> <a href="#section-3" title="back to body">↑</a></li>
+<li id="S208"><strong>S208</strong> — <a href="https://www.globenewswire.com/news-release/2025/12/04/3199723/0/en/Discuss-Closes-2025-With-Major-AI-Innovations-Following-Its-Merger-Announcement-with-Voxco.html">Discuss closes 2025 with AI release</a> <a href="#section-3" title="back to body">↑</a></li>
+<li id="S209"><strong>S209</strong> — <a href="https://www.usertesting.com/company/newsroom/press-releases/thoma-bravo-and-sunstone-partners-complete-acquisition-usertesting">UserTesting + Thoma Bravo close</a> <a href="#section-3" title="back to body">↑</a></li>
+<li id="S210"><strong>S210</strong> — <a href="https://www.usertesting.com/company/newsroom/press-releases/usertesting-and-userzoom-merge-help-organizations-build-human">UserTesting + UserZoom merger</a> <a href="#section-3" title="back to body">↑</a></li>
+<li id="S211"><strong>S211</strong> — <a href="https://www.usertesting.com/company/newsroom/press-releases/usertesting-announces-chief-executive-officer-leadership-transition">UserTesting CEO transition</a> <a href="#section-3" title="back to body">↑</a></li>
+<li id="S212"><strong>S212</strong> — <a href="https://www.sunsethq.com/layoff-tracker/usertesting">Sunset HQ — UserTesting layoff tracker</a> <a href="#section-3" title="back to body">↑</a></li>
+<li id="S213"><strong>S213</strong> — <a href="https://www.usertesting.com/platform/enjoyhq">EnjoyHQ Insight Hub</a> <a href="#section-3" title="back to body">↑</a></li>
+<li id="S214"><strong>S214</strong> — <a href="https://peinsights.substack.com/p/thoma-bravo-set-to-hand-medallia">Medallia handover — PE Insights</a> <a href="#section-3" title="back to body">↑</a></li>
+<li id="S215"><strong>S215</strong> — <a href="https://finance.yahoo.com/markets/stocks/articles/exclusive-thoma-bravo-nears-agreement-180233668.html">Medallia — Yahoo Finance</a> <a href="#section-3" title="back to body">↑</a></li>
+<li id="S216"><strong>S216</strong> — <a href="https://www.investing.com/news/stock-market-news/thoma-bravos-51b-medallia-wipeout-deepens-software-private-credit-reckoning-4633506">Medallia — Investing.com</a> <a href="#section-3" title="back to body">↑</a></li>
+<li id="S217"><strong>S217</strong> — <a href="https://www.corpdev.org/2026/04/23/thoma-bravo-nears-handover-of-medallia-to-creditors-after-5-1-billion-equity-wipeout/">CorpDev — Medallia</a> <a href="#section-3" title="back to body">↑</a></li>
+<li id="S218"><strong>S218</strong> — <a href="https://www.medallia.com/press-release/medallia-appoints-mark-bishof-as-chairman-and-ceo/">Medallia — Bishof appointment</a> <a href="#section-3" title="back to body">↑</a></li>
+<li id="S219"><strong>S219</strong> — <a href="https://www.cmswire.com/contact-center/medallia-adds-5-former-qualtrics-execs-including-new-ceo-mark-bishof/">CMSWire — Medallia 5 ex-Qualtrics</a> <a href="#section-3" title="back to body">↑</a></li>
+<li id="S220"><strong>S220</strong> — <a href="https://www.cxtoday.com/uncategorized/medallia-snags-former-qualtrics-exec-mark-bishof-as-ceo/">CX Today — Bishof to Medallia</a> <a href="#section-3" title="back to body">↑</a></li>
+<li id="S221"><strong>S221</strong> — <a href="https://marketech-apac.com/medallia-names-mark-bishof-as-chairman-ceo-announces-key-senior-hires/">Marketech-APAC — Medallia leadership</a> <a href="#section-3" title="back to body">↑</a></li>
+<li id="S222"><strong>S222</strong> — <a href="https://www.qualtrics.com/articles/news/experience-agents/">Qualtrics Experience Agents launch</a> <a href="#section-3" title="back to body">↑</a></li>
+<li id="S223"><strong>S223</strong> — <a href="https://www.qualtrics.com/articles/news/x4-2025-recap-qualtrics-redefined-the-future-of-experience-management-with-experience-agents/">Qualtrics X4 2025 recap</a> <a href="#section-3" title="back to body">↑</a></li>
+<li id="S224"><strong>S224</strong> — <a href="https://www.cxtoday.com/voice-of-the-customer/qualtrics-x4-2025-5-massive-announcements-from-the-experience-management-summit/">CX Today — Qualtrics X4 2025</a> <a href="#section-3" title="back to body">↑</a></li>
+<li id="S225"><strong>S225</strong> — <a href="https://investors.sprinklr.com/news/press-releases/detail/229/sprinklr-announces-first-quarter-fiscal-2026-results">Sprinklr Q1 FY2026</a> <a href="#section-3" title="back to body">↑</a></li>
+<li id="S226"><strong>S226</strong> — <a href="https://investors.sprinklr.com/news/press-releases/detail/234/sprinklr-announces-second-quarter-fiscal-2026-results">Sprinklr Q2 FY2026</a> <a href="#section-3" title="back to body">↑</a></li>
+<li id="S227"><strong>S227</strong> — <a href="https://www.businesswire.com/news/home/20241030274062/en/IDC-and-Sprinklr-Unveil-New-Research-on-2025-AI-Priorities">Sprinklr × IDC 2025 AI priorities</a> <a href="#section-3" title="back to body">↑</a></li>
+<li id="S228"><strong>S228</strong> — <a href="https://investors.cint.com/en/report/cint-group-interim-report-january-september-2025-quarter-affected-customer-migration">Cint Q3 2025</a> <a href="#section-3" title="back to body">↑</a></li>
+<li id="S229"><strong>S229</strong> — <a href="https://www.cint.com/blog/cint-exchange-2025-review/">Cint Exchange 2025</a> <a href="#section-3" title="back to body">↑</a></li>
+<li id="S230"><strong>S230</strong> — <a href="https://www.surveyplus.cn/">SurveyPlus 调研家</a> <a href="#section-3" title="back to body">↑</a></li>
+<li id="S231"><strong>S231</strong> — <a href="https://eu.36kr.com/en/p/3403929291017856">36Kr — startup street activity 2025</a> <a href="#section-3" title="back to body">↑</a></li>
+<li id="S232"><strong>S232</strong> — <a href="https://m.thepaper.cn/newsDetail_forward_32363294">The Paper — China AI applications 1070亿</a> <a href="#section-3" title="back to body">↑</a></li>
+<li id="S233"><strong>S233</strong> — <a href="https://cdn.itjuzi.com/pdf/1a5ee188cfde75809136ad47f4077d3a.pdf">ITJuzi — China AI funding PDF</a> <a href="#section-3" title="back to body">↑</a></li>
+<li id="S234"><strong>S234</strong> — <a href="https://news.crunchbase.com/venture/china-leads-startup-funding-ai-seed-growth-asia-q1-2026/">Crunchbase — China leads Q1 2026</a> <a href="#section-3" title="back to body">↑</a></li>
+<li id="S235"><strong>S235</strong> — <a href="https://www.cbinsights.com/research/report/ai-trends-2025/">CB Insights — State of AI 2025</a> <a href="#section-3" title="back to body">↑</a></li>
+<li id="S236"><strong>S236</strong> — <a href="https://news.crunchbase.com/ai/big-funding-trends-charts-eoy-2025/">Crunchbase — Big AI trends 2025</a> <a href="#section-3" title="back to body">↑</a></li>
+<li id="S237"><strong>S237</strong> — <a href="https://dealroom.co/uploaded/2025/02/Dealroom-AI-Summit-2025.pdf">Dealroom — Opening Moves AI 2025</a> <a href="#section-3" title="back to body">↑</a></li>
+<li id="S238"><strong>S238</strong> — <a href="https://pitchbook.com/news/reports/q4-2025-ai-public-comp-sheet-and-valuation-guide">PitchBook — Q4 2025 AI valuation guide</a> <a href="#section-3" title="back to body">↑</a></li>
+<li id="S239"><strong>S239</strong> — <a href="https://www.factmr.com/report/ai-market-research-services-market">Fact.MR — AI MR services 2035</a> <a href="#section-3" title="back to body">↑</a></li>
+</ol>
+</div>
+</details>
+
+<details class="appendix">
+<summary>Practitioner sentiment (Phase 4 — 60 sources)</summary>
+<div class="src-list">
+<ol>
+<li id="S240"><strong>S240</strong> — <a href="https://www.userresearchstrategist.com/p/ai-for-user-researchers">Nikki Anderson — AI for user researchers</a> <a href="#section-6" title="back to body">↑</a></li>
+<li id="S241"><strong>S241</strong> — <a href="https://www.linkedin.com/posts/erikahall_lets-put-this-whole-synthetic-users-thing-activity-7333175909866184704-aVxE">Erika Hall — synthetic users LinkedIn post</a> <a href="#section-6" title="back to body">↑</a></li>
+<li id="S242"><strong>S242</strong> — <a href="https://medium.com/inclusive-software/insta-personas-synthetic-users-fc6e9cd1c301">Indi Young — Insta-Personas</a> <a href="#section-6" title="back to body">↑</a></li>
+<li id="S243"><strong>S243</strong> — <a href="https://www.linkedin.com/posts/indiyoung_insta-personas-synthetic-users-activity-7144084257194262529-GHnR">Indi Young — LinkedIn re-promotion</a> <a href="#section-6" title="back to body">↑</a></li>
+<li id="S244"><strong>S244</strong> — <a href="https://uxmag.com/articles/no-ai-user-research-is-not-better-than-nothing-its-much-worse">Pavel Samsonov — UX Magazine</a> <a href="#section-6" title="back to body">↑</a></li>
+<li id="S245"><strong>S245</strong> — <a href="https://www.smashingmagazine.com/2025/03/how-to-argue-against-ai-first-research/">Pavel Samsonov — Smashing Magazine</a> <a href="#section-6" title="back to body">↑</a></li>
+<li id="S246"><strong>S246</strong> — <a href="https://niloufars.substack.com/p/i-tried-out-syntheticusers-so-you">Niloufar Salehi — SyntheticUsers</a> <a href="#section-6" title="back to body">↑</a></li>
+<li id="S247"><strong>S247</strong> — <a href="https://www.uxforai.com/p/navigating-the-abyss-the-dark-side-of-synthetic-ai-user-research-tools">Greg Nudelman — UX For AI</a> <a href="#section-6" title="back to body">↑</a></li>
+<li id="S248"><strong>S248</strong> — <a href="https://speero.com/post/why-im-not-sold-on-synthetic-user-research">Emma Travis — Speero</a> <a href="#section-6" title="back to body">↑</a></li>
+<li id="S249"><strong>S249</strong> — <a href="https://www.radicalproduct.com/blog/synthetic-users-user-research">Radhika Dutt — Radical Product</a> <a href="#section-6" title="back to body">↑</a></li>
+<li id="S250"><strong>S250</strong> — <a href="https://www.nngroup.com/articles/synthetic-users/">Maria Rosala + Kate Moran — NN/g synthetic users</a> <a href="#section-6" title="back to body">↑</a></li>
+<li id="S251"><strong>S251</strong> — <a href="https://www.nngroup.com/articles/ai-interviewers/">Maria Rosala — NN/g AI interviewers</a> <a href="#section-6" title="back to body">↑</a></li>
+<li id="S252"><strong>S252</strong> — <a href="https://www.nngroup.com/videos/dont-outsource-analysis-to-ai/">Maria Rosala — Don't Outsource Analysis</a> <a href="#section-6" title="back to body">↑</a></li>
+<li id="S253"><strong>S253</strong> — <a href="https://www.nngroup.com/articles/research-tool-problems/">Maria Rosala — Methodological problems</a> <a href="#section-6" title="back to body">↑</a></li>
+<li id="S254"><strong>S254</strong> — <a href="https://www.nngroup.com/videos/use-ai-responsibly-in-analysis/">Maria Rosala — Use AI Responsibly</a> <a href="#section-6" title="back to body">↑</a></li>
+<li id="S255"><strong>S255</strong> — <a href="https://carljpearson.com/ai-moderated-interviews-methodological-error-amplified/">Carl J. Pearson — methodological error</a> <a href="#section-6" title="back to body">↑</a></li>
+<li id="S256"><strong>S256</strong> — <a href="https://christophersilvestri.com/research-reports/state-of-synthetic-research-in-2025/">Christopher Silvestri — State of Synthetic Research 2025</a> <a href="#section-6" title="back to body">↑</a></li>
+<li id="S257"><strong>S257</strong> — <a href="https://www.looppanel.com/blog/dovetail-review">Theertha Raj — Dovetail review</a> <a href="#section-6" title="back to body">↑</a></li>
+<li id="S258"><strong>S258</strong> — <a href="https://dovetail.com/blog/contributors/matt-duignan/">Matt Duignan — Dovetail contributor</a> <a href="#section-6" title="back to body">↑</a></li>
+<li id="S259"><strong>S259</strong> — <a href="https://podcast.userinterviews.com/episodes/188-why-ai-cant-replace-qualitative-research-with-sam-ladner-of-workday">Awkward Silences #188 — Sam Ladner</a> <a href="#section-6" title="back to body">↑</a></li>
+<li id="S260"><strong>S260</strong> — <a href="https://podcast.userinterviews.com/episodes/187-throwback-harnessing-ai-for-better-insights-with-george-whitfield-of-mit-and-google">Awkward Silences #187 — Whitfield</a> <a href="#section-6" title="back to body">↑</a></li>
+<li id="S261"><strong>S261</strong> — <a href="https://podcast.userinterviews.com/episodes/186-positioning-your-portfolio-for-ai-skills-with-aneta-kmiecik-of-be-your-own-design-team">Awkward Silences #186 — Kmiecik</a> <a href="#section-6" title="back to body">↑</a></li>
+<li id="S262"><strong>S262</strong> — <a href="https://podcast.userinterviews.com/episodes/185-how-to-use-ai-without-losing-your-research-soul-with-nikki-anderson-founder-of-drop-in-research">Awkward Silences #185 — Anderson</a> <a href="#section-6" title="back to body">↑</a></li>
+<li id="S263"><strong>S263</strong> — <a href="https://podcast.userinterviews.com/episodes/183-the-best-ways-to-use-ai-in-ux-research-with-laura-klein-of-nn-g">Awkward Silences #183 — Klein</a> <a href="#section-6" title="back to body">↑</a></li>
+<li id="S264"><strong>S264</strong> — <a href="https://podcast.userinterviews.com/episodes/182-the-future-of-research-in-a-moment-of-change">Awkward Silences #182 — Future of Research</a> <a href="#section-6" title="back to body">↑</a></li>
+<li id="S265"><strong>S265</strong> — <a href="https://www.youtube.com/watch?v=5R8Ub7eb5jM">Awkward Silences #180 — Rosala + Whalen</a> <a href="#section-6" title="back to body">↑</a></li>
+<li id="S266"><strong>S266</strong> — <a href="https://podcast.userinterviews.com/episodes/research-ops-2-0-episode-2-leveraging-ai-for-research-superstardom/transcript">Research Ops 2.0 Ep 2 transcript</a> <a href="#section-6" title="back to body">↑</a></li>
+<li id="S267"><strong>S267</strong> — <a href="https://podcast.userinterviews.com/episodes/173-prototyping-ai-in-live-research-with-bold-insight-panasonic-well">Awkward Silences #173 — Bold Insight / Panasonic Well</a> <a href="#section-6" title="back to body">↑</a></li>
+<li id="S268"><strong>S268</strong> — <a href="https://portigal.com/podcast/36-noam-segal-returns/">Dollars to Donuts #36 — Segal</a> <a href="#section-6" title="back to body">↑</a></li>
+<li id="S269"><strong>S269</strong> — <a href="https://portigal.com/podcast/">Off the Path with Sam &amp; Steve</a> <a href="#section-6" title="back to body">↑</a></li>
+<li id="S270"><strong>S270</strong> — <a href="https://rosenfeldmedia.com/advancing-research-2025-a-conference-for-the-future-of-research/">Advancing Research 2025</a> <a href="#section-6" title="back to body">↑</a></li>
+<li id="S271"><strong>S271</strong> — <a href="https://rosenfeldmedia.com/advancing-research/">Advancing Research 2026 program</a> <a href="#section-6" title="back to body">↑</a></li>
+<li id="S272"><strong>S272</strong> — <a href="https://joinlearners.com/rw-2025/uxrconf/">UXRConf 2025</a> <a href="#section-6" title="back to body">↑</a></li>
+<li id="S273"><strong>S273</strong> — <a href="https://www.greenbook.org/insights/greenbook-company-news/what-we-learned-at-iiex-north-america-2025-ai-agility-and-the-future-of-insights">IIEX North America 2025 recap</a> <a href="#section-6" title="back to body">↑</a></li>
+<li id="S274"><strong>S274</strong> — <a href="https://www.greenbook.org/insights/insights-industry-news/iiex-apac-2025-ai-nostalgia-the-future-of-consumer-insightskey-takeaways-from-bangkok">IIEX APAC 2025 recap</a> <a href="#section-6" title="back to body">↑</a></li>
+<li id="S275"><strong>S275</strong> — <a href="https://www.quirks.com/events/quirks-virtual-ai-innovation-20262026">Quirk's Virtual AI &amp; Innovation Jan 2026</a> <a href="#section-6" title="back to body">↑</a></li>
+<li id="S276"><strong>S276</strong> — <a href="https://www.greenbook.org/insights/artificial-intelligence-and-machine-learning/the-great-ai-pivot-how-market-research-is-reinventing-itself-without-losing-its-soul">Greenbook — Great AI Pivot</a> <a href="#section-6" title="back to body">↑</a></li>
+<li id="S277"><strong>S277</strong> — <a href="https://www.greenbook.org/insights/grit/smarter-insights-faster-pace-ais-breakthrough-in-market-research">Greenbook GRIT — Henriques</a> <a href="#section-6" title="back to body">↑</a></li>
+<li id="S278"><strong>S278</strong> — <a href="https://www.quirks.com/articles/ai-s-impact-on-market-research-what-to-expect-in-2025">Quirk's — AI impact 2025</a> <a href="#section-6" title="back to body">↑</a></li>
+<li id="S279"><strong>S279</strong> — <a href="https://www.quirks.com/articles/top-marketing-research-and-insights-articles-of-2025-from-quirk-s-newsletter">Quirk's — Top MR articles 2025</a> <a href="#section-6" title="back to body">↑</a></li>
+<li id="S280"><strong>S280</strong> — <a href="https://www.quirks.com/articles/the-shelf-life-of-an-ai-synthetic-panel">Quirk's — Shelf life of synthetic panel</a> <a href="#section-6" title="back to body">↑</a></li>
+<li id="S281"><strong>S281</strong> — <a href="https://www.quirks.com/articles/ai-is-redefining-the-qualitative-researcher">Quirk's — AI redefining qual researcher</a> <a href="#section-6" title="back to body">↑</a></li>
+<li id="S282"><strong>S282</strong> — <a href="https://allthingsinsights.com/content/the-rise-of-the-ai-powered-moderator/">All Things Insights — AI-powered moderator</a> <a href="#section-6" title="back to body">↑</a></li>
+<li id="S283"><strong>S283</strong> — <a href="https://www.forrester.com/report/the-state-of-ai-2025/RES189955">Forrester — State of AI 2025</a> <a href="#section-6" title="back to body">↑</a></li>
+<li id="S284"><strong>S284</strong> — <a href="https://www.greenbook.org/grit/insights-practice-edition">Greenbook GRIT 2025 Insights Practice</a> <a href="#section-6" title="back to body">↑</a></li>
+<li id="S285"><strong>S285</strong> — <a href="https://www.userinterviews.com/state-of-user-research-report">User Interviews — SoUR 2025</a> <a href="#section-6" title="back to body">↑</a></li>
+<li id="S286"><strong>S286</strong> — <a href="https://maze.co/resources/user-research-report/">Maze — Future of UR 2026</a> <a href="#section-6" title="back to body">↑</a></li>
+<li id="S287"><strong>S287</strong> — <a href="https://www.lyssna.com/reports/research-synthesis/">Lyssna — Research Synthesis 2025</a> <a href="#section-6" title="back to body">↑</a></li>
+<li id="S288"><strong>S288</strong> — <a href="https://www.rallyuxr.com/post/a-year-in-review-what-shaped-researchops-in-2025">Rally — Year in Review ResOps 2025</a> <a href="#section-6" title="back to body">↑</a></li>
+<li id="S289"><strong>S289</strong> — <a href="https://medium.com/researchops-community/using-ai-tools-to-augment-user-experience-research-workflows-b10e9bddec9a">ResearchOps Community — AI tools</a> <a href="#section-6" title="back to body">↑</a></li>
+<li id="S290"><strong>S290</strong> — <a href="https://www.linkedin.com/in/janelleestes/">Janelle Estes — LinkedIn</a> <a href="#section-6" title="back to body">↑</a></li>
+<li id="S291"><strong>S291</strong> — <a href="https://www.linkedin.com/in/matthew-duignan-89493932/">Matt Duignan — LinkedIn</a> <a href="#section-6" title="back to body">↑</a></li>
+<li id="S292"><strong>S292</strong> — <a href="https://www.linkedin.com/in/crohrer">Christian Rohrer — LinkedIn</a> <a href="#section-6" title="back to body">↑</a></li>
+<li id="S293"><strong>S293</strong> — <a href="https://www.linkedin.com/in/jmspool">Jared Spool — LinkedIn</a> <a href="#section-6" title="back to body">↑</a></li>
+<li id="S294"><strong>S294</strong> — <a href="https://www.linkedin.com/in/sladner/">Sam Ladner — LinkedIn</a> <a href="#section-6" title="back to body">↑</a></li>
+<li id="S295"><strong>S295</strong> — <a href="https://www.linkedin.com/in/maria-rosala/">Maria Rosala — LinkedIn</a> <a href="#section-6" title="back to body">↑</a></li>
+<li id="S296"><strong>S296</strong> — <a href="https://www.linkedin.com/in/indiyoung">Indi Young — LinkedIn</a> <a href="#section-6" title="back to body">↑</a></li>
+<li id="S297"><strong>S297</strong> — <a href="https://www.linkedin.com/in/erikahall/">Erika Hall — LinkedIn</a> <a href="#section-6" title="back to body">↑</a></li>
+<li id="S298"><strong>S298</strong> — <a href="https://outset.ai/customers">Outset customers list</a> <a href="#section-6" title="back to body">↑</a></li>
+<li id="S299"><strong>S299</strong> — <a href="https://listenlabs.ai/case-studies/microsoft">Listen Labs — Microsoft case study</a> <a href="#section-6" title="back to body">↑</a></li>
+<li id="S300"><strong>S300</strong> — <a href="https://daxueconsulting.com/double-11-2025/">Daxue Consulting — Double 11 2025</a> <a href="#section-6" title="back to body">↑</a></li>
+<li id="S301"><strong>S301</strong> — <a href="https://www.anthropic.com/81k-interviews">Anthropic — 81k interviews</a> <a href="#section-6" title="back to body">↑</a></li>
+</ol>
+</div>
+</details>
+
+<details class="appendix">
+<summary>Analyst, regulatory &amp; China ecosystem (Phase 5 — 80 sources)</summary>
+<div class="src-list">
+<ol>
+<li id="S302"><strong>S302</strong> — <a href="https://marketing.greenbook.org/hubfs/%5BPDF%5D%202025%20GRIT%20Insights%20Practice%20Report/Abbreviated%202025%20GRIT%20Insights%20Practice%20Report.pdf">GRIT 2025 Insights Practice (abbrev. PDF)</a> <a href="#section-4" title="back to body">↑</a></li>
+<li id="S303"><strong>S303</strong> — <a href="https://www.greenbook.org/grit/grit-business-and-innovation-edition">GRIT Business &amp; Innovation 2025</a> <a href="#section-4" title="back to body">↑</a></li>
+<li id="S304"><strong>S304</strong> — <a href="https://www.greenbook.org/insights/artificial-intelligence-and-machine-learning/the-sea-change-insights-from-the-2025-grit-business-outlook">Greenbook — Sea Change GRIT 2025</a> <a href="#section-4" title="back to body">↑</a></li>
+<li id="S305"><strong>S305</strong> — <a href="https://www.rivaltech.com/blog/2025-grit-insights-practice-report">Rival Tech — GRIT 2025</a> <a href="#section-4" title="back to body">↑</a></li>
+<li id="S306"><strong>S306</strong> — <a href="https://www.newtonx.com/article/2025-grit-insights-practice-report/">NewtonX — GRIT 2025</a> <a href="#section-4" title="back to body">↑</a></li>
+<li id="S307"><strong>S307</strong> — <a href="https://aytm.com/post/the-2025-grit-report-why-the-future-of-insights-is-human-led-and-ai-powered">aytm — GRIT 2025</a> <a href="#section-4" title="back to body">↑</a></li>
+<li id="S308"><strong>S308</strong> — <a href="https://esomar.org/publications/global-market-research-2025">ESOMAR Global Market Research 2025</a> <a href="#section-4" title="back to body">↑</a></li>
+<li id="S309"><strong>S309</strong> — <a href="https://researchworld.com/articles/inside-the-153bn-insights-industry">Research World — $153bn insights industry</a> <a href="#section-4" title="back to body">↑</a></li>
+<li id="S310"><strong>S310</strong> — <a href="https://www.einnews.com/pr_news/825277849/esomar-announces-major-update-to-the-icc-esomar-international-code-to-reflect-ai-and-emerging-technology">ICC/ESOMAR Code update 2025</a> <a href="#section-4" title="back to body">↑</a></li>
+<li id="S311"><strong>S311</strong> — <a href="https://ana.esomar.org/api/public/document/file_renderer/12519">ESOMAR Congress 2024 — Synthetic Data</a> <a href="#section-4" title="back to body">↑</a></li>
+<li id="S312"><strong>S312</strong> — <a href="https://ana.esomar.org/documents/synthetic-responses-revolution">ESOMAR — Synthetic Responses Revolution</a> <a href="#section-4" title="back to body">↑</a></li>
+<li id="S313"><strong>S313</strong> — <a href="https://newmr.org/blog/ai-dominates-the-agenda-at-esomar-congress-2025-prague/">NewMR — ESOMAR Congress 2025</a> <a href="#section-4" title="back to body">↑</a></li>
+<li id="S314"><strong>S314</strong> — <a href="https://medium.com/@enric_cid/a-crash-course-on-synthetic-data-esomar-congress-2025-recap-34a61784671e">Enric Cid — ESOMAR 2025 recap</a> <a href="#section-4" title="back to body">↑</a></li>
+<li id="S315"><strong>S315</strong> — <a href="https://www.zs.com/insights/forrester-wave-customer-analytics-leader-2025">Forrester Wave Customer Analytics Q2 2025 — ZS</a> <a href="#section-4" title="back to body">↑</a></li>
+<li id="S316"><strong>S316</strong> — <a href="https://fractal.ai/forrester-wave-2025">Forrester Wave 2025 — Fractal</a> <a href="#section-4" title="back to body">↑</a></li>
+<li id="S317"><strong>S317</strong> — <a href="https://www.forrester.com/blogs/now-live-the-forrester-wave-customer-analytics-service-providers-q2-2025/">Forrester blog — Customer Analytics Q2 2025</a> <a href="#section-4" title="back to body">↑</a></li>
+<li id="S318"><strong>S318</strong> — <a href="https://www.forrester.com/report/the-forrester-wave-tm-ai-decisioning-platforms-q2-2025/RES182916">Forrester Wave AI Decisioning Q2 2025</a> <a href="#section-4" title="back to body">↑</a></li>
+<li id="S319"><strong>S319</strong> — <a href="https://www.forrester.com/blogs/insights-from-new-forrester-wave-of-digital-analytics-solutions/">Forrester Wave Digital Analytics Q3 2025</a> <a href="#section-4" title="back to body">↑</a></li>
+<li id="S320"><strong>S320</strong> — <a href="https://www.forrester.com/report/the-forrester-wave-tm-ai-technical-services-q4-2025/RES187841">Forrester Wave AI Technical Services Q4 2025</a> <a href="#section-4" title="back to body">↑</a></li>
+<li id="S321"><strong>S321</strong> — <a href="https://www.forrester.com/blogs/introducing-the-new-customer-feedback-management-and-analytics-solutions-market/">Forrester — new CFM &amp; Analytics market</a> <a href="#section-4" title="back to body">↑</a></li>
+<li id="S322"><strong>S322</strong> — <a href="https://www.gartner.com/en/documents/6367011">Gartner MQ VoC Platforms 2025</a> <a href="#section-4" title="back to body">↑</a></li>
+<li id="S323"><strong>S323</strong> — <a href="https://www.cxtoday.com/uncategorized/gartner-magic-quadrant-for-voice-of-the-customer-voc-platforms-2025-the-rundown/">CX Today — Gartner MQ VoC 2025</a> <a href="#section-4" title="back to body">↑</a></li>
+<li id="S324"><strong>S324</strong> — <a href="https://www.cxtoday.com/customer-analytics-intelligence/gartner-magic-quadrant-voc-platforms-2026/">CX Today — Gartner MQ VoC 2026</a> <a href="#section-4" title="back to body">↑</a></li>
+<li id="S325"><strong>S325</strong> — <a href="https://info.idc.com/futurescape-generative-ai-2025-predictions.html">IDC FutureScape GenAI 2025</a> <a href="#section-4" title="back to body">↑</a></li>
+<li id="S326"><strong>S326</strong> — <a href="https://my.idc.com/getdoc.jsp?containerId=prUS53765225">IDC — Agentic AI</a> <a href="#section-4" title="back to body">↑</a></li>
+<li id="S327"><strong>S327</strong> — <a href="https://my.idc.com/getdoc.jsp?containerId=prUS53290725">IDC — AI $22.3T impact 2030</a> <a href="#section-4" title="back to body">↑</a></li>
+<li id="S328"><strong>S328</strong> — <a href="https://www.deloitte.com/global/en/about/recognition/analyst-relations/idc-marketscape-worldwide-artificial-intelligence-services-vendor-assessment.html">IDC MarketScape AI Services 2025</a> <a href="#section-4" title="back to body">↑</a></li>
+<li id="S329"><strong>S329</strong> — <a href="https://www.mrs.org.uk/standards/ai-regulation">MRS BEST Framework for Gen AI</a> <a href="#section-4" title="back to body">↑</a></li>
+<li id="S330"><strong>S330</strong> — <a href="https://committees.parliament.uk/writtenevidence/124496/pdf/">MRS — UK Parliament evidence (1)</a> <a href="#section-4" title="back to body">↑</a></li>
+<li id="S331"><strong>S331</strong> — <a href="https://committees.parliament.uk/writtenevidence/131013/pdf/">MRS — UK Parliament evidence (2)</a> <a href="#section-4" title="back to body">↑</a></li>
+<li id="S332"><strong>S332</strong> — <a href="https://www.research-live.com/article/news/mrs-publishes-ai-guidance/id/5119723">Research-Live — MRS AI guidance</a> <a href="#section-4" title="back to body">↑</a></li>
+<li id="S333"><strong>S333</strong> — <a href="https://5593723.fs1.hubspotusercontent-na1.net/hubfs/5593723/Market%20Research%20Trends%202025/Market%20Research%20Trends%202025%20-%20Rival%20Technologies%20and%20Reach3%20Insights.pdf">Rival/Reach3 — MR Trends 2025</a> <a href="#section-4" title="back to body">↑</a></li>
+<li id="S334"><strong>S334</strong> — <a href="https://www.prnewswire.com/news-releases/rival-groups-2026-market-research-trends-report-covers-ai-in-insights-synthetic-respondents-evolving-qualitative-research-and-more-302633126.html">Rival 2026 Trends Report — PRNewswire</a> <a href="#section-4" title="back to body">↑</a></li>
+<li id="S335"><strong>S335</strong> — <a href="https://sloanreview.mit.edu/article/gain-consumer-insight-with-generative-ai/">MIT SMR — Gain Consumer Insight with GenAI</a> <a href="#section-4" title="back to body">↑</a></li>
+<li id="S336"><strong>S336</strong> — <a href="https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai">McKinsey QuantumBlack — State of AI 2025</a> <a href="#section-4" title="back to body">↑</a></li>
+<li id="S337"><strong>S337</strong> — <a href="https://www.twobirds.com/en/insights/2026/china/china-data-protection-and-cybersecurity-annual-review-of-2025-and-outlook-for-2026">Bird &amp; Bird — China DP &amp; Cybersecurity 2025–26</a> <a href="#section-4" title="back to body">↑</a></li>
+<li id="S338"><strong>S338</strong> — <a href="https://practiceguides.chambers.com/practice-guides/data-protection-privacy-2026/china/trends-and-developments">Chambers — China DPP 2026</a> <a href="#section-4" title="back to body">↑</a></li>
+<li id="S339"><strong>S339</strong> — <a href="https://www.dlapiperdataprotection.com/index.html?c=CN">DLA Piper — China DP</a> <a href="#section-4" title="back to body">↑</a></li>
+<li id="S340"><strong>S340</strong> — <a href="https://www.china-briefing.com/doing-business-guide/china/company-establishment/pipl-personal-information-protection-law">China-Briefing — PIPL guide</a> <a href="#section-4" title="back to body">↑</a></li>
+<li id="S341"><strong>S341</strong> — <a href="https://www.morganlewis.com/pubs/2025/10/chinas-data-outbound-rules-update-measures-for-the-certification">Morgan Lewis — China outbound certification</a> <a href="#section-4" title="back to body">↑</a></li>
+<li id="S342"><strong>S342</strong> — <a href="https://www.arnoldporter.com/en/perspectives/advisories/2025/11/china-issues-clarifications-cross-border-data-transfer-rules">Arnold &amp; Porter — China cross-border</a> <a href="#section-4" title="back to body">↑</a></li>
+<li id="S343"><strong>S343</strong> — <a href="https://www.arnoldporter.com/en/perspectives/advisories/2025/11/china-requirements-personal-information-protection-certification">Arnold &amp; Porter — PIP certification</a> <a href="#section-4" title="back to body">↑</a></li>
+<li id="S344"><strong>S344</strong> — <a href="https://www.china-briefing.com/news/china-cross-border-data-transfer-certification/">China-Briefing — Certification measures</a> <a href="#section-4" title="back to body">↑</a></li>
+<li id="S345"><strong>S345</strong> — <a href="https://www.whitecase.com/insight-alert/china-released-new-regulations-ease-requirements-outbound-cross-border-data-transfers">White &amp; Case — China outbound</a> <a href="#section-4" title="back to body">↑</a></li>
+<li id="S346"><strong>S346</strong> — <a href="https://www.kwm.com/us/en/insights/latest-thinking/chinas-cross-border-dataregime-key-points-on-personal-information-export-certification.html">KWM — Cross-border data regime</a> <a href="#section-4" title="back to body">↑</a></li>
+<li id="S347"><strong>S347</strong> — <a href="https://cms-lawnow.com/en/ealerts/2025/11/china-issues-measures-for-the-certification-of-the-cross-border-transfer-of-personal-information">CMS — Certification measures</a> <a href="#section-4" title="back to body">↑</a></li>
+<li id="S348"><strong>S348</strong> — <a href="https://iapp.org/news/a/chinas-new-cross-border-data-transfer-regulations-what-you-need-to-know-and-do">IAPP — China cross-border data</a> <a href="#section-4" title="back to body">↑</a></li>
+<li id="S349"><strong>S349</strong> — <a href="https://www.jdsupra.com/legalnews/the-regulatory-framework-for-cross-5929165/">JD Supra/Dacheng — 2025 latest</a> <a href="#section-4" title="back to body">↑</a></li>
+<li id="S350"><strong>S350</strong> — <a href="https://riskandcompliance.freshfields.com/post/102j3jy/china-introduces-revised-cross-border-data-transfer-rules">Freshfields — Cross-border revisions</a> <a href="#section-4" title="back to body">↑</a></li>
+<li id="S351"><strong>S351</strong> — <a href="https://en.wikipedia.org/wiki/Interim_Measures_for_the_Management_of_Generative_AI_Services">Interim Measures — GenAI services (overview)</a> <a href="#section-4" title="back to body">↑</a></li>
+<li id="S352"><strong>S352</strong> — <a href="https://www.chinalawtranslate.com/en/generative-ai-interim/">China Law Translate — Interim Measures</a> <a href="#section-4" title="back to body">↑</a></li>
+<li id="S353"><strong>S353</strong> — <a href="https://www.whitecase.com/insight-our-thinking/ai-watch-global-regulatory-tracker-china">White &amp; Case — AI Watch China</a> <a href="#section-4" title="back to body">↑</a></li>
+<li id="S354"><strong>S354</strong> — <a href="https://practiceguides.chambers.com/practice-guides/artificial-intelligence-2025/china">Chambers — AI 2025 China</a> <a href="#section-4" title="back to body">↑</a></li>
+<li id="S355"><strong>S355</strong> — <a href="https://www.globallegalinsights.com/practice-areas/ai-machine-learning-and-big-data-laws-and-regulations/china/">GLI — AI/ML/Big Data China 2025</a> <a href="#section-4" title="back to body">↑</a></li>
+<li id="S356"><strong>S356</strong> — <a href="https://securiti.ai/china-ai-regulatory-landscape/">Securiti — China AI 2025</a> <a href="#section-4" title="back to body">↑</a></li>
+<li id="S357"><strong>S357</strong> — <a href="https://iapp.org/resources/article/global-ai-governance-china">IAPP — Global AI Governance China</a> <a href="#section-4" title="back to body">↑</a></li>
+<li id="S358"><strong>S358</strong> — <a href="https://www.insideprivacy.com/international/china/china-releases-new-labeling-requirements-for-ai-generated-content/">Covington — China AI content labeling</a> <a href="#section-4" title="back to body">↑</a></li>
+<li id="S359"><strong>S359</strong> — <a href="https://www.technologyslegaledge.com/2025/03/china-released-new-measures-for-labelling-ai-generated-and-synthetic-content/">Tech Legal Edge — labeling measures</a> <a href="#section-4" title="back to body">↑</a></li>
+<li id="S360"><strong>S360</strong> — <a href="https://iclg.com/practice-areas/telecoms-media-and-internet-laws-and-regulations/03-china-s-key-developments-in-artificial-intelligence-governance-in-2025">ICLG — China AI 2025</a> <a href="#section-4" title="back to body">↑</a></li>
+<li id="S361"><strong>S361</strong> — <a href="https://www.chinalawtranslate.com/en/chatbot-measures-draft/">CLT — Anthropomorphic AI draft</a> <a href="#section-4" title="back to body">↑</a></li>
+<li id="S362"><strong>S362</strong> — <a href="https://www.globaltimes.cn/page/202512/1351628.shtml">Global Times — Chatbot measures</a> <a href="#section-4" title="back to body">↑</a></li>
+<li id="S363"><strong>S363</strong> — <a href="https://www.geopolitechs.org/p/whats-in-chinas-first-drafts-rules">Geopolitechs — Chinese first-draft rules</a> <a href="#section-4" title="back to body">↑</a></li>
+<li id="S364"><strong>S364</strong> — <a href="https://www.lexology.com/library/detail.aspx?g=3c7273cf-8f85-4702-af70-6edf394ff1c3">Lexology — Algorithm Filing Regime</a> <a href="#section-4" title="back to body">↑</a></li>
+<li id="S365"><strong>S365</strong> — <a href="https://www.chinalawvision.com/2025/02/digital-economy-ai/deep-synthesis-not-deepfake-how-ai-compliance-works-in-china/">China Law Vision — Deep Synthesis</a> <a href="#section-4" title="back to body">↑</a></li>
+<li id="S366"><strong>S366</strong> — <a href="https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai">European Commission — AI Act framework</a> <a href="#section-4" title="back to body">↑</a></li>
+<li id="S367"><strong>S367</strong> — <a href="https://artificialintelligenceact.eu/implementation-timeline/">AI Act Implementation Timeline</a> <a href="#section-4" title="back to body">↑</a></li>
+<li id="S368"><strong>S368</strong> — <a href="https://digital-strategy.ec.europa.eu/en/policies/guidelines-gpai-providers">EC — GPAI provider guidelines</a> <a href="#section-4" title="back to body">↑</a></li>
+<li id="S369"><strong>S369</strong> — <a href="https://euaiactnyc.com/blog/eu-ai-act-implementation-april-2026.html">EU AI Act NYC — April 2026 update</a> <a href="#section-4" title="back to body">↑</a></li>
+<li id="S370"><strong>S370</strong> — <a href="https://www.modulos.ai/blog/is-the-eu-ai-act-delayed/">Modulos — Is the AI Act delayed</a> <a href="#section-4" title="back to body">↑</a></li>
+<li id="S371"><strong>S371</strong> — <a href="https://www.crowell.com/en/insights/client-alerts/eu-ai-act-gdpr-and-digital-laws-changes-proposed">Crowell — Digital Omnibus changes</a> <a href="#section-4" title="back to body">↑</a></li>
+<li id="S372"><strong>S372</strong> — <a href="https://www.edpb.europa.eu/news/news/2024/edpb-opinion-ai-models-gdpr-principles-support-responsible-ai_en">EDPB Opinion 28/2024 — AI models</a> <a href="#section-4" title="back to body">↑</a></li>
+<li id="S373"><strong>S373</strong> — <a href="https://www.edpb.europa.eu/system/files/2024-12/edpb_opinion_202428_ai-models_en.pdf">EDPB Opinion 28/2024 PDF</a> <a href="#section-4" title="back to body">↑</a></li>
+<li id="S374"><strong>S374</strong> — <a href="https://privacymatters.dlapiper.com/2025/01/eu-edpb-opinion-on-ai-provides-important-guidance-though-many-questions-remain/">DLA Piper — EDPB AI opinion</a> <a href="#section-4" title="back to body">↑</a></li>
+<li id="S375"><strong>S375</strong> — <a href="https://iapp.org/news/a/edpb-opinion-sheds-light-on-lawful-ai-training-dpa-discretion">IAPP — EDPB opinion AI training</a> <a href="#section-4" title="back to body">↑</a></li>
+<li id="S376"><strong>S376</strong> — <a href="https://www.kennedyslaw.com/en/thought-leadership/article/2026/the-2025-european-commission-eu-digital-omnibus-package-the-e-privacy-directive/">Kennedys — Digital Omnibus / ePrivacy</a> <a href="#section-4" title="back to body">↑</a></li>
+<li id="S377"><strong>S377</strong> — <a href="https://www.osano.com/articles/eprivacy-guide">Osano — ePrivacy guide</a> <a href="#section-4" title="back to body">↑</a></li>
+<li id="S378"><strong>S378</strong> — <a href="https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-generative-artificial-intelligence">NIST AI RMF GenAI Profile</a> <a href="#section-4" title="back to body">↑</a></li>
+<li id="S379"><strong>S379</strong> — <a href="https://www.whitehouse.gov/presidential-actions/2025/12/eliminating-state-law-obstruction-of-national-artificial-intelligence-policy/">White House — EO Dec 2025</a> <a href="#section-4" title="back to body">↑</a></li>
+<li id="S380"><strong>S380</strong> — <a href="https://www.sidley.com/en/insights/newsupdates/2025/12/unpacking-the-december-11-2025-executive-order">Sidley Austin — Dec 2025 EO</a> <a href="#section-4" title="back to body">↑</a></li>
+<li id="S381"><strong>S381</strong> — <a href="https://cppa.ca.gov/announcements/2025/20250923.html">CPPA — Sept 2025 announcement</a> <a href="#section-4" title="back to body">↑</a></li>
+<li id="S382"><strong>S382</strong> — <a href="https://www.skadden.com/insights/publications/2025/10/california-finalizes-cppa-regulations">Skadden — California ADMT</a> <a href="#section-4" title="back to body">↑</a></li>
+<li id="S383"><strong>S383</strong> — <a href="https://leg.colorado.gov/bills/sb24-205">Colorado SB24-205</a> <a href="#section-4" title="back to body">↑</a></li>
+<li id="S384"><strong>S384</strong> — <a href="https://www.cooley.com/news/insight/2026/2026-04-24-state-ai-laws-where-are-they-now">Cooley — State AI Laws Apr 2026</a> <a href="#section-4" title="back to body">↑</a></li>
+<li id="S385"><strong>S385</strong> — <a href="https://github.com/CLUEbenchmark/SuperCLUE">SuperCLUE benchmark</a> <a href="#section-4" title="back to body">↑</a></li>
+<li id="S386"><strong>S386</strong> — <a href="https://news.aibase.com/news/26656">aibase — Doubao top tier</a> <a href="#section-4" title="back to body">↑</a></li>
+<li id="S387"><strong>S387</strong> — <a href="https://chinai.substack.com/p/chinai-224-comparing-chinese-large">ChinAI #224 — Comparing Chinese LLMs</a> <a href="#section-4" title="back to body">↑</a></li>
+<li id="S388"><strong>S388</strong> — <a href="https://arxiv.org/abs/2504.00289">arXiv 2504.00289 — Chinese models / Chinese languages</a> <a href="#section-4" title="back to body">↑</a></li>
+<li id="S389"><strong>S389</strong> — <a href="https://arxiv.org/html/2408.16756v2">arXiv 2408.16756 — How Well Do LLMs Handle Cantonese</a> <a href="#section-4" title="back to body">↑</a></li>
+<li id="S390"><strong>S390</strong> — <a href="https://aclanthology.org/2025.findings-naacl.253.pdf">NAACL Findings 2025 — Cantonese</a> <a href="#section-4" title="back to body">↑</a></li>
+<li id="S391"><strong>S391</strong> — <a href="https://arxiv.org/html/2503.12440">HKCanto-Eval (arXiv 2503.12440)</a> <a href="#section-4" title="back to body">↑</a></li>
+<li id="S392"><strong>S392</strong> — <a href="https://github.com/openai/whisper/discussions/277">Whisper discussion #277 — Cantonese</a> <a href="#section-4" title="back to body">↑</a></li>
+<li id="S393"><strong>S393</strong> — <a href="https://benchlm.ai/blog/posts/best-chinese-llm">BenchLM — Best Chinese LLMs 2026</a> <a href="#section-4" title="back to body">↑</a></li>
+<li id="S394"><strong>S394</strong> — <a href="https://artificialanalysis.ai/leaderboards/models">Artificial Analysis leaderboards</a> <a href="#section-4" title="back to body">↑</a></li>
+<li id="S395"><strong>S395</strong> — <a href="https://www.technologyreview.com/2026/04/21/1135658/china-open-source-models-ai-artificial-intelligence/">MIT Tech Review — China open source bet</a> <a href="#section-4" title="back to body">↑</a></li>
+<li id="S396"><strong>S396</strong> — <a href="https://carnegieendowment.org/research/2026/03/chinas-ai-empowered-censorship-strengths-and-limitations">Carnegie — China AI moderation</a> <a href="#section-4" title="back to body">↑</a></li>
+<li id="S397"><strong>S397</strong> — <a href="https://essfeed.com/top-10-ai-moderation-companies-in-china-2025/">Top 10 AI moderation companies in China</a> <a href="#section-4" title="back to body">↑</a></li>
+<li id="S398"><strong>S398</strong> — <a href="https://eu.36kr.com/en/p/3362475871488004">36Kr — 2025 China AI Glasses report</a> <a href="#section-4" title="back to body">↑</a></li>
+</ol>
+</div>
+</details>
+
+<details class="appendix">
+<summary>XR &amp; hardware-specific (Phase 5 closing layer — 60 sources)</summary>
+<div class="src-list">
+<ol>
+<li id="S399"><strong>S399</strong> — <a href="https://medium.com/xrpractices/usability-testing-for-xr-products-907e6083a5a1">XRPractices — Usability Testing for XR</a> <a href="#section-5" title="back to body">↑</a></li>
+<li id="S400"><strong>S400</strong> — <a href="https://www.tobii.com/products/integration/xr-headsets">Tobii — eye tracking for AR/VR/MR</a> <a href="#section-5" title="back to body">↑</a></li>
+<li id="S401"><strong>S401</strong> — <a href="https://imotions.com/blog/learning/product-guides/5-best-vr-headsets/">iMotions — 5 Best VR headsets 2026</a> <a href="#section-5" title="back to body">↑</a></li>
+<li id="S402"><strong>S402</strong> — <a href="https://imotions.com/blog/learning/product-guides/multimodality-in-imotions-software/">iMotions — Multimodality guide</a> <a href="#section-5" title="back to body">↑</a></li>
+<li id="S403"><strong>S403</strong> — <a href="https://pupil-labs.com/products/vr-ar">Pupil Labs — VR &amp; AR eye tracking</a> <a href="#section-5" title="back to body">↑</a></li>
+<li id="S404"><strong>S404</strong> — <a href="https://pupil-labs.com/releases">Pupil Labs — Software releases</a> <a href="#section-5" title="back to body">↑</a></li>
+<li id="S405"><strong>S405</strong> — <a href="https://github.com/pupil-labs/hmd-eyes">Pupil Labs hmd-eyes (GitHub)</a> <a href="#section-5" title="back to body">↑</a></li>
+<li id="S406"><strong>S406</strong> — <a href="https://www.meta.com/blog/connect-2025-day-2-keynote-recap-vr-development-use-cases-wearable-device-access-toolkit/">Meta Connect 2025 Day 2 keynote</a> <a href="#section-5" title="back to body">↑</a></li>
+<li id="S407"><strong>S407</strong> — <a href="https://developers.meta.com/horizon/documentation/native/android/ts-mqdh/">Meta Quest Developer Hub</a> <a href="#section-5" title="back to body">↑</a></li>
+<li id="S408"><strong>S408</strong> — <a href="https://developers.meta.com/horizon/resources/playtest-planning-survey-script/">Meta — VR Playtest Plan &amp; Survey Script</a> <a href="#section-5" title="back to body">↑</a></li>
+<li id="S409"><strong>S409</strong> — <a href="http://ieeevr.org/2025/contribute/papers/">IEEE VR 2025 papers</a> <a href="#section-5" title="back to body">↑</a></li>
+<li id="S410"><strong>S410</strong> — <a href="https://ieeexplore.ieee.org/document/10585501/">StudyVR (IEEE VR 2024)</a> <a href="#section-5" title="back to body">↑</a></li>
+<li id="S411"><strong>S411</strong> — <a href="https://dl.acm.org/doi/full/10.1145/3706598.3713461">CHI 2025 — Online-EYE</a> <a href="#section-5" title="back to body">↑</a></li>
+<li id="S412"><strong>S412</strong> — <a href="https://dl.acm.org/doi/10.1145/3706598.3714224">CHI 2025 — LLM Integration in XR</a> <a href="#section-5" title="back to body">↑</a></li>
+<li id="S413"><strong>S413</strong> — <a href="https://www.researchgate.net/publication/390671238_Proceedings_of_the_Purposeful_XR_Workshop_for_CHI_2025">CHI 2025 — Purposeful XR Workshop</a> <a href="#section-5" title="back to body">↑</a></li>
+<li id="S414"><strong>S414</strong> — <a href="https://dl.acm.org/doi/10.1145/3715669.3725880">ETRA 2025 — ET + Observational Field Study</a> <a href="#section-5" title="back to body">↑</a></li>
+<li id="S415"><strong>S415</strong> — <a href="https://dl.acm.org/doi/10.1145/3715669.3725881">ETRA 2025 — Foveated Volume Visualization</a> <a href="#section-5" title="back to body">↑</a></li>
+<li id="S416"><strong>S416</strong> — <a href="https://uist.acm.org/2025/papers/">UIST 2025 program</a> <a href="#section-5" title="back to body">↑</a></li>
+<li id="S417"><strong>S417</strong> — <a href="https://lab.plopes.org/published/2025-UIST-VRSideEffects.pdf">Cheymol &amp; Lopes — VR Side-Effects (UIST 2025)</a> <a href="#section-5" title="back to body">↑</a></li>
+<li id="S418"><strong>S418</strong> — <a href="https://arxiv.org/html/2501.13778v2">arXiv — Explainable XR (LLM-assisted)</a> <a href="#section-5" title="back to body">↑</a></li>
+<li id="S419"><strong>S419</strong> — <a href="https://arxiv.org/html/2412.17490v1">arXiv — Toolkit for VR Data Collection</a> <a href="#section-5" title="back to body">↑</a></li>
+<li id="S420"><strong>S420</strong> — <a href="https://arxiv.org/html/2507.18252v1">arXiv — Multimodal Behavioral Patterns</a> <a href="#section-5" title="back to body">↑</a></li>
+<li id="S421"><strong>S421</strong> — <a href="https://arxiv.org/html/2502.07598v1">arXiv — Multimodal natural interaction for XR</a> <a href="#section-5" title="back to body">↑</a></li>
+<li id="S422"><strong>S422</strong> — <a href="https://arxiv.org/html/2508.12268v2">arXiv — iTrace (Click-Based Gaze on Vision Pro)</a> <a href="#section-5" title="back to body">↑</a></li>
+<li id="S423"><strong>S423</strong> — <a href="https://arxiv.org/html/2508.00097v1">arXiv — XRoboToolkit teleoperation</a> <a href="#section-5" title="back to body">↑</a></li>
+<li id="S424"><strong>S424</strong> — <a href="https://arxiv.org/html/2507.18877v1">arXiv — Collaborative Embodiment in VR survey</a> <a href="#section-5" title="back to body">↑</a></li>
+<li id="S425"><strong>S425</strong> — <a href="https://onlinelibrary.wiley.com/doi/10.1111/jcal.70112">Wiley — Cooperation in Multi-User VR Learning</a> <a href="#section-5" title="back to body">↑</a></li>
+<li id="S426"><strong>S426</strong> — <a href="https://link.springer.com/article/10.1007/s10055-025-01280-4">Springer — Collaborative VR engineering education review</a> <a href="#section-5" title="back to body">↑</a></li>
+<li id="S427"><strong>S427</strong> — <a href="https://www.apple.com/newsroom/2025/05/apple-unveils-powerful-accessibility-features-coming-later-this-year/">Apple Newsroom — Accessibility features</a> <a href="#section-5" title="back to body">↑</a></li>
+<li id="S428"><strong>S428</strong> — <a href="https://www.frontiersin.org/journals/computer-science/articles/10.3389/fcomp.2025.1591289/full">Frontiers — Spatial computing 3D content (Vision Pro)</a> <a href="#section-5" title="back to body">↑</a></li>
+<li id="S429"><strong>S429</strong> — <a href="https://www.frontiersin.org/journals/virtual-reality/articles/10.3389/frvir.2023.1198024/full">Frontiers — Virtual moderator in social VR</a> <a href="#section-5" title="back to body">↑</a></li>
+<li id="S430"><strong>S430</strong> — <a href="https://www.frontiersin.org/journals/digital-health/articles/10.3389/fdgth.2025.1740557/full">Frontiers — AI-XR in medical education</a> <a href="#section-5" title="back to body">↑</a></li>
+<li id="S431"><strong>S431</strong> — <a href="https://developer.picoxr.com/document/unity/eye-tracking/">PICO Developer — Eye Tracking</a> <a href="#section-5" title="back to body">↑</a></li>
+<li id="S432"><strong>S432</strong> — <a href="https://developer.picoxr.com/document/unreal/face-tracking/">PICO Developer — Face Tracking (Unreal)</a> <a href="#section-5" title="back to body">↑</a></li>
+<li id="S433"><strong>S433</strong> — <a href="https://developer-cn.picoxr.com/en/news/">PICO Developer News</a> <a href="#section-5" title="back to body">↑</a></li>
+<li id="S434"><strong>S434</strong> — <a href="https://www.picoxr.com/global/products/pico4e">PICO Global — Pico 4 Ultra Enterprise</a> <a href="#section-5" title="back to body">↑</a></li>
+<li id="S435"><strong>S435</strong> — <a href="https://www.uctoday.com/immersive-workplace-xr-tech/the-metaverse-is-dead-pico-thinks-enterprise-xr-is-just-getting-started/">UC Today — Pico enterprise XR</a> <a href="#section-5" title="back to body">↑</a></li>
+<li id="S436"><strong>S436</strong> — <a href="https://medium.com/data-science-edge/stanfordxr-winner-our-private-mixed-reality-diabetes-app-built-on-securemr-and-pico-xr-64f0f29155f5">Stanford XR Hackathon — SecureMR</a> <a href="#section-5" title="back to body">↑</a></li>
+<li id="S437"><strong>S437</strong> — <a href="https://skarredghost.com/2025/03/03/picotionai-ai-mr-camera-access/">Skarred Ghost — PicotionAI</a> <a href="#section-5" title="back to body">↑</a></li>
+<li id="S438"><strong>S438</strong> — <a href="https://developer.varjo.com/docs/get-started/eye-tracking-with-varjo-headset">Varjo — Eye tracking docs</a> <a href="#section-5" title="back to body">↑</a></li>
+<li id="S439"><strong>S439</strong> — <a href="https://varjo.com/blog/beyond-foveation-evolving-the-role-of-eye-tracking-at-varjo">Varjo — Beyond Foveation blog</a> <a href="#section-5" title="back to body">↑</a></li>
+<li id="S440"><strong>S440</strong> — <a href="https://imotions.com/products/hardware/varjo-xr-4/">iMotions — Varjo XR-4</a> <a href="#section-5" title="back to body">↑</a></li>
+<li id="S441"><strong>S441</strong> — <a href="https://idtechwire.com/varjo-and-vrai-partner-to-bring-biometric-performance-analytics-to-military-xr-training/">ID Tech — Varjo + VRAI military</a> <a href="#section-5" title="back to body">↑</a></li>
+<li id="S442"><strong>S442</strong> — <a href="https://www.tobii.com/products/software/behavior-research-software/tobii-pro-lab/multimodal-research-solutions">Tobii Pro Lab — Multimodal solutions</a> <a href="#section-5" title="back to body">↑</a></li>
+<li id="S443"><strong>S443</strong> — <a href="https://connect.tobii.com/s/article/How-to-export-data-from-Tobii-Pro-Lab?language=en_US">Tobii Connect — Pro Lab data export</a> <a href="#section-5" title="back to body">↑</a></li>
+<li id="S444"><strong>S444</strong> — <a href="https://www.worldviz.com/vizard-virtual-reality-software">WorldViz — Vizard / SightLab VR Pro</a> <a href="#section-5" title="back to body">↑</a></li>
+<li id="S445"><strong>S445</strong> — <a href="https://www.prnewswire.com/news-releases/worldviz-vr-releases-ai-enabled-virtual-reality-software-package-for-academic-researchers-302300797.html">WorldViz — AI-enabled VR for academic research</a> <a href="#section-5" title="back to body">↑</a></li>
+<li id="S446"><strong>S446</strong> — <a href="https://looxidlink.looxidlabs.com/">Looxid Link</a> <a href="#section-5" title="back to body">↑</a></li>
+<li id="S447"><strong>S447</strong> — <a href="https://www.frontiersin.org/articles/10.3389/frvir.2022.781218/full">Frontiers — emteqPRO biometric VR</a> <a href="#section-5" title="back to body">↑</a></li>
+<li id="S448"><strong>S448</strong> — <a href="https://ixdf.org/literature/article/ai-vs-researched-personas">IxDF — AI vs researched personas</a> <a href="#section-5" title="back to body">↑</a></li>
+<li id="S449"><strong>S449</strong> — <a href="https://uxpsychology.substack.com/p/the-problem-with-ai-generated-personas">UX Psychology — AI-generated personas</a> <a href="#section-5" title="back to body">↑</a></li>
+<li id="S450"><strong>S450</strong> — <a href="https://outset.ai/platform">Outset platform</a> <a href="#section-5" title="back to body">↑</a></li>
+<li id="S451"><strong>S451</strong> — <a href="https://outset.ai/privacy-policy">Outset privacy policy</a> <a href="#section-5" title="back to body">↑</a></li>
+<li id="S452"><strong>S452</strong> — <a href="https://listenlabs.ai/articles/best-ai-research-assistant-enterprise/">Listen Labs — Best AI research assistants</a> <a href="#section-5" title="back to body">↑</a></li>
+<li id="S453"><strong>S453</strong> — <a href="https://www.notably.ai/features/research-repository">Notably — Research Repository</a> <a href="#section-5" title="back to body">↑</a></li>
+<li id="S454"><strong>S454</strong> — <a href="https://condens.io/research-repository/">Condens — Research repository</a> <a href="#section-5" title="back to body">↑</a></li>
+<li id="S455"><strong>S455</strong> — <a href="https://help.usertesting.com/hc/en-us/articles/11880405753885-Custom-confidentiality-terms">UserTesting — Custom confidentiality terms</a> <a href="#section-5" title="back to body">↑</a></li>
+<li id="S456"><strong>S456</strong> — <a href="https://dscout.com/platform/methods/diary-studies">dscout — Diary Studies</a> <a href="#section-5" title="back to body">↑</a></li>
+<li id="S457"><strong>S457</strong> — <a href="https://www.simonsaysai.com/on-premise-ai-transcription">Simon Says — On-prem AI transcription</a> <a href="#section-5" title="back to body">↑</a></li>
+<li id="S458"><strong>S458</strong> — <a href="https://github.com/FunAudioLLM/Fun-ASR">FunAudioLLM Fun-ASR (Alibaba)</a> <a href="#section-5" title="back to body">↑</a></li>
+<li id="S459"><strong>S459</strong> — <a href="https://huggingface.co/jonatasgrosman/whisper-large-zh-cv11">Hugging Face — whisper-large-zh-cv11</a> <a href="#section-5" title="back to body">↑</a></li>
+<li id="S460"><strong>S460</strong> — <a href="https://www.isca-archive.org/interspeech_2025/wu25m_interspeech.pdf">Interspeech 2025 — Mandarin–English ASR</a> <a href="#section-5" title="back to body">↑</a></li>
+<li id="S461"><strong>S461</strong> — <a href="https://arxiv.org/html/2506.05796v1">arXiv — Diarization-Aware Multi-Speaker ASR</a> <a href="#section-5" title="back to body">↑</a></li>
+<li id="S462"><strong>S462</strong> — <a href="https://www.skyflow.com/post/china-data-residency-pipl-compliance">Skyflow — China data residency PIPL</a> <a href="#section-5" title="back to body">↑</a></li>
+<li id="S463"><strong>S463</strong> — <a href="https://www.arnoldporter.com/en/perspectives/advisories/2025/10/china-data-privacy-enforcement-cross-border-data-transfer">Arnold &amp; Porter — China DP enforcement</a> <a href="#section-5" title="back to body">↑</a></li>
+<li id="S464"><strong>S464</strong> — <a href="https://www.globalprivacyblog.com/2025/05/data-protection-compliance-audits-to-take-effect-in-china-in-2025/">Global Privacy Blog — China DP audits</a> <a href="#section-5" title="back to body">↑</a></li>
+<li id="S465"><strong>S465</strong> — <a href="https://www.caixinglobal.com/2026-04-02/bytedances-volcengine-powers-ai-growth-with-openclaw-partnership-102430344.html">Caixin — ByteDance Volcengine OpenClaw</a> <a href="#section-5" title="back to body">↑</a></li>
+<li id="S466"><strong>S466</strong> — <a href="https://en.tmtpost.com/post/7645516">TMTPost — Volcano Engine AI offerings</a> <a href="#section-5" title="back to body">↑</a></li>
+<li id="S467"><strong>S467</strong> — <a href="https://www.huawei.com/en/news/2019/4/huawei-vr-openlab-partners-dual-g-cloud-vr-initiative">Huawei — VR OpenLab Dual-G</a> <a href="#section-5" title="back to body">↑</a></li>
+<li id="S468"><strong>S468</strong> — <a href="https://www.mdpi.com/2078-2489/16/6/430">MDPI Information — VR cybersecurity risk</a> <a href="#section-5" title="back to body">↑</a></li>
+<li id="S469"><strong>S469</strong> — <a href="https://arxiv.org/html/2509.06368v1">arXiv — Developer-centred S&amp;P threats in XR</a> <a href="#section-5" title="back to body">↑</a></li>
+<li id="S470"><strong>S470</strong> — <a href="https://link.springer.com/article/10.3758/s13428-022-02051-8">Springer — VR hand-tracking accuracy (Quest 2)</a> <a href="#section-5" title="back to body">↑</a></li>
+<li id="S471"><strong>S471</strong> — <a href="https://www.nature.com/articles/s41598-025-91552-5">Nature Sci. Reports — Hand kinematics Quest 2</a> <a href="#section-5" title="back to body">↑</a></li>
+<li id="S472"><strong>S472</strong> — <a href="https://pubmed.ncbi.nlm.nih.gov/40053653/">PubMed — Markerless hand-tracking Quest Pro / Quest 3</a> <a href="#section-5" title="back to body">↑</a></li>
+<li id="S473"><strong>S473</strong> — <a href="https://link.springer.com/article/10.1007/s10055-023-00931-8">Springer VR — Foveated rendering with HMD ET</a> <a href="#section-5" title="back to body">↑</a></li>
+<li id="S474"><strong>S474</strong> — <a href="https://developers.meta.com/horizon/documentation/unity/unity-eye-tracked-foveated-rendering/">Meta — Eye-tracked foveated rendering</a> <a href="#section-5" title="back to body">↑</a></li>
+<li id="S475"><strong>S475</strong> — <a href="https://link.springer.com/article/10.1007/s10055-023-00903-y">Springer VR — Eye tracking on VR survey</a> <a href="#section-5" title="back to body">↑</a></li>
+<li id="S476"><strong>S476</strong> — <a href="https://www.sciencedirect.com/science/article/pii/S2096579625000580">ScienceDirect — Efficient VR rendering survey</a> <a href="#section-5" title="back to body">↑</a></li>
+<li id="S477"><strong>S477</strong> — <a href="https://tech.facebook.com/reality-labs/">Tech at Meta — Reality Labs</a> <a href="#section-5" title="back to body">↑</a></li>
+<li id="S478"><strong>S478</strong> — <a href="https://www.meta.com/blog/inside-reality-labs-meet-the-team-thats-bringing-touch-to-the-digital-world/">Meta — Reality Labs touch</a> <a href="#section-5" title="back to body">↑</a></li>
+<li id="S479"><strong>S479</strong> — <a href="https://www.meta.com/blog/reality-labs-surface-emg-research-nature-publication-ar-glasses-orion/">Meta — Surface EMG Nature publication</a> <a href="#section-5" title="back to body">↑</a></li>
+<li id="S480"><strong>S480</strong> — <a href="https://link.springer.com/article/10.3758/s13428-025-02750-y">Springer — Movies in VR research ecosystem</a> <a href="#section-5" title="back to body">↑</a></li>
+<li id="S481"><strong>S481</strong> — <a href="https://lumivero.com/resources/blog/state-of-ai-in-qualitative-research/">Lumivero — State of AI in qual 2025</a> <a href="#section-5" title="back to body">↑</a></li>
+<li id="S482"><strong>S482</strong> — <a href="https://www.stravito.com/resources/best-ux-research-repository-tools/">Stravito — Best UX repository tools 2026</a> <a href="#section-5" title="back to body">↑</a></li>
+<li id="S483"><strong>S483</strong> — <a href="https://www.usercall.co/post/top-12-qualitative-study-coding-software-tools-in-2025">UserCall — Top qual coding tools 2026</a> <a href="#section-5" title="back to body">↑</a></li>
+<li id="S484"><strong>S484</strong> — <a href="https://www.tomsguide.com/computing/virtual-reality/samsung-galaxy-xr-vs-apple-vision-pro-m5-vs-meta-quest-3">Tom's Guide — Galaxy XR vs Vision Pro vs Quest 3</a> <a href="#section-5" title="back to body">↑</a></li>
+<li id="S485"><strong>S485</strong> — <a href="https://www.uploadvr.com/pico-4-enterprise-announced/">UploadVR — Pico 4 Enterprise eye + face tracking</a> <a href="#section-5" title="back to body">↑</a></li>
+<li id="S486"><strong>S486</strong> — <a href="https://www.roadtovr.com/pico-4-pro-enterprise-eye-tracking-face/">Road to VR — Pico 4 Pro Enterprise</a> <a href="#section-5" title="back to body">↑</a></li>
+<li id="S487"><strong>S487</strong> — <a href="https://smarteye.se/smart-eye-at-ces-2025/">Smart Eye CES 2025</a> <a href="#section-5" title="back to body">↑</a></li>
+<li id="S488"><strong>S488</strong> — <a href="https://crkdongle.com/tobii-pro-lab-24-21/">Tobii Pro Lab 24.21 review</a> <a href="#section-5" title="back to body">↑</a></li>
+<li id="S489"><strong>S489</strong> — <a href="http://www.researchinchina.com/Htmls/Report/2025/77079.html">ResearchInChina — Automotive XR 2025</a> <a href="#section-5" title="back to body">↑</a></li>
+<li id="S490"><strong>S490</strong> — <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10651722/">PMC — Vision Pro psychological research</a> <a href="#section-5" title="back to body">↑</a></li>
+<li id="S491"><strong>S491</strong> — <a href="https://www.imveurope.com/article/could-imaging-enabled-eye-tracking-tech-drive-mass-adoption-virtual-reality">IMVE — Vision Pro eye-tracking</a> <a href="#section-5" title="back to body">↑</a></li>
+<li id="S492"><strong>S492</strong> — <a href="https://github.com/picoxr/EyeTrackingDemo">PICO XR — EyeTrackingDemo (GitHub)</a> <a href="#section-5" title="back to body">↑</a></li>
+<li id="S493"><strong>S493</strong> — <a href="https://developer.picoxr.com/">PICO Developer Resources</a> <a href="#section-5" title="back to body">↑</a></li>
+<li id="S494"><strong>S494</strong> — <a href="https://www.uctoday.com/immersive-workplace-xr-tech/are-xr-workspaces-creating-risks-your-security-cant-handle/">UC Today — XR workspaces security</a> <a href="#section-5" title="back to body">↑</a></li>
+</ol>
+</div>
+</details>
+
+<p style="margin-top:18px; font-size:11px; color:var(--muted);">Total cited sources across all six appendix groups: ~400 distinct URLs. The body of the report cites a curated subset; the appendix preserves the full evidence trail per the project's confidence-tagging convention.</p>
+
+</div>
+</body>
+</html>
