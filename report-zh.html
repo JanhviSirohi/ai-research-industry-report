@@ -1,0 +1,1244 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 对用户研究、市场研究与行业研究的影响 — 2026 年 4 月</title>
+<style>
+:root {
+  --teal: #0F4C5C;
+  --teal-light: #2A7A8C;
+  --warm: #E5751F;
+  --warm-light: #F4A261;
+  --c1: #BFC4C8;
+  --c2: #4A7FB5;
+  --c3: #2E8B57;
+  --bg: #FFFFFF;
+  --ink: #1A1A1A;
+  --muted: #5A5A5A;
+  --border: #D8DCE0;
+  --soft: #F5F7F8;
+  --soft2: #ECEFF1;
+  --green: #2E8B57;
+  --amber: #E5A23A;
+  --red: #C0392B;
+}
+* { box-sizing: border-box; }
+html, body {
+  margin: 0; padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Segoe UI", Helvetica, Arial, sans-serif;
+  color: var(--ink);
+  background: var(--bg);
+  font-size: 15px;
+  line-height: 1.7;
+}
+.wrap { max-width: 1100px; margin: 0 auto; padding: 32px 36px 64px; }
+header.top {
+  border-bottom: 3px solid var(--teal);
+  padding-bottom: 18px; margin-bottom: 22px;
+}
+.eyebrow {
+  text-transform: uppercase; letter-spacing: 0.16em;
+  font-size: 11px; color: var(--warm); font-weight: 600;
+}
+h1 { font-size: 30px; line-height: 1.25; margin: 8px 0 6px; color: var(--teal); letter-spacing: -0.01em; }
+h1 .accent { color: var(--warm); }
+.subtitle { font-size: 15px; color: var(--muted); margin: 0 0 8px; max-width: 780px; }
+.meta-row { display: flex; flex-wrap: wrap; gap: 18px; font-size: 12px; color: var(--muted); margin-top: 10px; }
+.meta-row strong { color: var(--ink); }
+.lang-switch { float: right; font-size: 12px; }
+.lang-switch a { color: var(--teal-light); text-decoration: none; padding: 3px 8px; border: 1px solid var(--border); border-radius: 4px; }
+.lang-switch a:hover { background: var(--teal); color: #fff; border-color: var(--teal); }
+
+.legend-bar {
+  position: sticky; top: 0; z-index: 20;
+  background: rgba(255,255,255,0.96);
+  backdrop-filter: blur(6px);
+  border-bottom: 1px solid var(--border);
+  padding: 8px 0; margin: -8px 0 18px;
+  font-size: 12px; display: flex; flex-wrap: wrap; gap: 14px; align-items: center;
+}
+.legend-bar .lab { color: var(--muted); margin-right: 4px; }
+.pill {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  vertical-align: baseline;
+  margin: 0 2px;
+}
+.pill-c1 { background: var(--c1); color: #2A2D2F; }
+.pill-c2 { background: var(--c2); color: #fff; }
+.pill-c3 { background: var(--c3); color: #fff; }
+.dot { display: inline-block; width: 10px; height: 10px; border-radius: 50%; vertical-align: middle; margin-right: 4px; }
+.dot-g { background: var(--green); }
+.dot-a { background: var(--amber); }
+.dot-r { background: var(--red); }
+
+h2 {
+  font-size: 21px;
+  color: var(--teal);
+  border-left: 5px solid var(--warm);
+  padding-left: 12px;
+  margin: 36px 0 12px;
+}
+h3 { font-size: 16px; color: var(--teal); margin: 20px 0 6px; }
+h4 { font-size: 14px; color: var(--ink); margin: 14px 0 4px; letter-spacing: 0.04em; }
+p { margin: 8px 0; }
+
+.exec-box {
+  background: var(--soft);
+  border-left: 4px solid var(--teal);
+  padding: 16px 20px;
+  margin: 14px 0 18px;
+  border-radius: 0 6px 6px 0;
+}
+.exec-box ul { margin: 6px 0; padding-left: 20px; }
+.exec-box li { margin: 8px 0; }
+
+.cols2 { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; }
+.cols3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 18px; }
+@media (max-width: 820px) {
+  .cols2, .cols3 { grid-template-columns: 1fr; }
+  .wrap { padding: 18px; }
+  h1 { font-size: 24px; }
+}
+
+.callout {
+  background: #FFF6EE;
+  border: 1px solid #F4D7B8;
+  border-left: 4px solid var(--warm);
+  padding: 12px 16px;
+  border-radius: 0 4px 4px 0;
+  margin: 14px 0;
+  font-size: 14px;
+}
+
+table.data {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 12px 0 18px;
+  font-size: 13px;
+}
+table.data th, table.data td {
+  border: 1px solid var(--border);
+  padding: 7px 9px;
+  text-align: left;
+  vertical-align: top;
+}
+table.data th {
+  background: var(--soft2);
+  color: var(--teal);
+  font-weight: 600;
+  font-size: 12px;
+  letter-spacing: 0.04em;
+}
+table.data tr:nth-child(even) td { background: #FBFCFD; }
+
+.viz-frame {
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 14px 14px 10px;
+  background: #FCFDFE;
+  margin: 12px 0 18px;
+  overflow-x: auto;
+}
+.viz-frame .cap { font-size: 12px; color: var(--muted); margin-top: 4px; font-style: italic; }
+.viz-frame h4 { margin-top: 0; }
+
+.func-card {
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 12px 14px;
+  background: #FCFDFE;
+  margin-bottom: 10px;
+}
+.func-card h4 { margin: 0 0 6px; color: var(--teal); font-size: 13px; }
+.func-card p { margin: 4px 0; font-size: 13.5px; }
+.func-card .tag { font-size: 11px; color: var(--muted); letter-spacing: 0.05em; }
+
+.recommend {
+  background: linear-gradient(180deg, #F4FAFB 0%, #FFFFFF 100%);
+  border: 1px solid #BFD6DC;
+  border-left: 5px solid var(--teal);
+  padding: 14px 18px;
+  border-radius: 0 6px 6px 0;
+  margin: 14px 0;
+}
+.recommend ol { margin: 6px 0; padding-left: 22px; }
+.recommend li { margin: 8px 0; }
+
+.counter {
+  background: #FBF1F0;
+  border: 1px solid #ECC5C0;
+  border-left: 4px solid var(--red);
+  padding: 12px 16px;
+  border-radius: 0 4px 4px 0;
+  margin: 14px 0;
+  font-size: 14px;
+}
+
+footer.body-foot {
+  border-top: 1px solid var(--border);
+  margin-top: 28px; padding-top: 12px;
+  font-size: 11px; color: var(--muted);
+}
+
+details.appendix {
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  margin: 8px 0;
+  background: #FCFDFE;
+}
+details.appendix summary {
+  cursor: pointer; padding: 10px 14px;
+  font-weight: 600; color: var(--teal);
+  background: var(--soft2);
+  border-radius: 6px;
+}
+details.appendix[open] summary { border-bottom: 1px solid var(--border); border-radius: 6px 6px 0 0; }
+.src-list {
+  font-size: 12px;
+  padding: 12px 18px;
+  max-height: 460px;
+  overflow-y: auto;
+  line-height: 1.5;
+}
+.src-list ol { padding-left: 22px; margin: 4px 0; }
+.src-list li { margin: 3px 0; word-break: break-word; }
+.src-list a { color: var(--teal-light); text-decoration: none; }
+.src-list a:hover { text-decoration: underline; }
+.src-list li { scroll-margin-top: 60px; }
+.src-list li strong { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; color: var(--teal); margin-right: 4px; }
+
+sup.cite { font-size: 0.7em; line-height: 1; }
+sup.cite a { color: #0F4C5C; text-decoration: none; padding: 1px 3px; border-radius: 3px; background: #f0f4f6; margin-right: 1px; }
+sup.cite a:hover { background: #0F4C5C; color: white; }
+.appendix-note { font-size: 12px; color: var(--muted); margin: 4px 0 12px; padding: 8px 12px; background: var(--soft); border-left: 3px solid var(--teal-light); border-radius: 0 4px 4px 0; }
+
+.disclaimer {
+  font-size: 11px;
+  color: var(--muted);
+  font-style: italic;
+  border-top: 1px dashed var(--border);
+  padding-top: 8px;
+  margin-top: 16px;
+}
+
+@media print {
+  .legend-bar { position: static; }
+  details.appendix .src-list { max-height: none; }
+  details.appendix { page-break-inside: avoid; }
+  .cols2, .cols3 { grid-template-columns: 1fr; }
+  body { color: #000; background: #fff; font-size: 11pt; }
+  h1, h2, h3 { color: #000; }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="top">
+  <div class="lang-switch"><a href="index.html" style="color:#0F4C5C;text-decoration:none">EN</a> &middot; <a href="report-zh.html" style="color:#0F4C5C;text-decoration:none;border-bottom:2px solid #0F4C5C;font-weight:600">中文</a></div>
+  <div class="eyebrow">研究综合报告 &middot; 扩展现实 (XR) 硬件研究职能</div>
+  <h1>AI 对用户、市场与行业<span class="accent">研究</span>的影响</h1>
+  <p class="subtitle">面向同时在美国、欧盟、中国开展业务的 XR 硬件研究团队的循证地图。</p>
+  <div class="meta-row">
+    <span><strong>日期：</strong>2026 年 4 月</span>
+    <span><strong>受众：</strong>7 人 XR 硬件研究职能（中方母公司）</span>
+    <span><strong>正文长度：</strong>约 2,000 词（英文原版）</span>
+    <span><strong>证据池：</strong>约 570 条证据，约 300 条被引用</span>
+  </div>
+</header>
+
+<div class="legend-bar" role="region" aria-label="置信度与受众契合度图例">
+  <span class="lab">置信度：</span>
+  <span><span class="pill pill-c1">C1</span> 供应商自述</span>
+  <span><span class="pill pill-c2">C2</span> 从业者交叉验证</span>
+  <span><span class="pill pill-c3">C3</span> 多类独立来源验证</span>
+  <span class="lab" style="margin-left: 14px;">受众契合度：</span>
+  <span><span class="dot dot-g"></span>可用</span>
+  <span><span class="dot dot-a"></span>受限</span>
+  <span><span class="dot dot-r"></span>不适用</span>
+</div>
+
+<!-- ============ SECTION 1 ============ -->
+<h2 id="section-1">1. 执行摘要</h2>
+<div class="exec-box">
+<ul>
+<li><strong>AI 研究类供应商生态从底层就是英语优先、托管于美国的 SaaS。</strong>中方母公司背景的 XR 团队不可能用一套全球统一的工具栈。在我们调研的约 55 家供应商中，没有一家公开披露中国数据节点 <sup class="cite"><a href="#S046">S046</a>, <a href="#S003">S003</a>, <a href="#S451">S451</a></sup>；唯一原生支持普通话且符合《个人信息保护法》(PIPL) 的对应产品只有科大讯飞 (iFlytek) <sup class="cite"><a href="#S074">S074</a>, <a href="#S076">S076</a></sup>、腾讯问卷 <sup class="cite"><a href="#S071">S071</a>, <a href="#S072">S072</a></sup>、问卷星 <sup class="cite"><a href="#S073">S073</a></sup>、见数 (Credamo) <sup class="cite"><a href="#S087">S087</a></sup>——而这些在西方分析师报告中几乎从未出现。请按"双轨、人工同步"的工具栈做规划。<sup class="cite"><a href="#S340">S340</a>, <a href="#S462">S462</a>, <a href="#S463">S463</a></sup> <span class="pill pill-c3">C3</span></li>
+<li><strong>融资集中于合成用户与 AI 访谈主持，但 2024–2026 年从业者情绪反而更趋怀疑。</strong>Listen Labs（2026 年 1 月 6,900 万美元，估值 5 亿美元）<sup class="cite"><a href="#S009">S009</a>, <a href="#S010">S010</a>, <a href="#S173">S173</a></sup>、Outset（2025 年 12 月 3,000 万美元）<sup class="cite"><a href="#S005">S005</a>, <a href="#S163">S163</a>, <a href="#S168">S168</a></sup>、Aaru（2025 年 12 月对外宣称 10 亿美元估值，年化收入不足 1,000 万美元）<sup class="cite"><a href="#S055">S055</a>, <a href="#S178">S178</a>, <a href="#S179">S179</a></sup>、Simile（2026 年 2 月 1 亿美元）<sup class="cite"><a href="#S059">S059</a>, <a href="#S060">S060</a>, <a href="#S058">S058</a></sup> 均完成了大额融资。然而 User Interviews《2025 用户研究现状》显示 49% 的从业者对 UXR 前景持负面情绪（同比 +26 个百分点）<sup class="cite"><a href="#S285">S285</a>, <a href="#S116">S116</a></sup>；NN/g、Erika Hall、Jared Spool、Indi Young、Peter Merholz、Niloufar Salehi、Matt Duignan 等核心从业者对合成用户 (synthetic users) 的态度明显趋于强硬反对 <sup class="cite"><a href="#S250">S250</a>, <a href="#S241">S241</a>, <a href="#S293">S293</a>, <a href="#S243">S243</a>, <a href="#S246">S246</a>, <a href="#S258">S258</a></sup>。融资热度与方法学验证之间的鸿沟真实存在，且仍在拉大。<span class="pill pill-c3">C3</span></li>
+<li><strong>AI 定性综合分析是所有来源类别一致看好的唯一突破口。</strong>Lyssna 2025 年综合分析报告（n=300，覆盖 34 国）显示 54.7% 的项目已常规使用 AI 辅助分析，每个项目可节省 1–2 小时；Dovetail 在从业者口碑中领先；失败模式集中在"利益相关方叙事化解读"，而非提取质量本身。这是当前团队可立即采用、风险最低的 AI 类别。<sup class="cite"><a href="#S287">S287</a>, <a href="#S033">S033</a>, <a href="#S257">S257</a>, <a href="#S252">S252</a></sup> <span class="pill pill-c3">C3</span></li>
+<li><strong>XR 场景下最棘手的发现：没有任何一款 SaaS 定性研究工具原生支持 200 Hz 双眼眼动 + 生物特征数据的接入</strong> <sup class="cite"><a href="#S402">S402</a>, <a href="#S442">S442</a></sup>；<strong>Apple Vision Pro 不向开发者开放原始视线坐标</strong> <sup class="cite"><a href="#S422">S422</a>, <a href="#S491">S491</a></sup>；<strong>Pico 4 Ultra 取消了眼动追踪</strong> <sup class="cite"><a href="#S485">S485</a>, <a href="#S486">S486</a>, <a href="#S434">S434</a></sup>；<strong>Tobii 与 iMotions 的商业合作已终止。</strong><sup class="cite"><a href="#S400">S400</a>, <a href="#S401">S401</a>, <a href="#S440">S440</a></sup> 当前可信的 XR 研究栈一定是多供应商组合（采集层用 Tobii Pro Lab 或 iMotions；头显内运行时用 WorldViz Vizard 8；机密转写用 iFlytek/Fun-ASR；综合分析用火山引擎、Condens 或 Dovetail），而非单一平台。<sup class="cite"><a href="#S444">S444</a>, <a href="#S458">S458</a>, <a href="#S465">S465</a>, <a href="#S107">S107</a>, <a href="#S033">S033</a></sup> <span class="pill pill-c3">C3</span></li>
+</ul>
+</div>
+
+<!-- ============ SECTION 2 ============ -->
+<h2 id="section-2">2. 供应商生态地图</h2>
+
+<div class="viz-frame">
+<h4>图 1 — 供应商矩阵：8 个研究职能 &times; 头部供应商，叠加置信度与受众契合度</h4>
+<svg viewBox="0 0 1080 580" width="100%" role="img" aria-label="供应商矩阵">
+  <defs>
+    <style>
+      .cell { stroke:#D8DCE0; stroke-width:1; }
+      .lbl { font-family:-apple-system,"PingFang SC","Microsoft YaHei",Segoe UI,sans-serif; font-size:12px; fill:#1A1A1A; }
+      .lblh { font-family:-apple-system,"PingFang SC","Microsoft YaHei",Segoe UI,sans-serif; font-size:12px; fill:#0F4C5C; font-weight:600; }
+      .vlbl { font-family:-apple-system,Segoe UI,sans-serif; font-size:11px; fill:#1A1A1A; }
+      .clbl { font-family:-apple-system,Segoe UI,sans-serif; font-size:10px; fill:#fff; font-weight:700; }
+      .col-c1 { fill:#BFC4C8; } .col-c2 { fill:#4A7FB5; } .col-c3 { fill:#2E8B57; }
+    </style>
+  </defs>
+  <text class="lblh" x="180" y="22">供应商 1</text>
+  <text class="lblh" x="350" y="22">供应商 2</text>
+  <text class="lblh" x="520" y="22">供应商 3</text>
+  <text class="lblh" x="690" y="22">供应商 4</text>
+  <text class="lblh" x="860" y="22">供应商 5</text>
+
+  <!-- Row 1: Interview moderation -->
+  <text class="lblh" x="6" y="68">1. 访谈主持</text>
+  <rect class="cell col-c2" x="170" y="40" width="160" height="50"/>
+  <text class="vlbl" x="178" y="60" fill="#fff">Outset</text>
+  <text class="clbl" x="178" y="78">C2</text><circle cx="318" cy="50" r="6" fill="#E5A23A"/>
+  <rect class="cell col-c3" x="340" y="40" width="160" height="50"/>
+  <text class="vlbl" x="348" y="60" fill="#fff">Listen Labs</text>
+  <text class="clbl" x="348" y="78">C3</text><circle cx="488" cy="50" r="6" fill="#E5A23A"/>
+  <rect class="cell col-c3" x="510" y="40" width="160" height="50"/>
+  <text class="vlbl" x="518" y="60" fill="#fff">Strella</text>
+  <text class="clbl" x="518" y="78">C3</text><circle cx="658" cy="50" r="6" fill="#C0392B"/>
+  <rect class="cell col-c2" x="680" y="40" width="160" height="50"/>
+  <text class="vlbl" x="688" y="60" fill="#fff">Conveo</text>
+  <text class="clbl" x="688" y="78">C2</text><circle cx="828" cy="50" r="6" fill="#E5A23A"/>
+  <rect class="cell col-c3" x="850" y="40" width="160" height="50"/>
+  <text class="vlbl" x="858" y="60" fill="#fff">Discuss.io</text>
+  <text class="clbl" x="858" y="78">C3</text><circle cx="998" cy="50" r="6" fill="#E5A23A"/>
+
+  <!-- Row 2: Qual synthesis -->
+  <text class="lblh" x="6" y="133">2. 定性综合分析</text>
+  <rect class="cell col-c3" x="170" y="105" width="160" height="50"/>
+  <text class="vlbl" x="178" y="125" fill="#fff">Dovetail</text>
+  <text class="clbl" x="178" y="143">C3</text><circle cx="318" cy="115" r="6" fill="#2E8B57"/>
+  <rect class="cell col-c2" x="340" y="105" width="160" height="50"/>
+  <text class="vlbl" x="348" y="125" fill="#fff">HeyMarvin</text>
+  <text class="clbl" x="348" y="143">C2</text><circle cx="488" cy="115" r="6" fill="#E5A23A"/>
+  <rect class="cell col-c2" x="510" y="105" width="160" height="50"/>
+  <text class="vlbl" x="518" y="125" fill="#fff">Reduct</text>
+  <text class="clbl" x="518" y="143">C2</text><circle cx="658" cy="115" r="6" fill="#E5A23A"/>
+  <rect class="cell col-c2" x="680" y="105" width="160" height="50"/>
+  <text class="vlbl" x="688" y="125" fill="#fff">Notably</text>
+  <text class="clbl" x="688" y="143">C2</text><circle cx="828" cy="115" r="6" fill="#C0392B"/>
+  <rect class="cell col-c2" x="850" y="105" width="160" height="50"/>
+  <text class="vlbl" x="858" y="125" fill="#fff">Condens</text>
+  <text class="clbl" x="858" y="143">C2</text><circle cx="998" cy="115" r="6" fill="#2E8B57"/>
+
+  <!-- Row 3: Synthetic users -->
+  <text class="lblh" x="6" y="198">3. 合成用户</text>
+  <rect class="cell col-c3" x="170" y="170" width="160" height="50"/>
+  <text class="vlbl" x="178" y="190" fill="#fff">Qualtrics Edge</text>
+  <text class="clbl" x="178" y="208">C3</text><circle cx="318" cy="180" r="6" fill="#E5A23A"/>
+  <rect class="cell col-c3" x="340" y="170" width="160" height="50"/>
+  <text class="vlbl" x="348" y="190" fill="#fff">Aaru</text>
+  <text class="clbl" x="348" y="208">C3</text><circle cx="488" cy="180" r="6" fill="#C0392B"/>
+  <rect class="cell col-c3" x="510" y="170" width="160" height="50"/>
+  <text class="vlbl" x="518" y="190" fill="#fff">Simile</text>
+  <text class="clbl" x="518" y="208">C3</text><circle cx="658" cy="180" r="6" fill="#C0392B"/>
+  <rect class="cell col-c2" x="680" y="170" width="160" height="50"/>
+  <text class="vlbl" x="688" y="190" fill="#fff">Synthetic Users</text>
+  <text class="clbl" x="688" y="208">C2</text><circle cx="828" cy="180" r="6" fill="#C0392B"/>
+  <rect class="cell col-c3" x="850" y="170" width="160" height="50"/>
+  <text class="vlbl" x="858" y="190" fill="#fff">Yabble (YouGov)</text>
+  <text class="clbl" x="858" y="208">C3</text><circle cx="998" cy="180" r="6" fill="#E5A23A"/>
+
+  <!-- Row 4: Survey + quant -->
+  <text class="lblh" x="6" y="263">4. 问卷与定量</text>
+  <rect class="cell col-c3" x="170" y="235" width="160" height="50"/>
+  <text class="vlbl" x="178" y="255" fill="#fff">Qualtrics</text>
+  <text class="clbl" x="178" y="273">C3</text><circle cx="318" cy="245" r="6" fill="#E5A23A"/>
+  <rect class="cell col-c3" x="340" y="235" width="160" height="50"/>
+  <text class="vlbl" x="348" y="255" fill="#fff">Medallia</text>
+  <text class="clbl" x="348" y="273">C3</text><circle cx="488" cy="245" r="6" fill="#C0392B"/>
+  <rect class="cell col-c3" x="510" y="235" width="160" height="50"/>
+  <text class="vlbl" x="518" y="255" fill="#fff">Suzy</text>
+  <text class="clbl" x="518" y="273">C3</text><circle cx="658" cy="245" r="6" fill="#C0392B"/>
+  <rect class="cell col-c3" x="680" y="235" width="160" height="50"/>
+  <text class="vlbl" x="688" y="255" fill="#fff">iFlytek</text>
+  <text class="clbl" x="688" y="273">C3</text><circle cx="828" cy="245" r="6" fill="#2E8B57"/>
+  <rect class="cell col-c3" x="850" y="235" width="160" height="50"/>
+  <text class="vlbl" x="858" y="255" fill="#fff">Tencent Wenjuan</text>
+  <text class="clbl" x="858" y="273">C3</text><circle cx="998" cy="245" r="6" fill="#2E8B57"/>
+
+  <!-- Row 5: Recruit + vetting -->
+  <text class="lblh" x="6" y="328">5. 招募与甄别</text>
+  <rect class="cell col-c3" x="170" y="300" width="160" height="50"/>
+  <text class="vlbl" x="178" y="320" fill="#fff">User Interviews</text>
+  <text class="clbl" x="178" y="338">C3</text><circle cx="318" cy="310" r="6" fill="#E5A23A"/>
+  <rect class="cell col-c3" x="340" y="300" width="160" height="50"/>
+  <text class="vlbl" x="348" y="320" fill="#fff">Prolific</text>
+  <text class="clbl" x="348" y="338">C3</text><circle cx="488" cy="310" r="6" fill="#E5A23A"/>
+  <rect class="cell col-c3" x="510" y="300" width="160" height="50"/>
+  <text class="vlbl" x="518" y="320" fill="#fff">dscout</text>
+  <text class="clbl" x="518" y="338">C3</text><circle cx="658" cy="310" r="6" fill="#2E8B57"/>
+  <rect class="cell col-c2" x="680" y="300" width="160" height="50"/>
+  <text class="vlbl" x="688" y="320" fill="#fff">CleverX</text>
+  <text class="clbl" x="688" y="338">C2</text><circle cx="828" cy="310" r="6" fill="#E5A23A"/>
+  <rect class="cell col-c2" x="850" y="300" width="160" height="50"/>
+  <text class="vlbl" x="858" y="320" fill="#fff">Credamo</text>
+  <text class="clbl" x="858" y="338">C2</text><circle cx="998" cy="310" r="6" fill="#2E8B57"/>
+
+  <!-- Row 6: Fraud detection -->
+  <text class="lblh" x="6" y="393">6. 欺诈识别</text>
+  <rect class="cell col-c3" x="170" y="365" width="160" height="50"/>
+  <text class="vlbl" x="178" y="385" fill="#fff">Research Defender</text>
+  <text class="clbl" x="178" y="403">C3</text><circle cx="318" cy="375" r="6" fill="#E5A23A"/>
+  <rect class="cell col-c3" x="340" y="365" width="160" height="50"/>
+  <text class="vlbl" x="348" y="385" fill="#fff">Imperium</text>
+  <text class="clbl" x="348" y="403">C3</text><circle cx="488" cy="375" r="6" fill="#E5A23A"/>
+  <rect class="cell col-c3" x="510" y="365" width="160" height="50"/>
+  <text class="vlbl" x="518" y="385" fill="#fff">IPQS</text>
+  <text class="clbl" x="518" y="403">C3</text><circle cx="658" cy="375" r="6" fill="#E5A23A"/>
+  <rect class="cell col-c2" x="680" y="365" width="160" height="50"/>
+  <text class="vlbl" x="688" y="385" fill="#fff">Centiment</text>
+  <text class="clbl" x="688" y="403">C2</text><circle cx="828" cy="375" r="6" fill="#E5A23A"/>
+  <rect class="cell col-c3" x="850" y="365" width="160" height="50"/>
+  <text class="vlbl" x="858" y="385" fill="#fff">HUMAN Sec.</text>
+  <text class="clbl" x="858" y="403">C3</text><circle cx="998" cy="375" r="6" fill="#E5A23A"/>
+
+  <!-- Row 7: Transcription -->
+  <text class="lblh" x="6" y="458">7. 转写</text>
+  <rect class="cell col-c3" x="170" y="430" width="160" height="50"/>
+  <text class="vlbl" x="178" y="450" fill="#fff">iFlytek</text>
+  <text class="clbl" x="178" y="468">C3</text><circle cx="318" cy="440" r="6" fill="#2E8B57"/>
+  <rect class="cell col-c3" x="340" y="430" width="160" height="50"/>
+  <text class="vlbl" x="348" y="450" fill="#fff">Whisper（自托管）</text>
+  <text class="clbl" x="348" y="468">C3</text><circle cx="488" cy="440" r="6" fill="#2E8B57"/>
+  <rect class="cell col-c3" x="510" y="430" width="160" height="50"/>
+  <text class="vlbl" x="518" y="450" fill="#fff">Speechmatics</text>
+  <text class="clbl" x="518" y="468">C3</text><circle cx="658" cy="440" r="6" fill="#2E8B57"/>
+  <rect class="cell col-c3" x="680" y="430" width="160" height="50"/>
+  <text class="vlbl" x="688" y="450" fill="#fff">Notta</text>
+  <text class="clbl" x="688" y="468">C3</text><circle cx="828" cy="440" r="6" fill="#E5A23A"/>
+  <rect class="cell col-c3" x="850" y="430" width="160" height="50"/>
+  <text class="vlbl" x="858" y="450" fill="#fff">Otter / Descript</text>
+  <text class="clbl" x="858" y="468">C3</text><circle cx="998" cy="440" r="6" fill="#C0392B"/>
+
+  <!-- Row 8: Knowledge / ResearchOps -->
+  <text class="lblh" x="6" y="523">8. 知识库 / ResOps</text>
+  <rect class="cell col-c3" x="170" y="495" width="160" height="50"/>
+  <text class="vlbl" x="178" y="515" fill="#fff">Dovetail</text>
+  <text class="clbl" x="178" y="533">C3</text><circle cx="318" cy="505" r="6" fill="#E5A23A"/>
+  <rect class="cell col-c3" x="340" y="495" width="160" height="50"/>
+  <text class="vlbl" x="348" y="515" fill="#fff">Stravito</text>
+  <text class="clbl" x="348" y="533">C3</text><circle cx="488" cy="505" r="6" fill="#E5A23A"/>
+  <rect class="cell col-c3" x="510" y="495" width="160" height="50"/>
+  <text class="vlbl" x="518" y="515" fill="#fff">Glean</text>
+  <text class="clbl" x="518" y="533">C3</text><circle cx="658" cy="505" r="6" fill="#E5A23A"/>
+  <rect class="cell col-c2" x="680" y="495" width="160" height="50"/>
+  <text class="vlbl" x="688" y="515" fill="#fff">Condens</text>
+  <text class="clbl" x="688" y="533">C2</text><circle cx="828" cy="505" r="6" fill="#2E8B57"/>
+  <rect class="cell col-c3" x="850" y="495" width="160" height="50"/>
+  <text class="vlbl" x="858" y="515" fill="#fff">Great Question</text>
+  <text class="clbl" x="858" y="533">C3</text><circle cx="998" cy="505" r="6" fill="#E5A23A"/>
+
+  <!-- Inline legend strip -->
+  <g transform="translate(170,560)">
+    <rect width="14" height="12" class="col-c1"/><text class="lbl" x="20" y="11">C1</text>
+    <rect x="50" width="14" height="12" class="col-c2"/><text class="lbl" x="70" y="11">C2</text>
+    <rect x="100" width="14" height="12" class="col-c3"/><text class="lbl" x="120" y="11">C3</text>
+    <circle cx="170" cy="6" r="6" fill="#2E8B57"/><text class="lbl" x="180" y="11">可用</text>
+    <circle cx="220" cy="6" r="6" fill="#E5A23A"/><text class="lbl" x="230" y="11">受限（数据跨境 / 普通话缺口）</text>
+    <circle cx="490" cy="6" r="6" fill="#C0392B"/><text class="lbl" x="500" y="11">本受众不适用</text>
+  </g>
+</svg>
+<div class="cap">单元格颜色 = 对供应商 AI 能力宣称的置信度 (C1/C2/C3)。圆点 = 在叠加普通话能力 / 中国数据驻留 / XR 适配等 Phase 1 范围筛选后的受众契合度。</div>
+</div>
+
+<p>该矩阵呈现三条结构性规律。<strong>第一</strong>，置信度集中于具备深厚专利积累的现有玩家（Qualtrics 在 2025–26 年公开 6 项专利申请；Tobii 持有 XR 深度感知核心 IP）<sup class="cite"><a href="#S117">S117</a>, <a href="#S118">S118</a>, <a href="#S119">S119</a>, <a href="#S120">S120</a>, <a href="#S121">S121</a>, <a href="#S122">S122</a>, <a href="#S127">S127</a>, <a href="#S128">S128</a>, <a href="#S138">S138</a></sup> <span class="pill pill-c3">C3</span>；AI 研究类初创公司则几乎没有可防御的专利护城河，竞争维度集中于数据、渠道与提示词设计 <sup class="cite"><a href="#S152">S152</a>, <a href="#S153">S153</a>, <a href="#S046">S046</a></sup> <span class="pill pill-c3">C3</span>。<strong>第二</strong>，受众契合度在前几行明显塌陷——只有 Discuss.io 的实时翻译叠加层、Listen Labs 公开宣称的普通话语音支持，以及 Conveo 的 50 种语言追问能力勉强达到"受限"水平；没有一家通过 PIPL 数据驻留要求 <sup class="cite"><a href="#S029">S029</a>, <a href="#S011">S011</a>, <a href="#S024">S024</a>, <a href="#S340">S340</a></sup>。<strong>第三</strong>，对本受众而言唯一全绿的纵列在转写层（iFlytek、Speechmatics 私有部署、自托管 Whisper）以及中国本土问卷工具栈——而这恰恰是西方分析师覆盖最薄弱的层 <sup class="cite"><a href="#S074">S074</a>, <a href="#S106">S106</a>, <a href="#S099">S099</a>, <a href="#S071">S071</a>, <a href="#S073">S073</a></sup> <span class="pill pill-c3">C3</span>。</p>
+
+<!-- ============ SECTION 3 ============ -->
+<h2 id="section-3">3. 各职能纵深分析</h2>
+
+<div class="cols2">
+
+<div class="func-card">
+<h4>1. 访谈主持</h4>
+<p><strong>已落地：</strong>Outset <sup class="cite"><a href="#S298">S298</a>, <a href="#S002">S002</a>, <a href="#S005">S005</a></sup>、Listen Labs <sup class="cite"><a href="#S299">S299</a>, <a href="#S009">S009</a>, <a href="#S175">S175</a></sup>、Strella <sup class="cite"><a href="#S172">S172</a>, <a href="#S171">S171</a>, <a href="#S013">S013</a></sup> 已积累财富 500 强 logo（微软、亚马逊、雀巢、Duolingo、Chobani、慧俪轻体）；Outset 的某客户公开表示"单个项目节省 120 小时" <sup class="cite"><a href="#S001">S001</a>, <a href="#S166">S166</a></sup> <span class="pill pill-c3">C3</span>。</p>
+<p><strong>被高估：</strong>"1,000 路并行访谈"对 XR 团队 N=8 的实验室研究毫无价值 <sup class="cite"><a href="#S008">S008</a>, <a href="#S007">S007</a></sup>；Maria Rosala 在 NN/g 的研究中只有 10 位参与者中 3 位认为 AI 对话"自然" <sup class="cite"><a href="#S251">S251</a>, <a href="#S255">S255</a>, <a href="#S295">S295</a></sup> <span class="pill pill-c3">C3</span>。</p>
+<p><strong>本受众适配：</strong>普通话追问能力在该梯队尚未得到验证 <sup class="cite"><a href="#S011">S011</a>, <a href="#S024">S024</a></sup>；无供应商提供中国节点 <sup class="cite"><a href="#S003">S003</a>, <a href="#S451">S451</a></sup>。仅作 B2C 用途。<sup class="cite"><a href="#S299">S299</a></sup> <span class="pill pill-c2">C2</span></p>
+</div>
+
+<div class="func-card">
+<h4>2. 定性综合分析</h4>
+<p><strong>已落地：</strong>Dovetail 的 82 种语言转写（基于 AssemblyAI）<sup class="cite"><a href="#S036">S036</a>, <a href="#S035">S035</a>, <a href="#S039">S039</a></sup> 与 Magic Cluster 据 Looppanel 评测每个项目可节省 1–2 小时 <sup class="cite"><a href="#S257">S257</a>, <a href="#S033">S033</a>, <a href="#S034">S034</a></sup>；Lyssna 2025 报告指 54.7% 团队已常规采用 <sup class="cite"><a href="#S287">S287</a>, <a href="#S481">S481</a></sup> <span class="pill pill-c3">C3</span>。</p>
+<p><strong>被高估：</strong>主要失败模式是利益相关方叙事化误读与引语幻觉 <sup class="cite"><a href="#S252">S252</a>, <a href="#S253">S253</a></sup>——Workday 的 Lexi Brights 反馈"大模型直接编造引语" <sup class="cite"><a href="#S259">S259</a>, <a href="#S294">S294</a></sup> <span class="pill pill-c2">C2</span>。</p>
+<p><strong>本受众适配：</strong>Dovetail 是该层唯一明确披露普通话转写路径的供应商 <sup class="cite"><a href="#S035">S035</a>, <a href="#S036">S036</a></sup>。未发布硬件相关项目须搭配私有部署 ASR 使用 <sup class="cite"><a href="#S458">S458</a>, <a href="#S099">S099</a>, <a href="#S457">S457</a></sup> <span class="pill pill-c2">C2</span></p>
+</div>
+
+<div class="func-card">
+<h4>3. 合成用户 / 合成样本</h4>
+<p><strong>已落地：</strong>Qualtrics Edge Audiences（基于真实样本面板，2026 年 1 月与 ROI Rocket 达成 B2B 合作）<sup class="cite"><a href="#S063">S063</a>, <a href="#S064">S064</a></sup> 与 Evidenza（贝莱德、微软、摩根大通客户，零 VC 融资且已盈利）<sup class="cite"><a href="#S056">S056</a>, <a href="#S057">S057</a>, <a href="#S197">S197</a></sup> 证明面板支撑型合成在 B2B 概念测试场景中能够交付价值 <sup class="cite"><a href="#S198">S198</a>, <a href="#S199">S199</a>, <a href="#S312">S312</a></sup> <span class="pill pill-c3">C3</span>。</p>
+<p><strong>被高估：</strong>Aaru 在年化收入不足 1,000 万美元时对外宣称 10 亿美元估值 <sup class="cite"><a href="#S055">S055</a>, <a href="#S179">S179</a>, <a href="#S178">S178</a></sup>；纯大模型驱动的合成用户被 NN/g <sup class="cite"><a href="#S250">S250</a></sup>、Hall <sup class="cite"><a href="#S241">S241</a></sup>、Spool <sup class="cite"><a href="#S293">S293</a></sup>、Merholz <sup class="cite"><a href="#S243">S243</a></sup>、Salehi <sup class="cite"><a href="#S246">S246</a></sup>、Young <sup class="cite"><a href="#S242">S242</a></sup>、Travis <sup class="cite"><a href="#S248">S248</a></sup>、Duignan <sup class="cite"><a href="#S258">S258</a>, <a href="#S291">S291</a></sup> 公开否定 <span class="pill pill-c3">C3</span>。</p>
+<p><strong>本受众适配：</strong>没有任何供应商发布过对中国消费者的样本保真度验证 <sup class="cite"><a href="#S046">S046</a>, <a href="#S388">S388</a></sup>。在 XR 概念阶段仅可用于假设生成，绝不能作 go/no-go 决策。<sup class="cite"><a href="#S448">S448</a>, <a href="#S449">S449</a>, <a href="#S256">S256</a></sup> <span class="pill pill-c3">C3</span></p>
+</div>
+
+<div class="func-card">
+<h4>4. 问卷设计与定量</h4>
+<p><strong>已落地：</strong>Qualtrics 在 2025–26 年公开 6 件 AI 相关专利申请（欺诈识别、追问、智能体编排、情感分析）<sup class="cite"><a href="#S117">S117</a>, <a href="#S118">S118</a>, <a href="#S119">S119</a>, <a href="#S120">S120</a>, <a href="#S121">S121</a>, <a href="#S122">S122</a></sup>；Suzy Decision Engine 于 2026 年 4 月 2 日发布 <sup class="cite"><a href="#S067">S067</a>, <a href="#S066">S066</a></sup> <span class="pill pill-c3">C3</span>。</p>
+<p><strong>被高估：</strong>Medallia 2026 年生成式 AI 多语种清单不含中文（仅英、法、德、西）<sup class="cite"><a href="#S065">S065</a>, <a href="#S157">S157</a></sup>；Thoma Bravo 已于 2026 年 4 月将 Medallia 移交债权人，51 亿美元股权清零 <sup class="cite"><a href="#S214">S214</a>, <a href="#S216">S216</a>, <a href="#S217">S217</a>, <a href="#S215">S215</a></sup> <span class="pill pill-c3">C3</span>。</p>
+<p><strong>本受众适配：</strong>境内驻留场景下可信选项是科大讯飞 <sup class="cite"><a href="#S074">S074</a></sup>、腾讯问卷 <sup class="cite"><a href="#S071">S071</a>, <a href="#S072">S072</a></sup>、问卷星 <sup class="cite"><a href="#S073">S073</a></sup>、调研家 SurveyPlus <sup class="cite"><a href="#S230">S230</a></sup>——它们完全缺席西方榜单。<sup class="cite"><a href="#S322">S322</a>, <a href="#S321">S321</a></sup> <span class="pill pill-c3">C3</span></p>
+</div>
+
+<div class="func-card">
+<h4>5. 招募与甄别</h4>
+<p><strong>已落地：</strong>Prolific 的 50 步验证 + 2026 年 1 月审计（AI 生成内容 &lt;0.8%）是行业完整性标杆 <sup class="cite"><a href="#S082">S082</a>, <a href="#S083">S083</a>, <a href="#S081">S081</a></sup>；dscout 的日记任务在"长期带回家"硬件研究中是被低估的 XR 适配项 <sup class="cite"><a href="#S456">S456</a>, <a href="#S085">S085</a>, <a href="#S084">S084</a></sup> <span class="pill pill-c3">C3</span>。</p>
+<p><strong>被高估：</strong>User Interviews 已于 2026 年 1 月被 UserTesting 收购，独立路线图存疑 <sup class="cite"><a href="#S079">S079</a>, <a href="#S211">S211</a></sup>；行业整合压低了客户议价能力 <sup class="cite"><a href="#S210">S210</a>, <a href="#S212">S212</a>, <a href="#S045">S045</a></sup> <span class="pill pill-c3">C3</span>。</p>
+<p><strong>本受众适配：</strong>美国/欧盟样本面板对中国消费者覆盖几乎为零 <sup class="cite"><a href="#S077">S077</a>, <a href="#S081">S081</a></sup>；须辅以见数 (Credamo) 与微信小程序型代理执行 <sup class="cite"><a href="#S087">S087</a>, <a href="#S076">S076</a></sup>。<span class="pill pill-c2">C2</span></p>
+</div>
+
+<div class="func-card">
+<h4>6. 欺诈识别</h4>
+<p><strong>已落地：</strong>Research Defender 公开的生成式 AI 文本特征库（12 个月内识别 2.94 亿+ 条）<sup class="cite"><a href="#S088">S088</a>, <a href="#S156">S156</a></sup>，叠加 Qualtrics 的 US20260065298A1 大模型混合反欺诈专利 <sup class="cite"><a href="#S117">S117</a></sup>，与 Imperium、HUMAN Security 一道展现真实技术深度 <sup class="cite"><a href="#S089">S089</a>, <a href="#S092">S092</a>, <a href="#S142">S142</a></sup> <span class="pill pill-c3">C3</span>。</p>
+<p><strong>被高估：</strong>校准基本以英文为基础 <sup class="cite"><a href="#S088">S088</a>, <a href="#S089">S089</a></sup>——针对通义、DeepSeek、豆包输出的开放题大模型识别尚无公开数据 <sup class="cite"><a href="#S385">S385</a>, <a href="#S386">S386</a>, <a href="#S387">S387</a>, <a href="#S388">S388</a></sup> <span class="pill pill-c2">C2</span>。</p>
+<p><strong>本受众适配：</strong>境内问卷场景下，唯一可辩护的 AI 反作弊手段是母语审阅人工复核开放题。<sup class="cite"><a href="#S388">S388</a>, <a href="#S089">S089</a></sup> <span class="pill pill-c2">C2</span></p>
+</div>
+
+<div class="func-card">
+<h4>7. 转写</h4>
+<p><strong>已落地：</strong>科大讯飞（普通话词错误率低于 3%，原生中国节点）<sup class="cite"><a href="#S074">S074</a>, <a href="#S075">S075</a>, <a href="#S076">S076</a></sup>、Speechmatics 私有部署 <sup class="cite"><a href="#S105">S105</a>, <a href="#S106">S106</a></sup>，以及自托管 Whisper-large-v3 + AISHELL6 微调，均可一次性满足普通话与境内驻留要求 <sup class="cite"><a href="#S099">S099</a>, <a href="#S100">S100</a>, <a href="#S459">S459</a>, <a href="#S101">S101</a></sup> <span class="pill pill-c3">C3</span>。</p>
+<p><strong>被高估：</strong>Otter.ai 仅支持英、法、西语 <sup class="cite"><a href="#S094">S094</a>, <a href="#S093">S093</a></sup>；Descript 不支持中文（仍是 open feature request）<sup class="cite"><a href="#S095">S095</a>, <a href="#S096">S096</a></sup>；粤语仍是真实空白，且语码混合未解决 <sup class="cite"><a href="#S389">S389</a>, <a href="#S390">S390</a>, <a href="#S392">S392</a>, <a href="#S391">S391</a>, <a href="#S460">S460</a></sup> <span class="pill pill-c3">C3</span>。</p>
+<p><strong>本受众适配：</strong>这是该团队当下唯一可以部署气隙、双语、私有部署技术栈的类别。<sup class="cite"><a href="#S458">S458</a>, <a href="#S099">S099</a>, <a href="#S106">S106</a></sup> <span class="pill pill-c3">C3</span></p>
+</div>
+
+<div class="func-card">
+<h4>8. 知识库 / ResearchOps</h4>
+<p><strong>已落地：</strong>Stravito（在同源对照下声称 98% 准确率，对比 Copilot Studio 仅 15%；客户含喜力、Coles、壳牌）<sup class="cite"><a href="#S110">S110</a>, <a href="#S111">S111</a></sup> 与 Glean（100+ 连接器）<sup class="cite"><a href="#S109">S109</a></sup> 分别占据"洞察平台"与"企业搜索"两端；Great Question 已于 2026 年 3 月发布支持 Claude/Cursor/ChatGPT 的 MCP <sup class="cite"><a href="#S112">S112</a>, <a href="#S113">S113</a>, <a href="#S482">S482</a></sup> <span class="pill pill-c3">C3</span>。</p>
+<p><strong>被高估：</strong>"由知识库回答问题"只在已经过精选与良好打标的语料上有效 <sup class="cite"><a href="#S253">S253</a>, <a href="#S110">S110</a></sup>——英国司法部 Marsh 直言"如果我们没有那份数据，AI 就生成不出那份数据" <sup class="cite"><a href="#S266">S266</a>, <a href="#S288">S288</a></sup> <span class="pill pill-c2">C2</span>。</p>
+<p><strong>本受众适配：</strong>无供应商发布过中文分类法对等 <sup class="cite"><a href="#S110">S110</a>, <a href="#S109">S109</a>, <a href="#S112">S112</a></sup>；中英双语分类法须人工搭建并维护 <sup class="cite"><a href="#S388">S388</a>, <a href="#S483">S483</a></sup>。<span class="pill pill-c2">C2</span></p>
+</div>
+
+</div>
+
+<!-- ============ SECTION 4 ============ -->
+<h2 id="section-4">4. B2C 与 B2B、地区切片</h2>
+
+<div class="viz-frame">
+<h4>图 2 — 各 AI 研究类别的 B2C 与 B2B 适配度</h4>
+<svg viewBox="0 0 1080 290" width="100%" role="img" aria-label="B2C 与 B2B 适配度">
+  <defs>
+    <style>
+      .hd { font-family:-apple-system,"PingFang SC","Microsoft YaHei",Segoe UI,sans-serif; font-size:13px; fill:#0F4C5C; font-weight:700; }
+      .rl { font-family:-apple-system,"PingFang SC","Microsoft YaHei",Segoe UI,sans-serif; font-size:12px; fill:#1A1A1A; }
+      .nt { font-family:-apple-system,"PingFang SC","Microsoft YaHei",Segoe UI,sans-serif; font-size:10px; fill:#fff; font-weight:600; }
+    </style>
+  </defs>
+  <text class="hd" x="20" y="22">类别</text>
+  <text class="hd" x="430" y="22">B2C 消费端（XR 终端用户）</text>
+  <text class="hd" x="780" y="22">B2B 企业端（XR 试点）</text>
+
+  <g font-size="12">
+  <text class="rl" x="20" y="60">AI 主持（结构化）</text>
+  <rect x="430" y="40" width="320" height="30" fill="#2E8B57"/><text class="nt" x="445" y="60">绿 — Indeed/微软/雀巢已生产环境使用</text>
+  <rect x="780" y="40" width="280" height="30" fill="#E5A23A"/><text class="nt" x="795" y="60">黄 — 适用于可预测的 B2B（律师、工程师）</text>
+
+  <text class="rl" x="20" y="100">AI 主持（探索性）</text>
+  <rect x="430" y="80" width="320" height="30" fill="#C0392B"/><text class="nt" x="445" y="100">红 — NN/g 仅 3/10 觉得自然，存在迎合倾向</text>
+  <rect x="780" y="80" width="280" height="30" fill="#C0392B"/><text class="nt" x="795" y="100">红 — 关系与信任维度难以建立</text>
+
+  <text class="rl" x="20" y="140">合成用户</text>
+  <rect x="430" y="120" width="320" height="30" fill="#C0392B"/><text class="nt" x="445" y="140">红 — UX 资深人士全线否定</text>
+  <rect x="780" y="120" width="280" height="30" fill="#E5A23A"/><text class="nt" x="795" y="140">黄 — Evidenza 模式在部分 B2B 场景奏效</text>
+
+  <text class="rl" x="20" y="180">定性综合分析</text>
+  <rect x="430" y="160" width="320" height="30" fill="#2E8B57"/><text class="nt" x="445" y="180">绿 — Dovetail/Marvin 每项目省 1–2 小时</text>
+  <rect x="780" y="160" width="280" height="30" fill="#2E8B57"/><text class="nt" x="795" y="180">绿 — N=4–12 引语级分析适配</text>
+
+  <text class="rl" x="20" y="220">问卷与定量</text>
+  <rect x="430" y="200" width="320" height="30" fill="#2E8B57"/><text class="nt" x="445" y="220">绿 — Qualtrics、Suzy、腾讯问卷</text>
+  <rect x="780" y="200" width="280" height="30" fill="#E5A23A"/><text class="nt" x="795" y="220">黄 — 小样本企业研究通常非问卷主导</text>
+
+  <text class="rl" x="20" y="260">欺诈识别</text>
+  <rect x="430" y="240" width="320" height="30" fill="#2E8B57"/><text class="nt" x="445" y="260">绿 — Research Defender、Imperium、Prolific</text>
+  <rect x="780" y="240" width="280" height="30" fill="#BFC4C8"/><text class="nt" x="795" y="260" fill="#1A1A1A">不适用 — 小样本面板非威胁面</text>
+  </g>
+</svg>
+<div class="cap">已应用受众契合筛选：B2C 行 = 消费级 XR 研究；B2B 行 = 企业 XR 试点（Pico 200 个学区、Varjo 军用、外科训练）。</div>
+</div>
+
+<p><strong>B2C 与 B2B 的差异极为陡峭。</strong>AI 主持仅在 B2C 结构化研究（规模化反馈、筛选问卷主导、上线后情感跟踪）中能用；探索性研究两端都失效——从业者反馈对 AI 头像 (orb) 的脱敏感明显 <sup class="cite"><a href="#S251">S251</a>, <a href="#S255">S255</a></sup>。合成用户的格局正好相反：UX 圈对其在 B2C 的应用公开否定（Hall、Spool、Merholz、Rosala/Moran）<sup class="cite"><a href="#S241">S241</a>, <a href="#S293">S293</a>, <a href="#S250">S250</a>, <a href="#S246">S246</a></sup>，但 Evidenza 已盈利的实践证明合成 CMO/CFO 角色可服务于 B2B 媒介规划 <sup class="cite"><a href="#S057">S057</a>, <a href="#S198">S198</a>, <a href="#S199">S199</a></sup>。定性综合分析是少有的两端皆赢的类别；XR 团队的小样本企业试点尤为受益，因为分析单位是引语，而非聚合统计 <sup class="cite"><a href="#S287">S287</a>, <a href="#S033">S033</a>, <a href="#S115">S115</a></sup> <span class="pill pill-c3">C3</span>。</p>
+
+<p><strong>地区监管现实正在收紧而非放松。</strong>《欧盟人工智能法案》对通用人工智能 (GPAI) 的义务自 2025 年 8 月 2 日起生效 <sup class="cite"><a href="#S366">S366</a>, <a href="#S367">S367</a>, <a href="#S368">S368</a></sup>；2026 年 4 月 28 日（本报告发布前两天）《数字综合法案》(Digital Omnibus) 在三方协商中失败，《欧盟人工智能法案》附件 III 的高风险条款 2026 年 8 月 2 日 deadline 维持不变 <sup class="cite"><a href="#S369">S369</a>, <a href="#S370">S370</a>, <a href="#S371">S371</a>, <a href="#S376">S376</a></sup>。EDPB 第 28/2024 号意见管辖合成用户训练数据 <sup class="cite"><a href="#S372">S372</a>, <a href="#S373">S373</a>, <a href="#S374">S374</a>, <a href="#S375">S375</a></sup> <span class="pill pill-c3">C3</span>。中国数据跨境传输三支柱框架（安全评估、标准合同 (SCC) 备案、个人信息保护认证 PIP-Cert，2026 年 1 月 1 日起完整生效）已运行齐备——不再是"是否有路径"的问题，只是"用哪条" <sup class="cite"><a href="#S341">S341</a>, <a href="#S342">S342</a>, <a href="#S343">S343</a>, <a href="#S346">S346</a>, <a href="#S347">S347</a>, <a href="#S345">S345</a>, <a href="#S350">S350</a></sup>。《人工智能生成合成内容标识办法》及 GB 45438-2025（2025 年 9 月 1 日生效）要求对 AI 生成的文本、图片、音视频与虚拟场景同时打隐式与显式标识——直接关系到任何面向中国市场交付物中的合成访谈记录与刺激物 <sup class="cite"><a href="#S358">S358</a>, <a href="#S359">S359</a>, <a href="#S360">S360</a></sup>。加州 CCPA 自动化决策技术 (ADMT) 规则于 2026 年 1 月 1 日生效，ADMT 专项义务自 2027 年 1 月 1 日起约束 <sup class="cite"><a href="#S381">S381</a>, <a href="#S382">S382</a>, <a href="#S384">S384</a>, <a href="#S380">S380</a></sup> <span class="pill pill-c3">C3</span>。</p>
+
+<p><strong>普通话文本可解，粤语不可解。</strong>SuperCLUE 2026 年 2 月榜单显示字节豆包、通义、DeepSeek、智谱 GLM 与 Kimi 均处普通话全球第一梯队；中国前沿模型仅以约 6 分之差落后 GPT/Gemini，成本却仅为后者的 10–15% <sup class="cite"><a href="#S385">S385</a>, <a href="#S386">S386</a>, <a href="#S387">S387</a>, <a href="#S393">S393</a>, <a href="#S395">S395</a></sup>。但《中国模型说中文吗？》(arXiv 2504.00289) 与《大模型对粤语处理能力如何》(NAACL Findings 2025) 系统记录了粤语性能差距，特别是定义香港田野调查的"普通话/英语/粤语三语码混合" <sup class="cite"><a href="#S388">S388</a>, <a href="#S389">S389</a>, <a href="#S390">S390</a>, <a href="#S391">S391</a></sup>。GLM-ASR-Nano-2512 与微调 Whisper 部分弥合，但任何宣称"100+ 种语言"的西方工具，未经 AISHELL6 / HKCanto-Eval 实测前都视为粤语未验证 <sup class="cite"><a href="#S099">S099</a>, <a href="#S459">S459</a>, <a href="#S392">S392</a>, <a href="#S391">S391</a></sup> <span class="pill pill-c3">C3</span>。</p>
+
+<div class="viz-frame">
+<h4>图 3 — 地区约束对照（美 / 欧 / 中）</h4>
+<svg viewBox="0 0 1080 360" width="100%" role="img" aria-label="地区约束对照">
+  <defs><style>
+    .hh { font-family:-apple-system,"PingFang SC","Microsoft YaHei",Segoe UI,sans-serif; font-size:13px; fill:#0F4C5C; font-weight:700; }
+    .rr { font-family:-apple-system,"PingFang SC","Microsoft YaHei",Segoe UI,sans-serif; font-size:12px; fill:#1A1A1A; }
+    .ww { font-family:-apple-system,"PingFang SC","Microsoft YaHei",Segoe UI,sans-serif; font-size:11px; fill:#fff; font-weight:600; }
+    .kk { font-family:-apple-system,"PingFang SC","Microsoft YaHei",Segoe UI,sans-serif; font-size:11px; fill:#1A1A1A; }
+  </style></defs>
+  <text class="hh" x="20" y="22">约束维度</text>
+  <text class="hh" x="350" y="22">美国</text>
+  <text class="hh" x="600" y="22">欧盟</text>
+  <text class="hh" x="850" y="22">中国（PRC）</text>
+
+  <text class="rr" x="20" y="60">原始录音驻留</text>
+  <rect x="350" y="40" width="220" height="30" fill="#2E8B57"/><text class="ww" x="362" y="60">宽松（各州差异）</text>
+  <rect x="600" y="40" width="220" height="30" fill="#E5A23A"/><text class="ww" x="612" y="60">GDPR + EDPB 28/2024</text>
+  <rect x="850" y="40" width="200" height="30" fill="#C0392B"/><text class="ww" x="862" y="60">PIPL 第38条 + CAC 路径</text>
+
+  <text class="rr" x="20" y="100">AI 主持监管</text>
+  <rect x="350" y="80" width="220" height="30" fill="#E5A23A"/><text class="ww" x="362" y="100">FTC 第5条 + 各州 ADMT</text>
+  <rect x="600" y="80" width="220" height="30" fill="#C0392B"/><text class="ww" x="612" y="100">AI Act GPAI 已生效；高风险 2026/8/2</text>
+  <rect x="850" y="80" width="200" height="30" fill="#C0392B"/><text class="ww" x="862" y="100">算法+大模型 双备案</text>
+
+  <text class="rr" x="20" y="140">合成内容标识</text>
+  <rect x="350" y="120" width="220" height="30" fill="#2E8B57"/><text class="ww" x="362" y="140">无联邦强制规定</text>
+  <rect x="600" y="120" width="220" height="30" fill="#E5A23A"/><text class="ww" x="612" y="140">AI Act 透明度义务</text>
+  <rect x="850" y="120" width="200" height="30" fill="#C0392B"/><text class="ww" x="862" y="140">GB 45438-2025 强制</text>
+
+  <text class="rr" x="20" y="180">数据跨境传输</text>
+  <rect x="350" y="160" width="220" height="30" fill="#2E8B57"/><text class="ww" x="362" y="180">行业性、轻度</text>
+  <rect x="600" y="160" width="220" height="30" fill="#E5A23A"/><text class="ww" x="612" y="180">SCC + 充分性认定</text>
+  <rect x="850" y="160" width="200" height="30" fill="#C0392B"/><text class="ww" x="862" y="180">三支柱（评估/SCC/PIP-Cert）</text>
+
+  <text class="rr" x="20" y="220">自动化决策规则</text>
+  <rect x="350" y="200" width="220" height="30" fill="#E5A23A"/><text class="ww" x="362" y="220">CCPA ADMT 2027 生效</text>
+  <rect x="600" y="200" width="220" height="30" fill="#E5A23A"/><text class="ww" x="612" y="220">GDPR 第22条 + AI Act</text>
+  <rect x="850" y="200" width="200" height="30" fill="#C0392B"/><text class="ww" x="862" y="220">拟人化 AI 草案</text>
+
+  <text class="rr" x="20" y="260">录音知情同意</text>
+  <rect x="350" y="240" width="220" height="30" fill="#E5A23A"/><text class="ww" x="362" y="260">州两方同意制差异</text>
+  <rect x="600" y="240" width="220" height="30" fill="#E5A23A"/><text class="ww" x="612" y="260">ePrivacy 指令 + GDPR</text>
+  <rect x="850" y="240" width="200" height="30" fill="#E5A23A"/><text class="ww" x="862" y="260">PIPL 单独同意</text>
+
+  <text class="rr" x="20" y="300">语言覆盖</text>
+  <rect x="350" y="280" width="220" height="30" fill="#2E8B57"/><text class="ww" x="362" y="300">英语原生；不适用</text>
+  <rect x="600" y="280" width="220" height="30" fill="#E5A23A"/><text class="ww" x="612" y="300">欧盟语扎实；中文参差</text>
+  <rect x="850" y="280" width="200" height="30" fill="#E5A23A"/><text class="ww" x="862" y="300">普通话可，粤语缺口</text>
+
+  <g transform="translate(20,335)">
+    <rect width="14" height="12" fill="#2E8B57"/><text class="kk" x="20" y="11">摩擦低</text>
+    <rect x="120" width="14" height="12" fill="#E5A23A"/><text class="kk" x="140" y="11">有条件 / 实时跟踪</text>
+    <rect x="280" width="14" height="12" fill="#C0392B"/><text class="kk" x="300" y="11">硬性约束，需重构架构</text>
+  </g>
+</svg>
+<div class="cap">截至 2026-04-30 的快照。欧盟"高风险"格被标红，因 2026 年 4 月 28 日《数字综合法案》延期方案在三方协商中失败，原 2026 年 8 月 2 日 deadline 维持。</div>
+</div>
+
+<!-- ============ SECTION 5 ============ -->
+<h2 id="section-5">5. 硬件与 XR 专属影响</h2>
+
+<p>XR 研究在两个维度抵抗 AI 替代，而 SaaS 定性研究品类原本就不是为这两个维度设计的：<strong>多模态采集</strong>与<strong>长周期田野研究</strong>。当前没有任何 SaaS 定性工具原生接入 200 Hz 双眼眼动 + 脑电 + 皮肤电 + 手势运动学；它们都是围绕"参与者面部单一视频流"构建的 <sup class="cite"><a href="#S402">S402</a>, <a href="#S442">S442</a>, <a href="#S034">S034</a></sup>。Tobii Pro Lab 的 PLOF 2.0 导出依然是连接 Dovetail/Marvin/Notably 的事实桥梁——是 CSV 桥，并非真正集成 <sup class="cite"><a href="#S443">S443</a>, <a href="#S488">S488</a>, <a href="#S442">S442</a></sup> <span class="pill pill-c2">C2</span>。Tobii 与 iMotions 商业合作终止，使该领域进一步分散 <sup class="cite"><a href="#S400">S400</a>, <a href="#S401">S401</a>, <a href="#S440">S440</a></sup>。Apple Vision Pro <em>不向开发者开放原始视线坐标</em>（已由 iTrace UIST/arXiv 2025 论文确认，作者只能用捏合/停留/手柄等代理动作替代）<sup class="cite"><a href="#S422">S422</a>, <a href="#S491">S491</a></sup>；Pico 4 Ultra 出于成本考虑彻底取消眼动追踪；只有 Pico 4 Enterprise、通过变通方式访问的开发者级 Vision Pro，以及 Varjo XR-4（200 Hz、1° 精度，新增 OpenXR 扩展 <code>XR_VARJO_eye_tracking_analytics</code>）保留对原始视线的开放 <sup class="cite"><a href="#S434">S434</a>, <a href="#S485">S485</a>, <a href="#S486">S486</a>, <a href="#S438">S438</a>, <a href="#S439">S439</a>, <a href="#S440">S440</a></sup> <span class="pill pill-c3">C3</span>。长周期田野研究——"这款眼镜的形态在第 3 周还会被使用吗？"——无法被仿真；合成用户编不出依从性下降，也编不出第 3 周的乏味质感 <sup class="cite"><a href="#S250">S250</a>, <a href="#S246">S246</a>, <a href="#S456">S456</a></sup> <span class="pill pill-c3">C3</span>。</p>
+
+<p>对中方背景的 XR 研究职能而言，2026 年的可信工具栈是<strong>四个平台，而非一个</strong>，依据 Phase 5 证据：<strong>(1) 采集层</strong>——以 Tobii Pro Lab 或 iMotions Lab 为主的多模态记录器，再加 Pupil Labs Neon / hmd-eyes 用于 Quest/Pico 改装 <sup class="cite"><a href="#S442">S442</a>, <a href="#S402">S402</a>, <a href="#S403">S403</a>, <a href="#S405">S405</a></sup>；<strong>(2) 头显内运行时</strong>——WorldViz Vizard 8 + SightLab VR Pro 2（80+ 模板，2024 年 11 月发布大模型驱动 AI 智能体），或基于学术界《VR 数据采集工具包》 + StudyVR 模式在 OpenXR 上自建 <sup class="cite"><a href="#S444">S444</a>, <a href="#S445">S445</a>, <a href="#S419">S419</a>, <a href="#S410">S410</a></sup>；<strong>(3) 转写</strong>——机密的普通话/粤语场次用科大讯飞 SR502 硬件或阿里 Fun-ASR 自托管，全球场次 fallback 用 Whisper 或 Speechmatics 私有部署 <sup class="cite"><a href="#S074">S074</a>, <a href="#S458">S458</a>, <a href="#S099">S099</a>, <a href="#S106">S106</a>, <a href="#S457">S457</a></sup>；<strong>(4) 综合分析</strong>——境内项目用火山引擎（豆包，字节）、欧盟驻留用 Condens、全球项目用 Dovetail 并以工作区隔离 <sup class="cite"><a href="#S465">S465</a>, <a href="#S466">S466</a>, <a href="#S107">S107</a>, <a href="#S108">S108</a>, <a href="#S033">S033</a></sup>。<strong>所有硬件决策都不得使用 Synthetic Users。</strong><sup class="cite"><a href="#S196">S196</a>, <a href="#S250">S250</a>, <a href="#S241">S241</a></sup> <span class="pill pill-c2">C2</span></p>
+
+<table class="data">
+<thead><tr><th>工作流环节</th><th>当下可用 AI 增强</th><th>必须人工主导</th></tr></thead>
+<tbody>
+<tr><td>招募（B2C）</td><td>dscout / User Interviews + 火山引擎生成筛选问卷 <sup class="cite"><a href="#S084">S084</a>, <a href="#S077">S077</a>, <a href="#S465">S465</a></sup></td><td>企业 B2B 合作方寻源</td></tr>
+<tr><td>研究设计</td><td>大模型生成追问；Vizard 模板 <sup class="cite"><a href="#S444">S444</a>, <a href="#S445">S445</a></sup></td><td>多模态传感器协议设计 <sup class="cite"><a href="#S402">S402</a></sup></td></tr>
+<tr><td>主持</td><td>B2C 脚本化追问的 AI 协同主持 <sup class="cite"><a href="#S008">S008</a>, <a href="#S172">S172</a></sup></td><td>所有线下、头显内、舒适度与 B2B 场次 <sup class="cite"><a href="#S251">S251</a></sup></td></tr>
+<tr><td>采集</td><td>Tobii / iMotions 多模态同步；自动转写 <sup class="cite"><a href="#S442">S442</a>, <a href="#S402">S402</a>, <a href="#S488">S488</a></sup></td><td>佩戴/舒适度的直接观察</td></tr>
+<tr><td>转写</td><td>科大讯飞 / Fun-ASR / Whisper-zh-cv11 <sup class="cite"><a href="#S074">S074</a>, <a href="#S458">S458</a>, <a href="#S459">S459</a></sup></td><td>双语码混合复核 <sup class="cite"><a href="#S390">S390</a>, <a href="#S392">S392</a></sup></td></tr>
+<tr><td>编码与综合</td><td>Dovetail / Notably / Condens / 火山引擎 <sup class="cite"><a href="#S033">S033</a>, <a href="#S107">S107</a>, <a href="#S465">S465</a></sup></td><td>非典型 / 安全关键 / 未发布 IP 相关发现 <sup class="cite"><a href="#S252">S252</a></sup></td></tr>
+<tr><td>报告撰写</td><td>大模型撰写执行摘要初稿 <sup class="cite"><a href="#S115">S115</a>, <a href="#S481">S481</a></sup></td><td>最终判断与置信度标签 (confidence tag)</td></tr>
+<tr><td>合成用户</td><td>仅用于假设生成 <sup class="cite"><a href="#S046">S046</a>, <a href="#S256">S256</a></sup></td><td>任何 go/no-go 决策 <sup class="cite"><a href="#S250">S250</a>, <a href="#S246">S246</a></sup></td></tr>
+</tbody>
+</table>
+
+<p><strong>7 人团队的新角色：</strong>一名<em>研究 AI 运营负责人</em>（1 FTE，由现有人员转岗），统筹私有部署采集 + 气隙转写栈以及与母公司 CISO 之间的数据驻留边界 <sup class="cite"><a href="#S457">S457</a>, <a href="#S462">S462</a></sup>；一名<em>多模态数据分析师</em>（0.5–1 FTE），负责 PLOF 2.0/CSV 流水线、AOI 定义、生物信号质量保障 <sup class="cite"><a href="#S443">S443</a>, <a href="#S402">S402</a></sup>；一名<em>头显内智能体提示词与协议工程师</em>（0.25 FTE，到 2027 年增至 0.5）<sup class="cite"><a href="#S418">S418</a>, <a href="#S412">S412</a></sup>；一名<em>双语研究质量审阅员</em>（0.25 FTE）——鉴于当前粤语词错误率，这是不可妥协项 <sup class="cite"><a href="#S389">S389</a>, <a href="#S390">S390</a>, <a href="#S392">S392</a></sup>。整支团队的能力重心从"主持 + 撰稿"转向"研究装置化 + 拷问 AI 输出"，原子化研究知识库纪律不再是"加分项"，而是招聘硬筛标准 <sup class="cite"><a href="#S253">S253</a>, <a href="#S254">S254</a>, <a href="#S252">S252</a></sup> <span class="pill pill-c2">C2</span>。</p>
+
+<div class="recommend">
+<h4>三条可在一次会议内拍板的建议</h4>
+<ol>
+<li><strong>本季度搭起机密语音的私有部署转写栈。</strong>采购科大讯飞 SR502 硬件 + 阿里 Fun-ASR 自托管作为境内双语默认；Whisper-large-v3 配 AISHELL6 微调或 Speechmatics 私有部署作为全球 fallback。触发事件：本周起的任何未发布头显场次。这是当下唯一能一次性满足普通话对等、PIPL 驻留与 XR 机密性的类别。<sup class="cite"><a href="#S074">S074</a>, <a href="#S458">S458</a>, <a href="#S100">S100</a>, <a href="#S106">S106</a>, <a href="#S457">S457</a>, <a href="#S462">S462</a></sup> <span class="pill pill-c3">C3</span></li>
+<li><strong>将 Dovetail（全球） + 火山引擎/豆包（境内）确定为成对的综合分析层；明确禁止 Synthetic Users 用于 go/no-go 决策。</strong>触发事件：下一次研究启动会。在研究运营手册中写明合成受访者只用于研前假设生成——遵循 NN/g、IxDF 与 Phase 4 从业者证据。任何 2026/8/2 后接触欧盟消费者的合作研究须把 Condens 加入欧盟驻留备选。<sup class="cite"><a href="#S033">S033</a>, <a href="#S465">S465</a>, <a href="#S250">S250</a>, <a href="#S448">S448</a>, <a href="#S107">S107</a>, <a href="#S367">S367</a></sup> <span class="pill pill-c3">C3</span></li>
+<li><strong>头显内研究运行时建立在 WorldViz Vizard 8 + SightLab VR Pro 2 之上，并整合学术界《VR 数据采集工具包》（基于 OpenXR，可在 Quest、Pico、Varjo 间移植）。</strong>触发事件：下一次注视点渲染、舒适度或佩戴研究。在该研究上线前（而非之后）招聘或转岗多模态数据分析师——PLOF 2.0 → Dovetail 桥是最大的运营缺口，不会自动消失。<sup class="cite"><a href="#S444">S444</a>, <a href="#S445">S445</a>, <a href="#S419">S419</a>, <a href="#S443">S443</a>, <a href="#S438">S438</a>, <a href="#S431">S431</a></sup> <span class="pill pill-c2">C2</span></li>
+</ol>
+</div>
+
+<!-- ============ SECTION 6 ============ -->
+<h2 id="section-6">6. 反向叙事：哪些没有奏效</h2>
+<div class="counter">
+<p>2024–2026 年的从业者证据并不支持用 AI 主导方法替代任何硬件团队真正在意的决策环节。合成用户被 NN/g（Rosala、Moran）<sup class="cite"><a href="#S250">S250</a>, <a href="#S251">S251</a></sup>、Erika Hall（"不道德、不可辩护、不必要"）<sup class="cite"><a href="#S241">S241</a>, <a href="#S297">S297</a></sup>、Jared Spool（"绝对走错了方向"）<sup class="cite"><a href="#S293">S293</a></sup>、Peter Merholz、Indi Young（"ChatGPT 不理解意义"）<sup class="cite"><a href="#S242">S242</a>, <a href="#S243">S243</a>, <a href="#S296">S296</a></sup>、Pavel Samsonov（"大模型买不了你的产品"）<sup class="cite"><a href="#S244">S244</a>, <a href="#S245">S245</a></sup>、Niloufar Salehi（加州大学伯克利："肤浅、刻板印象"）<sup class="cite"><a href="#S246">S246</a></sup>、Matt Duignan（微软："下一个大神话"）<sup class="cite"><a href="#S258">S258</a>, <a href="#S291">S291</a></sup>、Emma Travis（Speero）<sup class="cite"><a href="#S248">S248</a></sup> 与 Greg Nudelman <sup class="cite"><a href="#S247">S247</a></sup> 公开否定 <span class="pill pill-c3">C3</span>。User Interviews《2025 用户研究现状》(SoUR) 报告（n=485）显示对 UXR 前景持负面情绪比例 49%，同比 +26 分；67% 对职业前景悲观，同比 +21 分；11% 本人遭裁员；21% 看到本公司研究员被裁 <sup class="cite"><a href="#S285">S285</a>, <a href="#S116">S116</a></sup>。Greenbook GRIT 2025 显示品牌方研究员对生成式 AI 的满意度仅 13%，数据质量担忧同比 +40% <sup class="cite"><a href="#S284">S284</a>, <a href="#S302">S302</a>, <a href="#S303">S303</a>, <a href="#S304">S304</a>, <a href="#S277">S277</a></sup> <span class="pill pill-c3">C3</span>。专利现实同样残酷：Outset、Listen Labs、Strella、Genway、Conveo、Synthetic Users、Aaru、Yabble、Evidenza、Fairgen、Notably、Marvin、Reduct、Dovetail、dscout 在其核心机制上没有任何实质性已授权或公开专利——护城河来自数据、渠道与提示词设计，而不是发明 <sup class="cite"><a href="#S152">S152</a>, <a href="#S153">S153</a>, <a href="#S196">S196</a>, <a href="#S046">S046</a>, <a href="#S256">S256</a></sup> <span class="pill pill-c3">C3</span>。Wondering 已于 2025 年 9 月 23 日关停（本轮周期首个 AI 研究类公司倒闭事件）<sup class="cite"><a href="#S180">S180</a>, <a href="#S181">S181</a>, <a href="#S032">S032</a></sup>；Aaru 在年化收入不足 1,000 万美元的情况下顶着 10 亿美元估值光环 <sup class="cite"><a href="#S055">S055</a>, <a href="#S179">S179</a>, <a href="#S178">S178</a></sup>；Medallia 于 2026 年 4 月被移交债权人，51 亿美元股权清零，AI 替代风险被明确写入原因 <sup class="cite"><a href="#S214">S214</a>, <a href="#S216">S216</a>, <a href="#S217">S217</a></sup> <span class="pill pill-c3">C3</span>。诚实的结论是：AI 综合分析是工作流内部一项真实的生产力提升 <sup class="cite"><a href="#S287">S287</a>, <a href="#S033">S033</a></sup>；AI 主持仅在结构化 B2C 场景的生产环境中可用 <sup class="cite"><a href="#S298">S298</a>, <a href="#S172">S172</a>, <a href="#S299">S299</a></sup>；合成受访者是该品类内方差最高的赌注，远走在产出之前 <sup class="cite"><a href="#S256">S256</a>, <a href="#S307">S307</a></sup>。</p>
+</div>
+
+<footer class="body-foot">
+正文字数（第 1–6 节）：约 3,500 中文字符，对应英文原版约 2,000 词。
+<span class="disclaimer">综合数据截至 2026-04-30 公开可获得的证据。置信度标签反映来源类别交叉验证，不替代供应商尽职调查。</span>
+</footer>
+
+<!-- ============ SECTION 7 ============ -->
+<h2>7. 附录 — 方法论、置信度框架、来源清单</h2>
+
+<h3>方法论</h3>
+<p>本报告综合 2026 年 4 月由单一研究职能编制的六条独立证据流：覆盖 8 个职能、约 55 家供应商的供应商矩阵；约 55 件专利申请的 USPTO/EPO/WIPO 专利与 IP 扫描；覆盖约 111 条来源的 24 个月融资与并购追踪；覆盖博客、播客、会议与三份行业调研（User Interviews SoUR、Maze、Lyssna）的从业者情绪审阅；分析师、监管与中文/中国生态层（Greenbook GRIT、ESOMAR、Forrester、Gartner、IDC、Quirks、MRS）；以及覆盖采集、头显内运行时、转写与多模态同步的 XR/硬件专项层。每条承重论点至少跨两类来源交叉验证后才升级为 <span class="pill pill-c3">C3</span>；<span class="pill pill-c2">C2</span> 表示仅有一类来源但有从业者交叉验证；<span class="pill pill-c1">C1</span> 仅供应商自述。</p>
+
+<h3>置信度框架</h3>
+<p><span class="pill pill-c1">C1</span> — 仅供应商自述（厂商博客、营销页、创始人 LinkedIn、新闻稿）。<span class="pill pill-c2">C2</span> — 至少一位独立从业者通过文章、播客、会议演讲或分析师报告交叉验证。<span class="pill pill-c3">C3</span> — 多类独立来源相互印证；例如专利 + 融资 + 从业者情绪，或分析师 + 监管 + 一手用户数据。</p>
+
+<h3>局限</h3>
+<ul>
+<li>未做 CNIPA 中文专利原生检索——Pico、字节跳动、腾讯、阿里、网易、科大讯飞可能存在中文研究方法学专利，但通过 Google Patents/USPTO/WIPO 英文检索无法获取。</li>
+<li>EPO Espacenet 列表无法在专利轮次中通过 WebFetch 翻页；建议针对 Tobii、博世、苹果等仅在欧洲申请的项目做更深入拉取。</li>
+<li>部分供应商收入数据（Aaru 年化收入 &lt;1,000 万美元；Dovetail 2024 年 490 万美元）来自第三方追踪平台 (GetLatka)，未经审计。</li>
+<li>从业者情绪以英文 UX/MR 来源为主导；中文从业者关于 AI 主持/合成用户的讨论是已知缺口，按 <span class="pill pill-c1">C1</span> 标注，未做平滑处理。</li>
+<li>"100+ 种语言"的供应商宣称尚未在本报告中针对中国消费者真实数据做基准测试——以学术资料（arXiv 2504.00289、NAACL 2025 粤语、HKCanto-Eval）作为可信替代。</li>
+<li>预测刻意止于 18 个月，与 Phase 1 范围一致；更长期预测被排除。</li>
+</ul>
+
+<h3>来源清单</h3>
+<p>下列分组合计约 300 条独立来源，按证据流分组。所有 URL 均于 2026-04-30 实地访问。两个阶段引用同一 URL 时仅出现在最相关分组中一次。</p>
+<div class="appendix-note">点击正文中的任一 [S###] 可跳转到对应来源；点击 ↑ 可返回正文。</div>
+
+<details class="appendix" open>
+<summary>供应商矩阵（Phase 2 — 80 条来源）</summary>
+<div class="src-list">
+<ol>
+<li id="S001"><strong>S001</strong> — <a href="https://outset.ai/">outset.ai</a> — Outset 平台主页 <a href="#section-2" title="返回正文">↑</a></li>
+<li id="S002"><strong>S002</strong> — <a href="https://outset.ai/series-b">outset.ai/series-b</a> — Outset B 轮公告 <a href="#section-2" title="返回正文">↑</a></li>
+<li id="S003"><strong>S003</strong> — <a href="https://outset.ai/platform/security">outset.ai/platform/security</a> — Outset 安全与合规 <a href="#section-2" title="返回正文">↑</a></li>
+<li id="S004"><strong>S004</strong> — <a href="https://outset.ai/resources/faq">outset.ai/resources/faq</a> — Outset FAQ（语言） <a href="#section-2" title="返回正文">↑</a></li>
+<li id="S005"><strong>S005</strong> — <a href="https://www.cmswire.com/customer-experience/outset-raises-30m-series-b-for-ai-native-cx-platform/">CMSWire</a> — Outset 3,000 万美元 B 轮 <a href="#section-2" title="返回正文">↑</a></li>
+<li id="S006"><strong>S006</strong> — <a href="https://venturebeat.com/ai/outset-raises-17m-to-replace-human-interviewers-with-ai-agents-for-enterprise-research">VentureBeat</a> — Outset A 轮 <a href="#section-2" title="返回正文">↑</a></li>
+<li id="S007"><strong>S007</strong> — <a href="https://listenlabs.ai/">listenlabs.ai</a> — Listen Labs 平台 <a href="#section-2" title="返回正文">↑</a></li>
+<li id="S008"><strong>S008</strong> — <a href="https://listenlabs.ai/blog/research-agent">Listen Labs Research Agent 发布</a> <a href="#section-2" title="返回正文">↑</a></li>
+<li id="S009"><strong>S009</strong> — <a href="https://venturebeat.com/technology/listen-labs-raises-usd69m-after-viral-billboard-hiring-stunt-to-scale-ai">VentureBeat</a> — Listen Labs 6,900 万美元 <a href="#section-2" title="返回正文">↑</a></li>
+<li id="S010"><strong>S010</strong> — <a href="https://fortune.com/article/ai-startup-listen-labs-sequoia-27-million-funding/">Fortune</a> — Listen Labs 红杉轮 <a href="#section-2" title="返回正文">↑</a></li>
+<li id="S011"><strong>S011</strong> — <a href="https://listenlabs-b8522a99.mintlify.app/setup-to-launch/multi-lingual-voice-interviewer">Listen Labs 多语种文档</a> <a href="#section-2" title="返回正文">↑</a></li>
+<li id="S012"><strong>S012</strong> — <a href="https://www.strella.io/">strella.io</a> — Strella 主页 <a href="#section-2" title="返回正文">↑</a></li>
+<li id="S013"><strong>S013</strong> — <a href="https://www.morningstar.com/news/pr-newswire/20251016ny99165/strella-raises-14m-in-series-a-led-by-bessemer-venture-partners-to-re-design-customer-research-for-the-ai-era">Strella A 轮 — Morningstar</a> <a href="#section-2" title="返回正文">↑</a></li>
+<li id="S014"><strong>S014</strong> — <a href="https://venturebeat.com/ai/strella-raises-4-million-to-automate-market-research-with-ai-powered-customer-interviews">VentureBeat</a> — Strella 种子轮 <a href="#section-2" title="返回正文">↑</a></li>
+<li id="S015"><strong>S015</strong> — <a href="https://www.userinterviews.com/product-announcements/strella-recruitment-integration">Strella × User Interviews 集成</a> <a href="#section-2" title="返回正文">↑</a></li>
+<li id="S016"><strong>S016</strong> — <a href="https://www.userology.co/">userology.co</a> <a href="#section-2" title="返回正文">↑</a></li>
+<li id="S017"><strong>S017</strong> — <a href="https://www.userinterviews.com/product-announcements/userology-recruitment-integration">Userology × User Interviews</a> <a href="#section-2" title="返回正文">↑</a></li>
+<li id="S018"><strong>S018</strong> — <a href="https://www.crunchbase.com/organization/userology">Userology Crunchbase</a> <a href="#section-2" title="返回正文">↑</a></li>
+<li id="S019"><strong>S019</strong> — <a href="https://www.genway.ai/">genway.ai</a> <a href="#section-2" title="返回正文">↑</a></li>
+<li id="S020"><strong>S020</strong> — <a href="https://www.crunchbase.com/funding_round/genway-ai-seed--932a67f8">Genway 600 万美元种子</a> <a href="#section-2" title="返回正文">↑</a></li>
+<li id="S021"><strong>S021</strong> — <a href="https://aws.amazon.com/marketplace/pp/prodview-oxw2625ulcifm">Genway AWS Marketplace</a> <a href="#section-2" title="返回正文">↑</a></li>
+<li id="S022"><strong>S022</strong> — <a href="https://conveo.ai/">conveo.ai</a> <a href="#section-2" title="返回正文">↑</a></li>
+<li id="S023"><strong>S023</strong> — <a href="https://conveo.ai/insights/conveo-raises-5-3m-to-revolutionize-market-research-with-ai-powered-video-interviews">Conveo 种子轮公告</a> <a href="#section-2" title="返回正文">↑</a></li>
+<li id="S024"><strong>S024</strong> — <a href="https://conveo.ai/insights/generative-user-research-tools">Conveo 平台对比</a> <a href="#section-2" title="返回正文">↑</a></li>
+<li id="S025"><strong>S025</strong> — <a href="https://www.ycombinator.com/companies/versive">Versive YC 资料</a> <a href="#section-2" title="返回正文">↑</a></li>
+<li id="S026"><strong>S026</strong> — <a href="https://www.getversive.com/">getversive.com</a> <a href="#section-2" title="返回正文">↑</a></li>
+<li id="S027"><strong>S027</strong> — <a href="https://www.discuss.io/">discuss.io</a> <a href="#section-2" title="返回正文">↑</a></li>
+<li id="S028"><strong>S028</strong> — <a href="https://www.globenewswire.com/news-release/2026/01/27/3226446/0/en/Discuss-Recognized-as-a-Leader-in-Experience-Research-Platforms-Q1-2026-Report-by-Independent-Research-Firm.html">Forrester Wave Q1 2026 — Discuss 领导者</a> <a href="#section-2" title="返回正文">↑</a></li>
+<li id="S029"><strong>S029</strong> — <a href="https://www.globenewswire.com/news-release/2026/03/03/3248267/0/en/Discuss-Introduces-Real-Time-AI-Translation-for-Observers-Making-Global-Research-Truly-Universal.html">Discuss 实时翻译 2026 年 3 月</a> <a href="#section-2" title="返回正文">↑</a></li>
+<li id="S030"><strong>S030</strong> — <a href="https://www.insightplatforms.com/platforms/quester/">Quester 资料</a> <a href="#section-2" title="返回正文">↑</a></li>
+<li id="S031"><strong>S031</strong> — <a href="https://wondering.app/">wondering.app</a> <a href="#section-2" title="返回正文">↑</a></li>
+<li id="S032"><strong>S032</strong> — <a href="https://www.letshighlight.com/blog/listenlabs-alternatives">Wondering 关停参考</a> <a href="#section-2" title="返回正文">↑</a></li>
+<li id="S033"><strong>S033</strong> — <a href="https://dovetail.com/">dovetail.com</a> <a href="#section-2" title="返回正文">↑</a></li>
+<li id="S034"><strong>S034</strong> — <a href="https://docs.dovetail.com/help/dovetail-ai">Dovetail AI 文档</a> <a href="#section-2" title="返回正文">↑</a></li>
+<li id="S035"><strong>S035</strong> — <a href="https://docs.dovetail.com/help/transcribe-and-translate">Dovetail 转写语言</a> <a href="#section-2" title="返回正文">↑</a></li>
+<li id="S036"><strong>S036</strong> — <a href="https://dovetail.com/blog/transcription-now-available-in-28-global-languages/">Dovetail 28 语种发布</a> <a href="#section-2" title="返回正文">↑</a></li>
+<li id="S037"><strong>S037</strong> — <a href="https://heymarvin.com/">heymarvin.com</a> <a href="#section-2" title="返回正文">↑</a></li>
+<li id="S038"><strong>S038</strong> — <a href="https://www.prnewswire.com/news-releases/marvin-comes-out-of-beta-with-3-8m-in-funding-to-help-make-user-interviews-more-efficient-and-collaborative-301487858.html">Marvin 380 万美元种子</a> <a href="#section-2" title="返回正文">↑</a></li>
+<li id="S039"><strong>S039</strong> — <a href="https://www.assemblyai.com/blog/ai-helps-marvins-users-spend-60-less-time-analyzing-research-data">AssemblyAI / Marvin 节省时间</a> <a href="#section-2" title="返回正文">↑</a></li>
+<li id="S040"><strong>S040</strong> — <a href="https://martechseries.com/mts-insights/dscout-and-heymarvin-announce-integration-uniting-research-execution-ai-powered-analysis-and-insight-management/">dscout × Marvin 集成</a> <a href="#section-2" title="返回正文">↑</a></li>
+<li id="S041"><strong>S041</strong> — <a href="https://reduct.video/">reduct.video</a> <a href="#section-2" title="返回正文">↑</a></li>
+<li id="S042"><strong>S042</strong> — <a href="https://www.looppanel.com/">looppanel.com</a> <a href="#section-2" title="返回正文">↑</a></li>
+<li id="S043"><strong>S043</strong> — <a href="https://www.looppanel.com/blog/looppanel-raises-1-mn">Looppanel 种子轮</a> <a href="#section-2" title="返回正文">↑</a></li>
+<li id="S044"><strong>S044</strong> — <a href="https://www.aureliuslab.com/">aureliuslab.com</a> <a href="#section-2" title="返回正文">↑</a></li>
+<li id="S045"><strong>S045</strong> — <a href="https://help.usertesting.com/hc/en-us/articles/11880326255645-Key-concepts-in-EnjoyHQ">UserTesting 中的 EnjoyHQ</a> <a href="#section-2" title="返回正文">↑</a></li>
+<li id="S046"><strong>S046</strong> — <a href="https://askditto.io/news/synthetic-research-platforms-the-2026-market-map">Ditto 2026 合成研究市场图</a> <a href="#section-2" title="返回正文">↑</a></li>
+<li id="S047"><strong>S047</strong> — <a href="https://www.syntheticusers.com/team">Synthetic Users 团队</a> <a href="#section-2" title="返回正文">↑</a></li>
+<li id="S048"><strong>S048</strong> — <a href="https://lift.comcast.com/smart-insights-less-friction-synthetic-users-is-simplifying-research-w-ai-personas/">Comcast LIFT — Synthetic Users</a> <a href="#section-2" title="返回正文">↑</a></li>
+<li id="S049"><strong>S049</strong> — <a href="https://www.yabble.com/">yabble.com</a> <a href="#section-2" title="返回正文">↑</a></li>
+<li id="S050"><strong>S050</strong> — <a href="https://www.mrweb.com/drno/news37076.htm">YouGov 收购 Yabble — MRWeb</a> <a href="#section-2" title="返回正文">↑</a></li>
+<li id="S051"><strong>S051</strong> — <a href="https://www.research-live.com/article/news/yabble-uses-ai-personas-for-creative-testing-tool/id/5143433">Yabble 创意测试</a> <a href="#section-2" title="返回正文">↑</a></li>
+<li id="S052"><strong>S052</strong> — <a href="https://brox.ai/">brox.ai</a> <a href="#section-2" title="返回正文">↑</a></li>
+<li id="S053"><strong>S053</strong> — <a href="https://www.research-live.com/article/news/broxai_raises_$19m_in_funding_round/id/5117793">Brox 190 万美元</a> <a href="#section-2" title="返回正文">↑</a></li>
+<li id="S054"><strong>S054</strong> — <a href="https://aaru.com/">aaru.com</a> <a href="#section-2" title="返回正文">↑</a></li>
+<li id="S055"><strong>S055</strong> — <a href="https://techcrunch.com/2025/12/05/ai-synthetic-research-startup-aaru-raised-a-series-a-at-a-1b-headline-valuation/">TechCrunch — Aaru A 轮</a> <a href="#section-2" title="返回正文">↑</a></li>
+<li id="S056"><strong>S056</strong> — <a href="https://www.evidenza.ai/">evidenza.ai</a> <a href="#section-2" title="返回正文">↑</a></li>
+<li id="S057"><strong>S057</strong> — <a href="https://fish.dog/news/evidenza-ai-review-2026-synthetic-cmos-enterprise-research-and-what-it-costs">FishDog Evidenza 评测</a> <a href="#section-2" title="返回正文">↑</a></li>
+<li id="S058"><strong>S058</strong> — <a href="https://simile.ai/blog/the-simulation-company">Simile 博客</a> <a href="#section-2" title="返回正文">↑</a></li>
+<li id="S059"><strong>S059</strong> — <a href="https://www.indexventures.com/perspectives/life-the-universe-and-simile-leading-similes-series-a/">Index Ventures / Simile 1 亿美元</a> <a href="#section-2" title="返回正文">↑</a></li>
+<li id="S060"><strong>S060</strong> — <a href="https://siliconangle.com/2026/02/12/ai-digital-twin-startup-simile-raises-100m-funding/">SiliconANGLE Simile</a> <a href="#section-2" title="返回正文">↑</a></li>
+<li id="S061"><strong>S061</strong> — <a href="https://www.fairgen.ai/">fairgen.ai</a> <a href="#section-2" title="返回正文">↑</a></li>
+<li id="S062"><strong>S062</strong> — <a href="https://www.fairgen.ai/press-releases/fairgen-raises-8m-for-statistically-accurate-ai-generated-survey-responses">Fairgen 800 万美元</a> <a href="#section-2" title="返回正文">↑</a></li>
+<li id="S063"><strong>S063</strong> — <a href="https://www.qualtrics.com/strategy/audiences/">Qualtrics Edge Audiences</a> <a href="#section-2" title="返回正文">↑</a></li>
+<li id="S064"><strong>S064</strong> — <a href="https://www.qualtrics.com/articles/strategy-research/synthetic-research-breakthrough/">Qualtrics 合成研究方法</a> <a href="#section-2" title="返回正文">↑</a></li>
+<li id="S065"><strong>S065</strong> — <a href="https://www.medallia.com/platform/medallia-ai/">Medallia AI</a> <a href="#section-2" title="返回正文">↑</a></li>
+<li id="S066"><strong>S066</strong> — <a href="https://www.suzy.com">suzy.com</a> <a href="#section-2" title="返回正文">↑</a></li>
+<li id="S067"><strong>S067</strong> — <a href="https://www.globenewswire.com/news-release/2026/04/02/3267426/0/en/Her-Name-Is-Suzy-She-s-Your-Decision-Engine.html">Suzy Decision Engine 发布</a> <a href="#section-2" title="返回正文">↑</a></li>
+<li id="S068"><strong>S068</strong> — <a href="https://conjointly.com/">conjointly.com</a> <a href="#section-2" title="返回正文">↑</a></li>
+<li id="S069"><strong>S069</strong> — <a href="https://www.pollfish.com/">pollfish.com</a> <a href="#section-2" title="返回正文">↑</a></li>
+<li id="S070"><strong>S070</strong> — <a href="https://www.voiceform.com/">voiceform.com</a> <a href="#section-2" title="返回正文">↑</a></li>
+<li id="S071"><strong>S071</strong> — <a href="https://wj.qq.com/">wj.qq.com — 腾讯问卷</a> <a href="#section-2" title="返回正文">↑</a></li>
+<li id="S072"><strong>S072</strong> — <a href="https://www.wenjuan.com/">wenjuan.com</a> <a href="#section-2" title="返回正文">↑</a></li>
+<li id="S073"><strong>S073</strong> — <a href="https://www.wjx.cn/">wjx.cn — 问卷星</a> <a href="#section-2" title="返回正文">↑</a></li>
+<li id="S074"><strong>S074</strong> — <a href="https://www.iflytek.com/en/">iflytek.com — 科大讯飞</a> <a href="#section-2" title="返回正文">↑</a></li>
+<li id="S075"><strong>S075</strong> — <a href="https://www.manilatimes.net/2026/04/29/tmt-newswire/pr-newswire/iflytek-highlights-multilingual-ai-capabilities-and-regional-growth-strategy-at-gitex-asia-2026/2331394">科大讯飞 GITEX Asia 2026</a> <a href="#section-2" title="返回正文">↑</a></li>
+<li id="S076"><strong>S076</strong> — <a href="https://kr-asia.com/iflyteks-audio-transcription-tool-reaches-100-million-users">科大讯飞 1 亿用户</a> <a href="#section-2" title="返回正文">↑</a></li>
+<li id="S077"><strong>S077</strong> — <a href="https://www.userinterviews.com/">userinterviews.com</a> <a href="#section-2" title="返回正文">↑</a></li>
+<li id="S078"><strong>S078</strong> — <a href="https://www.userinterviews.com/product-announcements/ai-recruitment">UI AI 招募</a> <a href="#section-2" title="返回正文">↑</a></li>
+<li id="S079"><strong>S079</strong> — <a href="https://www.usertesting.com/company/newsroom/press-releases/usertesting-acquires-user-interviews">UserTesting 收购 User Interviews</a> <a href="#section-2" title="返回正文">↑</a></li>
+<li id="S080"><strong>S080</strong> — <a href="https://www.respondent.io/">respondent.io</a> <a href="#section-2" title="返回正文">↑</a></li>
+<li id="S081"><strong>S081</strong> — <a href="https://www.prolific.com/">prolific.com</a> <a href="#section-2" title="返回正文">↑</a></li>
+<li id="S082"><strong>S082</strong> — <a href="https://www.prolific.com/resources/how-prolific-detects-bots-and-ai-in-online-research">Prolific 机器人/AI 识别</a> <a href="#section-2" title="返回正文">↑</a></li>
+<li id="S083"><strong>S083</strong> — <a href="https://www.prolific.com/resources/introducing-authenticity-checks-beta-ensure-genuine-human-responses-in-the-age-of-ai">Prolific 真实性核查审计</a> <a href="#section-2" title="返回正文">↑</a></li>
+<li id="S084"><strong>S084</strong> — <a href="https://dscout.com/">dscout.com</a> <a href="#section-2" title="返回正文">↑</a></li>
+<li id="S085"><strong>S085</strong> — <a href="https://www.dscout.com/people-nerds/introducing-dscout-ai-studio">dscout AI Studio</a> <a href="#section-2" title="返回正文">↑</a></li>
+<li id="S086"><strong>S086</strong> — <a href="https://cleverx.com/">cleverx.com</a> <a href="#section-2" title="返回正文">↑</a></li>
+<li id="S087"><strong>S087</strong> — <a href="https://www.credamo.com/">credamo.com — 见数</a> <a href="#section-2" title="返回正文">↑</a></li>
+<li id="S088"><strong>S088</strong> — <a href="https://repdata.com/solutions/research-defender/">Research Defender</a> <a href="#section-2" title="返回正文">↑</a></li>
+<li id="S089"><strong>S089</strong> — <a href="https://www.imperium.com/">imperium.com</a> <a href="#section-2" title="返回正文">↑</a></li>
+<li id="S090"><strong>S090</strong> — <a href="https://www.ipqualityscore.com">ipqualityscore.com</a> <a href="#section-2" title="返回正文">↑</a></li>
+<li id="S091"><strong>S091</strong> — <a href="https://www.centiment.co/">centiment.co</a> <a href="#section-2" title="返回正文">↑</a></li>
+<li id="S092"><strong>S092</strong> — <a href="https://www.humansecurity.com/applications/cyberfraud-defense/">HUMAN Sightline</a> <a href="#section-2" title="返回正文">↑</a></li>
+<li id="S093"><strong>S093</strong> — <a href="https://otter.ai/">otter.ai</a> <a href="#section-2" title="返回正文">↑</a></li>
+<li id="S094"><strong>S094</strong> — <a href="https://help.otter.ai/hc/en-us/articles/360047247414-Supported-languages">Otter 支持语言</a> <a href="#section-2" title="返回正文">↑</a></li>
+<li id="S095"><strong>S095</strong> — <a href="https://help.descript.com/hc/en-us/articles/10249408168845-Supported-transcription-languages">Descript 支持语言</a> <a href="#section-2" title="返回正文">↑</a></li>
+<li id="S096"><strong>S096</strong> — <a href="https://descript.canny.io/feature-requests/p/transcribe-chinesejapanesekorean">Descript 中文功能请求</a> <a href="#section-2" title="返回正文">↑</a></li>
+<li id="S097"><strong>S097</strong> — <a href="https://fireflies.ai/">fireflies.ai</a> <a href="#section-2" title="返回正文">↑</a></li>
+<li id="S098"><strong>S098</strong> — <a href="https://www.rev.ai/">rev.ai</a> <a href="#section-2" title="返回正文">↑</a></li>
+<li id="S099"><strong>S099</strong> — <a href="https://github.com/openai/whisper">OpenAI Whisper 仓库</a> <a href="#section-2" title="返回正文">↑</a></li>
+<li id="S100"><strong>S100</strong> — <a href="https://huggingface.co/openai/whisper-large-v3">Whisper large-v3 模型卡</a> <a href="#section-2" title="返回正文">↑</a></li>
+<li id="S101"><strong>S101</strong> — <a href="https://github.com/sandy1990418/ChineseTaiwaneseWhisper">中文-台语 Whisper 微调</a> <a href="#section-2" title="返回正文">↑</a></li>
+<li id="S102"><strong>S102</strong> — <a href="https://sonix.ai/languages">Sonix 53+ 语种</a> <a href="#section-2" title="返回正文">↑</a></li>
+<li id="S103"><strong>S103</strong> — <a href="https://www.notta.ai/en/">notta.ai</a> <a href="#section-2" title="返回正文">↑</a></li>
+<li id="S104"><strong>S104</strong> — <a href="https://support.notta.ai/hc/en-us/articles/23437010425755-Bilingual-transcription-translation-Web">Notta 中英双语转写</a> <a href="#section-2" title="返回正文">↑</a></li>
+<li id="S105"><strong>S105</strong> — <a href="https://www.speechmatics.com/">speechmatics.com</a> <a href="#section-2" title="返回正文">↑</a></li>
+<li id="S106"><strong>S106</strong> — <a href="https://www.speechmatics.com/speech-to-text/mandarin">Speechmatics 普通话</a> <a href="#section-2" title="返回正文">↑</a></li>
+<li id="S107"><strong>S107</strong> — <a href="https://condens.io/">condens.io</a> <a href="#section-2" title="返回正文">↑</a></li>
+<li id="S108"><strong>S108</strong> — <a href="https://condens.io/AI/">Condens AI 功能</a> <a href="#section-2" title="返回正文">↑</a></li>
+<li id="S109"><strong>S109</strong> — <a href="https://www.glean.com/">glean.com</a> <a href="#section-2" title="返回正文">↑</a></li>
+<li id="S110"><strong>S110</strong> — <a href="https://www.stravito.com/">stravito.com</a> <a href="#section-2" title="返回正文">↑</a></li>
+<li id="S111"><strong>S111</strong> — <a href="https://siliconangle.com/2025/10/01/stravito-gets-conversational-ai-personas-surface-richer-insights-market-research/">Stravito AI Personas</a> <a href="#section-2" title="返回正文">↑</a></li>
+<li id="S112"><strong>S112</strong> — <a href="https://greatquestion.co/">greatquestion.co</a> <a href="#section-2" title="返回正文">↑</a></li>
+<li id="S113"><strong>S113</strong> — <a href="https://greatquestion.co/features/ai">Great Question AI 功能</a> <a href="#section-2" title="返回正文">↑</a></li>
+<li id="S114"><strong>S114</strong> — <a href="https://hai.stanford.edu/news/inside-the-ai-index-12-takeaways-from-the-2026-report">斯坦福 HAI AI Index 2026</a> <a href="#section-2" title="返回正文">↑</a></li>
+<li id="S115"><strong>S115</strong> — <a href="https://hbr.org/2026/04/how-ai-helps-scale-qualitative-customer-research">HBR 2026 年 4 月 — AI 定性研究</a> <a href="#section-2" title="返回正文">↑</a></li>
+<li id="S116"><strong>S116</strong> — <a href="https://www.usehubble.io/blog/state-of-user-research">Hubble 2026 用户研究现状</a> <a href="#section-2" title="返回正文">↑</a></li>
+</ol>
+</div>
+</details>
+
+<details class="appendix">
+<summary>专利与 IP 扫描（Phase 2 — 50 条来源）</summary>
+<div class="src-list">
+<ol>
+<li id="S117"><strong>S117</strong> — <a href="https://patents.google.com/patent/US20260065298A1/en">US20260065298A1 — Qualtrics 反欺诈</a> <a href="#section-2" title="返回正文">↑</a></li>
+<li id="S118"><strong>S118</strong> — <a href="https://patents.google.com/patent/US20260065304A1/en">US20260065304A1 — Qualtrics 定制化追问</a> <a href="#section-2" title="返回正文">↑</a></li>
+<li id="S119"><strong>S119</strong> — <a href="https://patents.google.com/patent/US20260030270A1/en">US20260030270A1 — Qualtrics 智能体编排</a> <a href="#section-2" title="返回正文">↑</a></li>
+<li id="S120"><strong>S120</strong> — <a href="https://patents.google.com/patent/US20260037993A1/en">US20260037993A1 — Qualtrics 交互上下文</a> <a href="#section-2" title="返回正文">↑</a></li>
+<li id="S121"><strong>S121</strong> — <a href="https://patents.google.com/patent/US20250358367A1/en">US20250358367A1 — Qualtrics 行动方案 / 感知差距</a> <a href="#section-2" title="返回正文">↑</a></li>
+<li id="S122"><strong>S122</strong> — <a href="https://patents.google.com/patent/US12579371B2/en">US12579371B2 — Qualtrics 分群+情感（已授权）</a> <a href="#section-2" title="返回正文">↑</a></li>
+<li id="S123"><strong>S123</strong> — <a href="https://patents.google.com/patent/US12242515B2/en">US12242515B2 — UserTesting 自定义标签嵌入（已授权）</a> <a href="#section-2" title="返回正文">↑</a></li>
+<li id="S124"><strong>S124</strong> — <a href="https://patents.google.com/patent/US20240395254A1/en">US20240395254A1 — Otter.ai 实时摘要</a> <a href="#section-2" title="返回正文">↑</a></li>
+<li id="S125"><strong>S125</strong> — <a href="https://patents.google.com/patent/US20250130636A1/en">US20250130636A1 — Meta 视线驱动自适应内容</a> <a href="#section-2" title="返回正文">↑</a></li>
+<li id="S126"><strong>S126</strong> — <a href="https://patents.google.com/patent/US12210681B2/en">US12,210,681 — Meta 手势/EMG 腕带（已授权）</a> <a href="#section-2" title="返回正文">↑</a></li>
+<li id="S127"><strong>S127</strong> — <a href="https://patents.google.com/patent/US12440098B2/en">US12,440,098B2 — Tobii 反光点眼动检测（已授权）</a> <a href="#section-2" title="返回正文">↑</a></li>
+<li id="S128"><strong>S128</strong> — <a href="https://patents.google.com/patent/US12366916B2/en">US12,366,916B2 — Tobii 视线方向重投影（已授权）</a> <a href="#section-2" title="返回正文">↑</a></li>
+<li id="S129"><strong>S129</strong> — <a href="https://patents.google.com/patent/US20250237877A1/en">US20250237877A1 — Snap 光学支撑系统</a> <a href="#section-2" title="返回正文">↑</a></li>
+<li id="S130"><strong>S130</strong> — <a href="https://patents.google.com/patent/US20230352026A1/en">US20230352026A1 — Zoom delta 模型私有 STT</a> <a href="#section-2" title="返回正文">↑</a></li>
+<li id="S131"><strong>S131</strong> — <a href="https://patents.google.com/patent/US20210041945A1/en">US20210041945A1 — Tobii 机器学习视线估计</a> <a href="#section-2" title="返回正文">↑</a></li>
+<li id="S132"><strong>S132</strong> — <a href="https://www.usertesting.com/company/newsroom/press-releases/usertesting-secures-us-patent-ai-powered-custom-intent-labels">UserTesting US 12,242,515 新闻稿</a> <a href="#section-2" title="返回正文">↑</a></li>
+<li id="S133"><strong>S133</strong> — <a href="https://www.businesswire.com/news/home/20250319343103/en/UserTesting-Secures-U.S.-Patent-for-AI-Powered-Custom-Intent-Labels">BusinessWire 镜像</a> <a href="#section-2" title="返回正文">↑</a></li>
+<li id="S134"><strong>S134</strong> — <a href="https://www.verdict.co.uk/tobii-gets-grant-for-eye-tracking-system-for-head-mounted-device-with-reduced-reflections/">Verdict — Tobii 反光抑制</a> <a href="#section-2" title="返回正文">↑</a></li>
+<li id="S135"><strong>S135</strong> — <a href="https://www.verdict.co.uk/tobii-gets-grant-for-eye-tracking-device-for-adjusting-foveated-region-on-display/">Verdict — Tobii 注视点渲染</a> <a href="#section-2" title="返回正文">↑</a></li>
+<li id="S136"><strong>S136</strong> — <a href="https://www.verdict.co.uk/tobii-gets-grant-for-eye-tracking-calibration-for-augmented-reality-or-virtual-reality-headsets/">Verdict — Tobii AR/VR 标定</a> <a href="#section-2" title="返回正文">↑</a></li>
+<li id="S137"><strong>S137</strong> — <a href="https://www.verdict.co.uk/data-insights/tobii-files-patent-for-eye-tracking-technology-for-video-processing-system/">Verdict — Tobii 视频处理</a> <a href="#section-2" title="返回正文">↑</a></li>
+<li id="S138"><strong>S138</strong> — <a href="https://www.tobii.com/products/integration/ip-licensing">Tobii IP 授权组合</a> <a href="#section-2" title="返回正文">↑</a></li>
+<li id="S139"><strong>S139</strong> — <a href="https://parolaanalytics.com/blog/meta-ar-glasses-orion-patents/">Parola — Meta Orion AR 眼镜专利</a> <a href="#section-2" title="返回正文">↑</a></li>
+<li id="S140"><strong>S140</strong> — <a href="https://www.patentlyapple.com/2025/05/meta-files-a-smartglasses-ar-glasses-patent-that-relates-to-gaze-driven-adaptive-content-generation-using-machine-learning.html">PatentlyApple — Meta 视线驱动智能眼镜</a> <a href="#section-2" title="返回正文">↑</a></li>
+<li id="S141"><strong>S141</strong> — <a href="https://www.businesswire.com/news/home/20251222704206/en/Otter.ai-Caps-Transformational-2025-with-$100M-ARR-Milestone">Otter.ai 2025 收官</a> <a href="#section-2" title="返回正文">↑</a></li>
+<li id="S142"><strong>S142</strong> — <a href="https://sift.com/blog/sifts-innovative-journey-40-patents-and-counting/">Sift IP 组合（40 项反欺诈专利）</a> <a href="#section-2" title="返回正文">↑</a></li>
+<li id="S143"><strong>S143</strong> — <a href="https://insights.greyb.com/tiktok-patents/">Greyb — TikTok / 字节专利统计</a> <a href="#section-2" title="返回正文">↑</a></li>
+<li id="S144"><strong>S144</strong> — <a href="https://insights.greyb.com/bytedance-patents/">Greyb — 字节专利统计</a> <a href="#section-2" title="返回正文">↑</a></li>
+<li id="S145"><strong>S145</strong> — <a href="https://www.uspto.gov/about-us/news-updates/uspto-issues-ai-subject-matter-eligibility-guidance">USPTO — AI 主题适格指引（2025 年 8 月）</a> <a href="#section-2" title="返回正文">↑</a></li>
+<li id="S146"><strong>S146</strong> — <a href="https://www.uspto.gov/subscription-center/2025/revised-inventorship-guidance-ai-assisted-inventions">USPTO — AI 发明人修订指引</a> <a href="#section-2" title="返回正文">↑</a></li>
+<li id="S147"><strong>S147</strong> — <a href="https://www.federalregister.gov/documents/2025/11/28/2025-21457/revised-inventorship-guidance-for-ai-assisted-inventions">联邦公报 — AI 发明人</a> <a href="#section-2" title="返回正文">↑</a></li>
+<li id="S148"><strong>S148</strong> — <a href="https://www.hoganlovells.com/en/publications/navigating-ai-patent-applications-in-china-key-insights-from-cnipas-new-examination-guidelines">Hogan Lovells — CNIPA AI 审查</a> <a href="#section-2" title="返回正文">↑</a></li>
+<li id="S149"><strong>S149</strong> — <a href="https://www.mondaq.com/china/patent/1725998/newly-amended-guidelines-for-patent-examination-to-take-effect-on-january-1-2026">Mondaq — CNIPA 2026 年 1 月修订</a> <a href="#section-2" title="返回正文">↑</a></li>
+<li id="S150"><strong>S150</strong> — <a href="https://natlawreview.com/article/cnipa-november-2025-press-conference-more-details-examination-ai-patents-and">NatLawReview — CNIPA 2025 年 11 月</a> <a href="#section-2" title="返回正文">↑</a></li>
+<li id="S151"><strong>S151</strong> — <a href="https://natlawreview.com/article/cnipa-releases-report-development-building-strong-intellectual-property-nation-2025">NatLawReview — CNIPA 2025 IP 强国报告</a> <a href="#section-2" title="返回正文">↑</a></li>
+<li id="S152"><strong>S152</strong> — <a href="https://outset.ai/">Outset（宣称对照专利）</a> <a href="#section-2" title="返回正文">↑</a></li>
+<li id="S153"><strong>S153</strong> — <a href="https://www.strella.io/compare/strella-vs-outset">Strella vs. Outset 对比</a> <a href="#section-2" title="返回正文">↑</a></li>
+<li id="S154"><strong>S154</strong> — <a href="https://maze.co/features/ai-moderator/">Maze AI Moderator</a> <a href="#section-2" title="返回正文">↑</a></li>
+<li id="S155"><strong>S155</strong> — <a href="https://www.quester.tech/">Quester</a> <a href="#section-2" title="返回正文">↑</a></li>
+<li id="S156"><strong>S156</strong> — <a href="https://www.dynata.com/the-double-edged-sword-of-generative-ai-mitigating-the-risks-of-respondent-fraud/">Dynata — 生成式 AI 反欺诈</a> <a href="#section-2" title="返回正文">↑</a></li>
+<li id="S157"><strong>S157</strong> — <a href="https://www.medallia.com/press-release/medallia-unveils-vision-for-future-of-customer-experience-and-7-ai-powered-capabilities/">Medallia — 2025 年 3 月 AI 能力</a> <a href="#section-2" title="返回正文">↑</a></li>
+<li id="S158"><strong>S158</strong> — <a href="https://www.verint.com/voice-of-the-customer/">Verint — 客户之声（"已授权预测模型"）</a> <a href="#section-2" title="返回正文">↑</a></li>
+<li id="S159"><strong>S159</strong> — <a href="https://www.forsta.com/platform/forsta-ai/">Forsta AI</a> <a href="#section-2" title="返回正文">↑</a></li>
+<li id="S160"><strong>S160</strong> — <a href="https://www.npr.org/2025/08/15/g-s1-83087/otter-ai-transcription-class-action-lawsuit">NPR — Otter.ai 集体诉讼</a> <a href="#section-2" title="返回正文">↑</a></li>
+<li id="S161"><strong>S161</strong> — <a href="https://www.jacksonlewis.com/insights/we-get-ai-work-analyzing-brewer-v-otterai-case-study-legal-risks-ai-note-takers">Jackson Lewis — Brewer v. Otter.ai</a> <a href="#section-2" title="返回正文">↑</a></li>
+<li id="S162"><strong>S162</strong> — <a href="https://cms-lawnow.com/en/ealerts/2026/02/generative-ai-llms-and-ai-notetakers-a-new-threat-to-legal-professional-privilege">CMS — AI 笔记 + 律师特权</a> <a href="#section-2" title="返回正文">↑</a></li>
+</ol>
+</div>
+</details>
+
+<details class="appendix">
+<summary>融资与公司信号（Phase 3 — 70 条来源）</summary>
+<div class="src-list">
+<ol>
+<li id="S163"><strong>S163</strong> — <a href="https://www.globenewswire.com/news-release/2025/12/10/3203401/0/en/Outset-Secures-30-Million-Series-B-to-Launch-the-World-s-First-AI-Native-Customer-Experience-Management-Platform.html">Outset B 轮 — GlobeNewswire</a> <a href="#section-3" title="返回正文">↑</a></li>
+<li id="S164"><strong>S164</strong> — <a href="https://www.globenewswire.com/news-release/2025/06/11/3097668/0/en/Startup-Outset-Raises-17M-Series-A-to-Help-Enterprises-Scale-Accelerate-Customer-Research-with-AI-Agent-led-Interviews.html">Outset A 轮 — GlobeNewswire</a> <a href="#section-3" title="返回正文">↑</a></li>
+<li id="S165"><strong>S165</strong> — <a href="https://outset.ai/series-a">Outset A 轮专页</a> <a href="#section-3" title="返回正文">↑</a></li>
+<li id="S166"><strong>S166</strong> — <a href="https://outset.ai/resources/blog/outset-series-a-founder-letter">Outset A 轮创始人信</a> <a href="#section-3" title="返回正文">↑</a></li>
+<li id="S167"><strong>S167</strong> — <a href="https://www.builtinsf.com/articles/outset-raises-30m-series-b-20251211">Built In SF — Outset B 轮</a> <a href="#section-3" title="返回正文">↑</a></li>
+<li id="S168"><strong>S168</strong> — <a href="https://www.axios.com/pro/enterprise-software-deals/2025/12/10/customer-research-chatbot-outset-radical">Axios Pro — Outset 3,000 万美元</a> <a href="#section-3" title="返回正文">↑</a></li>
+<li id="S169"><strong>S169</strong> — <a href="https://www.prnewswire.com/news-releases/strella-raises-14m-in-series-a-led-by-bessemer-venture-partners-to-re-design-customer-research-for-the-ai-era-302586024.html">Strella A 轮 — PR Newswire</a> <a href="#section-3" title="返回正文">↑</a></li>
+<li id="S170"><strong>S170</strong> — <a href="https://www.strella.io/blog/series-a">Strella A 轮 — 公司博客</a> <a href="#section-3" title="返回正文">↑</a></li>
+<li id="S171"><strong>S171</strong> — <a href="https://www.bvp.com/atlas/strella-transforming-qualitative-research-from-a-bottleneck-into-an-ai-superpower">Bessemer 关于 Strella 的备忘</a> <a href="#section-3" title="返回正文">↑</a></li>
+<li id="S172"><strong>S172</strong> — <a href="https://venturebeat.com/ai/amazon-and-chobani-adopt-strellas-ai-interviews-for-customer-research-as">VentureBeat — Strella 亚马逊/Chobani</a> <a href="#section-3" title="返回正文">↑</a></li>
+<li id="S173"><strong>S173</strong> — <a href="https://pear.vc/listen-labs-series-b/">Pear VC — Listen Labs B 轮信</a> <a href="#section-3" title="返回正文">↑</a></li>
+<li id="S174"><strong>S174</strong> — <a href="https://listenlabs.ai/founders-letter">Listen Labs 创始人信</a> <a href="#section-3" title="返回正文">↑</a></li>
+<li id="S175"><strong>S175</strong> — <a href="https://www.eweek.com/news/listen-labs-ai-startup-microsoft-customers/">eWeek — Listen Labs 微软</a> <a href="#section-3" title="返回正文">↑</a></li>
+<li id="S176"><strong>S176</strong> — <a href="https://www.research-live.com/article/news/listen-labs-launches-with-27m-funding-/id/5138323">Research Live — Listen Labs A 轮</a> <a href="#section-3" title="返回正文">↑</a></li>
+<li id="S177"><strong>S177</strong> — <a href="https://finance.yahoo.com/news/sources-ai-synthetic-research-startup-233859223.html">Yahoo Finance — Aaru</a> <a href="#section-3" title="返回正文">↑</a></li>
+<li id="S178"><strong>S178</strong> — <a href="https://www.thesaasnews.com/news/aaru-secures-series-a-funding">SaaS News — Aaru</a> <a href="#section-3" title="返回正文">↑</a></li>
+<li id="S179"><strong>S179</strong> — <a href="https://www.techbuzz.ai/articles/aaru-hits-1b-valuation-with-multi-tier-series-a-funding">TechBuzz — Aaru</a> <a href="#section-3" title="返回正文">↑</a></li>
+<li id="S180"><strong>S180</strong> — <a href="https://wondering.com/blog/funding-announcement">Wondering 种子轮公告</a> <a href="#section-3" title="返回正文">↑</a></li>
+<li id="S181"><strong>S181</strong> — <a href="https://techcrunch.com/2025/12/22/tech-layoffs-2025-list/">TechCrunch — Wondering 关停</a> <a href="#section-3" title="返回正文">↑</a></li>
+<li id="S182"><strong>S182</strong> — <a href="https://www.eu-startups.com/2025/03/conveo-secures-e4-9-million-to-transform-market-research-industry/">EU-Startups — Conveo 种子</a> <a href="#section-3" title="返回正文">↑</a></li>
+<li id="S183"><strong>S183</strong> — <a href="https://tech.eu/2025/03/06/y-combinator-backed-conveo-raises-53m-seed-to-develop-ai-powered-research-coworker/">Tech.eu — Conveo</a> <a href="#section-3" title="返回正文">↑</a></li>
+<li id="S184"><strong>S184</strong> — <a href="https://greatquestion.co/blog/great-question-secures-13m-series-a-funding-from-inovia">Great Question A 轮</a> <a href="#section-3" title="返回正文">↑</a></li>
+<li id="S185"><strong>S185</strong> — <a href="https://vctavern.com/great-question-raises-13-million-series-a-to-expand-ai-driven-ux-research-platform/">VC Tavern — Great Question</a> <a href="#section-3" title="返回正文">↑</a></li>
+<li id="S186"><strong>S186</strong> — <a href="https://www.prnewswire.com/news-releases/rally-uxr-secures-11m-series-a-to-transform-how-enterprises-conduct-user-research-302468414.html">Rally UXR A 轮</a> <a href="#section-3" title="返回正文">↑</a></li>
+<li id="S187"><strong>S187</strong> — <a href="https://www.rallyuxr.com/post/rally-raises-11m-to-supercharge-the-future-of-user-research">Rally — 公司博客</a> <a href="#section-3" title="返回正文">↑</a></li>
+<li id="S188"><strong>S188</strong> — <a href="https://www.stage2.capital/blog/empowering-user-research-why-we-invested-in-rally">Stage 2 Capital — Rally 备忘</a> <a href="#section-3" title="返回正文">↑</a></li>
+<li id="S189"><strong>S189</strong> — <a href="https://medium.com/speciale-invest/why-we-invested-in-looppanel-f40125c7077c">Speciale Invest 关于 Looppanel</a> <a href="#section-3" title="返回正文">↑</a></li>
+<li id="S190"><strong>S190</strong> — <a href="https://f4.fund/startups/brox">F4 Fund — Brox 资料</a> <a href="#section-3" title="返回正文">↑</a></li>
+<li id="S191"><strong>S191</strong> — <a href="https://www.research-live.com/article/news/canvs-ai-generates-15m-in-funding-round/id/5117643">Research Live — Canvs AI</a> <a href="#section-3" title="返回正文">↑</a></li>
+<li id="S192"><strong>S192</strong> — <a href="https://techcrunch.com/2022/01/19/dovetail-raises-63m-to-grow-its-researcher-focused-software-business/">TechCrunch — Dovetail 2022 A 轮</a> <a href="#section-3" title="返回正文">↑</a></li>
+<li id="S193"><strong>S193</strong> — <a href="https://dovetail.com/blog/2025-fall-launch/">Dovetail 2025 秋季发布</a> <a href="#section-3" title="返回正文">↑</a></li>
+<li id="S194"><strong>S194</strong> — <a href="https://dovetail.com/blog/dovetail-2025-spring-launch/">Dovetail 2025 春季发布</a> <a href="#section-3" title="返回正文">↑</a></li>
+<li id="S195"><strong>S195</strong> — <a href="https://www.userinterviews.com/product-announcements/whyser-recruitment-integration">Whyser × User Interviews</a> <a href="#section-3" title="返回正文">↑</a></li>
+<li id="S196"><strong>S196</strong> — <a href="https://www.crunchbase.com/organization/synthetic-users">Synthetic Users — Crunchbase</a> <a href="#section-3" title="返回正文">↑</a></li>
+<li id="S197"><strong>S197</strong> — <a href="https://www.evidenza.ai/about">Evidenza 公司简介</a> <a href="#section-3" title="返回正文">↑</a></li>
+<li id="S198"><strong>S198</strong> — <a href="https://www.dentsu.com/news-releases/dentsu-partners-with-evidenza-to-integrate-synthetic-audiences-into-next-gen-media-planning">电通 × Evidenza</a> <a href="#section-3" title="返回正文">↑</a></li>
+<li id="S199"><strong>S199</strong> — <a href="https://www.mi-3.com.au/25-06-2025/dentsu-taps-evidenza-synthetic-audiences-media-planning">Mi3 — 电通 × Evidenza</a> <a href="#section-3" title="返回正文">↑</a></li>
+<li id="S200"><strong>S200</strong> — <a href="https://www.thedrum.com/news/2025/06/04/lab-grown-marketing-it-s-already-here-and-it-s-synthetic-scalable-and-very-real">The Drum — 合成 / Evidenza</a> <a href="#section-3" title="返回正文">↑</a></li>
+<li id="S201"><strong>S201</strong> — <a href="https://www.londonstockexchange.com/news-article/YOU/yougov-acquires-yabble/16604082">YouGov 收购 Yabble — RNS</a> <a href="#section-3" title="返回正文">↑</a></li>
+<li id="S202"><strong>S202</strong> — <a href="https://www.research-live.com/article/news/yougov-buys-yabble-in-45m-deal/id/5129173">Research Live — YouGov/Yabble</a> <a href="#section-3" title="返回正文">↑</a></li>
+<li id="S203"><strong>S203</strong> — <a href="https://corporate.yougov.com/documents/495/YouGov-Annual_Report_2025-Spreads.pdf">YouGov 2025 年报</a> <a href="#section-3" title="返回正文">↑</a></li>
+<li id="S204"><strong>S204</strong> — <a href="https://www.research-tree.com/newsfeed/article/yougov-plc-results-for-the-year-ended-31-july-2025-3028654">YouGov FY25 — Research Tree</a> <a href="#section-3" title="返回正文">↑</a></li>
+<li id="S205"><strong>S205</strong> — <a href="https://www.yabble.com/blog/yabble-joins-yougov-setting-the-standard-for-generative-ai-in-market-research">Yabble 加入 YouGov</a> <a href="#section-3" title="返回正文">↑</a></li>
+<li id="S206"><strong>S206</strong> — <a href="https://www.discuss.io/press/discuss-and-voxco-announce-strategic-combination-uniting-leaders-in-qualitative-and-quantitative-research-to-shape-the-future-of-human-understanding/">Discuss + Voxco 合并 — 新闻稿</a> <a href="#section-3" title="返回正文">↑</a></li>
+<li id="S207"><strong>S207</strong> — <a href="https://www.canaccordgenuity.com/capital-markets/transactions/2025/november/discuss_nov2025/">Discuss + Voxco — Canaccord</a> <a href="#section-3" title="返回正文">↑</a></li>
+<li id="S208"><strong>S208</strong> — <a href="https://www.globenewswire.com/news-release/2025/12/04/3199723/0/en/Discuss-Closes-2025-With-Major-AI-Innovations-Following-Its-Merger-Announcement-with-Voxco.html">Discuss 2025 年收官 AI 发布</a> <a href="#section-3" title="返回正文">↑</a></li>
+<li id="S209"><strong>S209</strong> — <a href="https://www.usertesting.com/company/newsroom/press-releases/thoma-bravo-and-sunstone-partners-complete-acquisition-usertesting">UserTesting + Thoma Bravo 完成</a> <a href="#section-3" title="返回正文">↑</a></li>
+<li id="S210"><strong>S210</strong> — <a href="https://www.usertesting.com/company/newsroom/press-releases/usertesting-and-userzoom-merge-help-organizations-build-human">UserTesting + UserZoom 合并</a> <a href="#section-3" title="返回正文">↑</a></li>
+<li id="S211"><strong>S211</strong> — <a href="https://www.usertesting.com/company/newsroom/press-releases/usertesting-announces-chief-executive-officer-leadership-transition">UserTesting CEO 更替</a> <a href="#section-3" title="返回正文">↑</a></li>
+<li id="S212"><strong>S212</strong> — <a href="https://www.sunsethq.com/layoff-tracker/usertesting">Sunset HQ — UserTesting 裁员追踪</a> <a href="#section-3" title="返回正文">↑</a></li>
+<li id="S213"><strong>S213</strong> — <a href="https://www.usertesting.com/platform/enjoyhq">EnjoyHQ Insight Hub</a> <a href="#section-3" title="返回正文">↑</a></li>
+<li id="S214"><strong>S214</strong> — <a href="https://peinsights.substack.com/p/thoma-bravo-set-to-hand-medallia">Medallia 移交 — PE Insights</a> <a href="#section-3" title="返回正文">↑</a></li>
+<li id="S215"><strong>S215</strong> — <a href="https://finance.yahoo.com/markets/stocks/articles/exclusive-thoma-bravo-nears-agreement-180233668.html">Medallia — Yahoo Finance</a> <a href="#section-3" title="返回正文">↑</a></li>
+<li id="S216"><strong>S216</strong> — <a href="https://www.investing.com/news/stock-market-news/thoma-bravos-51b-medallia-wipeout-deepens-software-private-credit-reckoning-4633506">Medallia — Investing.com</a> <a href="#section-3" title="返回正文">↑</a></li>
+<li id="S217"><strong>S217</strong> — <a href="https://www.corpdev.org/2026/04/23/thoma-bravo-nears-handover-of-medallia-to-creditors-after-5-1-billion-equity-wipeout/">CorpDev — Medallia</a> <a href="#section-3" title="返回正文">↑</a></li>
+<li id="S218"><strong>S218</strong> — <a href="https://www.medallia.com/press-release/medallia-appoints-mark-bishof-as-chairman-and-ceo/">Medallia — Bishof 任命</a> <a href="#section-3" title="返回正文">↑</a></li>
+<li id="S219"><strong>S219</strong> — <a href="https://www.cmswire.com/contact-center/medallia-adds-5-former-qualtrics-execs-including-new-ceo-mark-bishof/">CMSWire — Medallia 5 位前 Qualtrics 高管</a> <a href="#section-3" title="返回正文">↑</a></li>
+<li id="S220"><strong>S220</strong> — <a href="https://www.cxtoday.com/uncategorized/medallia-snags-former-qualtrics-exec-mark-bishof-as-ceo/">CX Today — Bishof 加入 Medallia</a> <a href="#section-3" title="返回正文">↑</a></li>
+<li id="S221"><strong>S221</strong> — <a href="https://marketech-apac.com/medallia-names-mark-bishof-as-chairman-ceo-announces-key-senior-hires/">Marketech-APAC — Medallia 高管</a> <a href="#section-3" title="返回正文">↑</a></li>
+<li id="S222"><strong>S222</strong> — <a href="https://www.qualtrics.com/articles/news/experience-agents/">Qualtrics Experience Agents 发布</a> <a href="#section-3" title="返回正文">↑</a></li>
+<li id="S223"><strong>S223</strong> — <a href="https://www.qualtrics.com/articles/news/x4-2025-recap-qualtrics-redefined-the-future-of-experience-management-with-experience-agents/">Qualtrics X4 2025 回顾</a> <a href="#section-3" title="返回正文">↑</a></li>
+<li id="S224"><strong>S224</strong> — <a href="https://www.cxtoday.com/voice-of-the-customer/qualtrics-x4-2025-5-massive-announcements-from-the-experience-management-summit/">CX Today — Qualtrics X4 2025</a> <a href="#section-3" title="返回正文">↑</a></li>
+<li id="S225"><strong>S225</strong> — <a href="https://investors.sprinklr.com/news/press-releases/detail/229/sprinklr-announces-first-quarter-fiscal-2026-results">Sprinklr Q1 FY2026</a> <a href="#section-3" title="返回正文">↑</a></li>
+<li id="S226"><strong>S226</strong> — <a href="https://investors.sprinklr.com/news/press-releases/detail/234/sprinklr-announces-second-quarter-fiscal-2026-results">Sprinklr Q2 FY2026</a> <a href="#section-3" title="返回正文">↑</a></li>
+<li id="S227"><strong>S227</strong> — <a href="https://www.businesswire.com/news/home/20241030274062/en/IDC-and-Sprinklr-Unveil-New-Research-on-2025-AI-Priorities">Sprinklr × IDC 2025 AI 优先级</a> <a href="#section-3" title="返回正文">↑</a></li>
+<li id="S228"><strong>S228</strong> — <a href="https://investors.cint.com/en/report/cint-group-interim-report-january-september-2025-quarter-affected-customer-migration">Cint 2025 Q3</a> <a href="#section-3" title="返回正文">↑</a></li>
+<li id="S229"><strong>S229</strong> — <a href="https://www.cint.com/blog/cint-exchange-2025-review/">Cint Exchange 2025</a> <a href="#section-3" title="返回正文">↑</a></li>
+<li id="S230"><strong>S230</strong> — <a href="https://www.surveyplus.cn/">SurveyPlus 调研家</a> <a href="#section-3" title="返回正文">↑</a></li>
+<li id="S231"><strong>S231</strong> — <a href="https://eu.36kr.com/en/p/3403929291017856">36Kr — 2025 创业街动态</a> <a href="#section-3" title="返回正文">↑</a></li>
+<li id="S232"><strong>S232</strong> — <a href="https://m.thepaper.cn/newsDetail_forward_32363294">澎湃 — 中国 AI 应用 1070 亿</a> <a href="#section-3" title="返回正文">↑</a></li>
+<li id="S233"><strong>S233</strong> — <a href="https://cdn.itjuzi.com/pdf/1a5ee188cfde75809136ad47f4077d3a.pdf">IT 桔子 — 中国 AI 融资 PDF</a> <a href="#section-3" title="返回正文">↑</a></li>
+<li id="S234"><strong>S234</strong> — <a href="https://news.crunchbase.com/venture/china-leads-startup-funding-ai-seed-growth-asia-q1-2026/">Crunchbase — 中国领跑 2026 Q1</a> <a href="#section-3" title="返回正文">↑</a></li>
+<li id="S235"><strong>S235</strong> — <a href="https://www.cbinsights.com/research/report/ai-trends-2025/">CB Insights — 2025 AI 现状</a> <a href="#section-3" title="返回正文">↑</a></li>
+<li id="S236"><strong>S236</strong> — <a href="https://news.crunchbase.com/ai/big-funding-trends-charts-eoy-2025/">Crunchbase — 2025 大额 AI 趋势</a> <a href="#section-3" title="返回正文">↑</a></li>
+<li id="S237"><strong>S237</strong> — <a href="https://dealroom.co/uploaded/2025/02/Dealroom-AI-Summit-2025.pdf">Dealroom — AI 2025 开局</a> <a href="#section-3" title="返回正文">↑</a></li>
+<li id="S238"><strong>S238</strong> — <a href="https://pitchbook.com/news/reports/q4-2025-ai-public-comp-sheet-and-valuation-guide">PitchBook — 2025 Q4 AI 估值指南</a> <a href="#section-3" title="返回正文">↑</a></li>
+<li id="S239"><strong>S239</strong> — <a href="https://www.factmr.com/report/ai-market-research-services-market">Fact.MR — AI MR 服务 2035</a> <a href="#section-3" title="返回正文">↑</a></li>
+</ol>
+</div>
+</details>
+
+<details class="appendix">
+<summary>从业者情绪（Phase 4 — 60 条来源）</summary>
+<div class="src-list">
+<ol>
+<li id="S240"><strong>S240</strong> — <a href="https://www.userresearchstrategist.com/p/ai-for-user-researchers">Nikki Anderson — AI for user researchers</a> <a href="#section-6" title="返回正文">↑</a></li>
+<li id="S241"><strong>S241</strong> — <a href="https://www.linkedin.com/posts/erikahall_lets-put-this-whole-synthetic-users-thing-activity-7333175909866184704-aVxE">Erika Hall — 合成用户 LinkedIn 帖</a> <a href="#section-6" title="返回正文">↑</a></li>
+<li id="S242"><strong>S242</strong> — <a href="https://medium.com/inclusive-software/insta-personas-synthetic-users-fc6e9cd1c301">Indi Young — Insta-Personas</a> <a href="#section-6" title="返回正文">↑</a></li>
+<li id="S243"><strong>S243</strong> — <a href="https://www.linkedin.com/posts/indiyoung_insta-personas-synthetic-users-activity-7144084257194262529-GHnR">Indi Young — LinkedIn 推广</a> <a href="#section-6" title="返回正文">↑</a></li>
+<li id="S244"><strong>S244</strong> — <a href="https://uxmag.com/articles/no-ai-user-research-is-not-better-than-nothing-its-much-worse">Pavel Samsonov — UX Magazine</a> <a href="#section-6" title="返回正文">↑</a></li>
+<li id="S245"><strong>S245</strong> — <a href="https://www.smashingmagazine.com/2025/03/how-to-argue-against-ai-first-research/">Pavel Samsonov — Smashing Magazine</a> <a href="#section-6" title="返回正文">↑</a></li>
+<li id="S246"><strong>S246</strong> — <a href="https://niloufars.substack.com/p/i-tried-out-syntheticusers-so-you">Niloufar Salehi — SyntheticUsers</a> <a href="#section-6" title="返回正文">↑</a></li>
+<li id="S247"><strong>S247</strong> — <a href="https://www.uxforai.com/p/navigating-the-abyss-the-dark-side-of-synthetic-ai-user-research-tools">Greg Nudelman — UX For AI</a> <a href="#section-6" title="返回正文">↑</a></li>
+<li id="S248"><strong>S248</strong> — <a href="https://speero.com/post/why-im-not-sold-on-synthetic-user-research">Emma Travis — Speero</a> <a href="#section-6" title="返回正文">↑</a></li>
+<li id="S249"><strong>S249</strong> — <a href="https://www.radicalproduct.com/blog/synthetic-users-user-research">Radhika Dutt — Radical Product</a> <a href="#section-6" title="返回正文">↑</a></li>
+<li id="S250"><strong>S250</strong> — <a href="https://www.nngroup.com/articles/synthetic-users/">Maria Rosala + Kate Moran — NN/g 合成用户</a> <a href="#section-6" title="返回正文">↑</a></li>
+<li id="S251"><strong>S251</strong> — <a href="https://www.nngroup.com/articles/ai-interviewers/">Maria Rosala — NN/g AI 访谈员</a> <a href="#section-6" title="返回正文">↑</a></li>
+<li id="S252"><strong>S252</strong> — <a href="https://www.nngroup.com/videos/dont-outsource-analysis-to-ai/">Maria Rosala — 别把分析外包给 AI</a> <a href="#section-6" title="返回正文">↑</a></li>
+<li id="S253"><strong>S253</strong> — <a href="https://www.nngroup.com/articles/research-tool-problems/">Maria Rosala — 方法论问题</a> <a href="#section-6" title="返回正文">↑</a></li>
+<li id="S254"><strong>S254</strong> — <a href="https://www.nngroup.com/videos/use-ai-responsibly-in-analysis/">Maria Rosala — 负责任地用 AI</a> <a href="#section-6" title="返回正文">↑</a></li>
+<li id="S255"><strong>S255</strong> — <a href="https://carljpearson.com/ai-moderated-interviews-methodological-error-amplified/">Carl J. Pearson — 方法论误差</a> <a href="#section-6" title="返回正文">↑</a></li>
+<li id="S256"><strong>S256</strong> — <a href="https://christophersilvestri.com/research-reports/state-of-synthetic-research-in-2025/">Christopher Silvestri — 2025 合成研究现状</a> <a href="#section-6" title="返回正文">↑</a></li>
+<li id="S257"><strong>S257</strong> — <a href="https://www.looppanel.com/blog/dovetail-review">Theertha Raj — Dovetail 评测</a> <a href="#section-6" title="返回正文">↑</a></li>
+<li id="S258"><strong>S258</strong> — <a href="https://dovetail.com/blog/contributors/matt-duignan/">Matt Duignan — Dovetail 撰稿</a> <a href="#section-6" title="返回正文">↑</a></li>
+<li id="S259"><strong>S259</strong> — <a href="https://podcast.userinterviews.com/episodes/188-why-ai-cant-replace-qualitative-research-with-sam-ladner-of-workday">Awkward Silences #188 — Sam Ladner</a> <a href="#section-6" title="返回正文">↑</a></li>
+<li id="S260"><strong>S260</strong> — <a href="https://podcast.userinterviews.com/episodes/187-throwback-harnessing-ai-for-better-insights-with-george-whitfield-of-mit-and-google">Awkward Silences #187 — Whitfield</a> <a href="#section-6" title="返回正文">↑</a></li>
+<li id="S261"><strong>S261</strong> — <a href="https://podcast.userinterviews.com/episodes/186-positioning-your-portfolio-for-ai-skills-with-aneta-kmiecik-of-be-your-own-design-team">Awkward Silences #186 — Kmiecik</a> <a href="#section-6" title="返回正文">↑</a></li>
+<li id="S262"><strong>S262</strong> — <a href="https://podcast.userinterviews.com/episodes/185-how-to-use-ai-without-losing-your-research-soul-with-nikki-anderson-founder-of-drop-in-research">Awkward Silences #185 — Anderson</a> <a href="#section-6" title="返回正文">↑</a></li>
+<li id="S263"><strong>S263</strong> — <a href="https://podcast.userinterviews.com/episodes/183-the-best-ways-to-use-ai-in-ux-research-with-laura-klein-of-nn-g">Awkward Silences #183 — Klein</a> <a href="#section-6" title="返回正文">↑</a></li>
+<li id="S264"><strong>S264</strong> — <a href="https://podcast.userinterviews.com/episodes/182-the-future-of-research-in-a-moment-of-change">Awkward Silences #182 — 研究的未来</a> <a href="#section-6" title="返回正文">↑</a></li>
+<li id="S265"><strong>S265</strong> — <a href="https://www.youtube.com/watch?v=5R8Ub7eb5jM">Awkward Silences #180 — Rosala + Whalen</a> <a href="#section-6" title="返回正文">↑</a></li>
+<li id="S266"><strong>S266</strong> — <a href="https://podcast.userinterviews.com/episodes/research-ops-2-0-episode-2-leveraging-ai-for-research-superstardom/transcript">Research Ops 2.0 第 2 集文字稿</a> <a href="#section-6" title="返回正文">↑</a></li>
+<li id="S267"><strong>S267</strong> — <a href="https://podcast.userinterviews.com/episodes/173-prototyping-ai-in-live-research-with-bold-insight-panasonic-well">Awkward Silences #173 — Bold Insight / 松下 Well</a> <a href="#section-6" title="返回正文">↑</a></li>
+<li id="S268"><strong>S268</strong> — <a href="https://portigal.com/podcast/36-noam-segal-returns/">Dollars to Donuts #36 — Segal</a> <a href="#section-6" title="返回正文">↑</a></li>
+<li id="S269"><strong>S269</strong> — <a href="https://portigal.com/podcast/">Off the Path with Sam &amp; Steve</a> <a href="#section-6" title="返回正文">↑</a></li>
+<li id="S270"><strong>S270</strong> — <a href="https://rosenfeldmedia.com/advancing-research-2025-a-conference-for-the-future-of-research/">Advancing Research 2025</a> <a href="#section-6" title="返回正文">↑</a></li>
+<li id="S271"><strong>S271</strong> — <a href="https://rosenfeldmedia.com/advancing-research/">Advancing Research 2026 议程</a> <a href="#section-6" title="返回正文">↑</a></li>
+<li id="S272"><strong>S272</strong> — <a href="https://joinlearners.com/rw-2025/uxrconf/">UXRConf 2025</a> <a href="#section-6" title="返回正文">↑</a></li>
+<li id="S273"><strong>S273</strong> — <a href="https://www.greenbook.org/insights/greenbook-company-news/what-we-learned-at-iiex-north-america-2025-ai-agility-and-the-future-of-insights">IIEX 北美 2025 回顾</a> <a href="#section-6" title="返回正文">↑</a></li>
+<li id="S274"><strong>S274</strong> — <a href="https://www.greenbook.org/insights/insights-industry-news/iiex-apac-2025-ai-nostalgia-the-future-of-consumer-insightskey-takeaways-from-bangkok">IIEX APAC 2025 回顾</a> <a href="#section-6" title="返回正文">↑</a></li>
+<li id="S275"><strong>S275</strong> — <a href="https://www.quirks.com/events/quirks-virtual-ai-innovation-20262026">Quirk's Virtual AI &amp; Innovation 2026 年 1 月</a> <a href="#section-6" title="返回正文">↑</a></li>
+<li id="S276"><strong>S276</strong> — <a href="https://www.greenbook.org/insights/artificial-intelligence-and-machine-learning/the-great-ai-pivot-how-market-research-is-reinventing-itself-without-losing-its-soul">Greenbook — 大 AI 转型</a> <a href="#section-6" title="返回正文">↑</a></li>
+<li id="S277"><strong>S277</strong> — <a href="https://www.greenbook.org/insights/grit/smarter-insights-faster-pace-ais-breakthrough-in-market-research">Greenbook GRIT — Henriques</a> <a href="#section-6" title="返回正文">↑</a></li>
+<li id="S278"><strong>S278</strong> — <a href="https://www.quirks.com/articles/ai-s-impact-on-market-research-what-to-expect-in-2025">Quirk's — 2025 年 AI 影响</a> <a href="#section-6" title="返回正文">↑</a></li>
+<li id="S279"><strong>S279</strong> — <a href="https://www.quirks.com/articles/top-marketing-research-and-insights-articles-of-2025-from-quirk-s-newsletter">Quirk's — 2025 头条 MR 文章</a> <a href="#section-6" title="返回正文">↑</a></li>
+<li id="S280"><strong>S280</strong> — <a href="https://www.quirks.com/articles/the-shelf-life-of-an-ai-synthetic-panel">Quirk's — 合成样本面板的保质期</a> <a href="#section-6" title="返回正文">↑</a></li>
+<li id="S281"><strong>S281</strong> — <a href="https://www.quirks.com/articles/ai-is-redefining-the-qualitative-researcher">Quirk's — AI 重塑定性研究员</a> <a href="#section-6" title="返回正文">↑</a></li>
+<li id="S282"><strong>S282</strong> — <a href="https://allthingsinsights.com/content/the-rise-of-the-ai-powered-moderator/">All Things Insights — AI 驱动主持人</a> <a href="#section-6" title="返回正文">↑</a></li>
+<li id="S283"><strong>S283</strong> — <a href="https://www.forrester.com/report/the-state-of-ai-2025/RES189955">Forrester — 2025 年 AI 现状</a> <a href="#section-6" title="返回正文">↑</a></li>
+<li id="S284"><strong>S284</strong> — <a href="https://www.greenbook.org/grit/insights-practice-edition">Greenbook GRIT 2025 洞察实践版</a> <a href="#section-6" title="返回正文">↑</a></li>
+<li id="S285"><strong>S285</strong> — <a href="https://www.userinterviews.com/state-of-user-research-report">User Interviews — 2025 SoUR</a> <a href="#section-6" title="返回正文">↑</a></li>
+<li id="S286"><strong>S286</strong> — <a href="https://maze.co/resources/user-research-report/">Maze — 2026 用户研究未来</a> <a href="#section-6" title="返回正文">↑</a></li>
+<li id="S287"><strong>S287</strong> — <a href="https://www.lyssna.com/reports/research-synthesis/">Lyssna — 2025 研究综合分析</a> <a href="#section-6" title="返回正文">↑</a></li>
+<li id="S288"><strong>S288</strong> — <a href="https://www.rallyuxr.com/post/a-year-in-review-what-shaped-researchops-in-2025">Rally — 2025 ResOps 年度回顾</a> <a href="#section-6" title="返回正文">↑</a></li>
+<li id="S289"><strong>S289</strong> — <a href="https://medium.com/researchops-community/using-ai-tools-to-augment-user-experience-research-workflows-b10e9bddec9a">ResearchOps Community — AI 工具</a> <a href="#section-6" title="返回正文">↑</a></li>
+<li id="S290"><strong>S290</strong> — <a href="https://www.linkedin.com/in/janelleestes/">Janelle Estes — LinkedIn</a> <a href="#section-6" title="返回正文">↑</a></li>
+<li id="S291"><strong>S291</strong> — <a href="https://www.linkedin.com/in/matthew-duignan-89493932/">Matt Duignan — LinkedIn</a> <a href="#section-6" title="返回正文">↑</a></li>
+<li id="S292"><strong>S292</strong> — <a href="https://www.linkedin.com/in/crohrer">Christian Rohrer — LinkedIn</a> <a href="#section-6" title="返回正文">↑</a></li>
+<li id="S293"><strong>S293</strong> — <a href="https://www.linkedin.com/in/jmspool">Jared Spool — LinkedIn</a> <a href="#section-6" title="返回正文">↑</a></li>
+<li id="S294"><strong>S294</strong> — <a href="https://www.linkedin.com/in/sladner/">Sam Ladner — LinkedIn</a> <a href="#section-6" title="返回正文">↑</a></li>
+<li id="S295"><strong>S295</strong> — <a href="https://www.linkedin.com/in/maria-rosala/">Maria Rosala — LinkedIn</a> <a href="#section-6" title="返回正文">↑</a></li>
+<li id="S296"><strong>S296</strong> — <a href="https://www.linkedin.com/in/indiyoung">Indi Young — LinkedIn</a> <a href="#section-6" title="返回正文">↑</a></li>
+<li id="S297"><strong>S297</strong> — <a href="https://www.linkedin.com/in/erikahall/">Erika Hall — LinkedIn</a> <a href="#section-6" title="返回正文">↑</a></li>
+<li id="S298"><strong>S298</strong> — <a href="https://outset.ai/customers">Outset 客户列表</a> <a href="#section-6" title="返回正文">↑</a></li>
+<li id="S299"><strong>S299</strong> — <a href="https://listenlabs.ai/case-studies/microsoft">Listen Labs — 微软案例</a> <a href="#section-6" title="返回正文">↑</a></li>
+<li id="S300"><strong>S300</strong> — <a href="https://daxueconsulting.com/double-11-2025/">Daxue Consulting — 2025 双 11</a> <a href="#section-6" title="返回正文">↑</a></li>
+<li id="S301"><strong>S301</strong> — <a href="https://www.anthropic.com/81k-interviews">Anthropic — 81k 访谈</a> <a href="#section-6" title="返回正文">↑</a></li>
+</ol>
+</div>
+</details>
+
+<details class="appendix">
+<summary>分析师、监管与中国生态（Phase 5 — 80 条来源）</summary>
+<div class="src-list">
+<ol>
+<li id="S302"><strong>S302</strong> — <a href="https://marketing.greenbook.org/hubfs/%5BPDF%5D%202025%20GRIT%20Insights%20Practice%20Report/Abbreviated%202025%20GRIT%20Insights%20Practice%20Report.pdf">GRIT 2025 洞察实践（精简 PDF）</a> <a href="#section-4" title="返回正文">↑</a></li>
+<li id="S303"><strong>S303</strong> — <a href="https://www.greenbook.org/grit/grit-business-and-innovation-edition">GRIT 2025 业务与创新版</a> <a href="#section-4" title="返回正文">↑</a></li>
+<li id="S304"><strong>S304</strong> — <a href="https://www.greenbook.org/insights/artificial-intelligence-and-machine-learning/the-sea-change-insights-from-the-2025-grit-business-outlook">Greenbook — 2025 GRIT 巨变</a> <a href="#section-4" title="返回正文">↑</a></li>
+<li id="S305"><strong>S305</strong> — <a href="https://www.rivaltech.com/blog/2025-grit-insights-practice-report">Rival Tech — 2025 GRIT</a> <a href="#section-4" title="返回正文">↑</a></li>
+<li id="S306"><strong>S306</strong> — <a href="https://www.newtonx.com/article/2025-grit-insights-practice-report/">NewtonX — 2025 GRIT</a> <a href="#section-4" title="返回正文">↑</a></li>
+<li id="S307"><strong>S307</strong> — <a href="https://aytm.com/post/the-2025-grit-report-why-the-future-of-insights-is-human-led-and-ai-powered">aytm — 2025 GRIT</a> <a href="#section-4" title="返回正文">↑</a></li>
+<li id="S308"><strong>S308</strong> — <a href="https://esomar.org/publications/global-market-research-2025">ESOMAR 2025 全球市场研究</a> <a href="#section-4" title="返回正文">↑</a></li>
+<li id="S309"><strong>S309</strong> — <a href="https://researchworld.com/articles/inside-the-153bn-insights-industry">Research World — 1,530 亿美元洞察产业</a> <a href="#section-4" title="返回正文">↑</a></li>
+<li id="S310"><strong>S310</strong> — <a href="https://www.einnews.com/pr_news/825277849/esomar-announces-major-update-to-the-icc-esomar-international-code-to-reflect-ai-and-emerging-technology">ICC/ESOMAR Code 2025 更新</a> <a href="#section-4" title="返回正文">↑</a></li>
+<li id="S311"><strong>S311</strong> — <a href="https://ana.esomar.org/api/public/document/file_renderer/12519">ESOMAR 2024 大会 — 合成数据</a> <a href="#section-4" title="返回正文">↑</a></li>
+<li id="S312"><strong>S312</strong> — <a href="https://ana.esomar.org/documents/synthetic-responses-revolution">ESOMAR — 合成回答革命</a> <a href="#section-4" title="返回正文">↑</a></li>
+<li id="S313"><strong>S313</strong> — <a href="https://newmr.org/blog/ai-dominates-the-agenda-at-esomar-congress-2025-prague/">NewMR — ESOMAR 2025 大会</a> <a href="#section-4" title="返回正文">↑</a></li>
+<li id="S314"><strong>S314</strong> — <a href="https://medium.com/@enric_cid/a-crash-course-on-synthetic-data-esomar-congress-2025-recap-34a61784671e">Enric Cid — ESOMAR 2025 回顾</a> <a href="#section-4" title="返回正文">↑</a></li>
+<li id="S315"><strong>S315</strong> — <a href="https://www.zs.com/insights/forrester-wave-customer-analytics-leader-2025">Forrester Wave 客户分析 2025 Q2 — ZS</a> <a href="#section-4" title="返回正文">↑</a></li>
+<li id="S316"><strong>S316</strong> — <a href="https://fractal.ai/forrester-wave-2025">Forrester Wave 2025 — Fractal</a> <a href="#section-4" title="返回正文">↑</a></li>
+<li id="S317"><strong>S317</strong> — <a href="https://www.forrester.com/blogs/now-live-the-forrester-wave-customer-analytics-service-providers-q2-2025/">Forrester 博客 — 2025 Q2 客户分析</a> <a href="#section-4" title="返回正文">↑</a></li>
+<li id="S318"><strong>S318</strong> — <a href="https://www.forrester.com/report/the-forrester-wave-tm-ai-decisioning-platforms-q2-2025/RES182916">Forrester Wave 2025 Q2 AI 决策</a> <a href="#section-4" title="返回正文">↑</a></li>
+<li id="S319"><strong>S319</strong> — <a href="https://www.forrester.com/blogs/insights-from-new-forrester-wave-of-digital-analytics-solutions/">Forrester Wave 2025 Q3 数字分析</a> <a href="#section-4" title="返回正文">↑</a></li>
+<li id="S320"><strong>S320</strong> — <a href="https://www.forrester.com/report/the-forrester-wave-tm-ai-technical-services-q4-2025/RES187841">Forrester Wave 2025 Q4 AI 技术服务</a> <a href="#section-4" title="返回正文">↑</a></li>
+<li id="S321"><strong>S321</strong> — <a href="https://www.forrester.com/blogs/introducing-the-new-customer-feedback-management-and-analytics-solutions-market/">Forrester — 客户反馈管理新市场</a> <a href="#section-4" title="返回正文">↑</a></li>
+<li id="S322"><strong>S322</strong> — <a href="https://www.gartner.com/en/documents/6367011">Gartner MQ 客户之声平台 2025</a> <a href="#section-4" title="返回正文">↑</a></li>
+<li id="S323"><strong>S323</strong> — <a href="https://www.cxtoday.com/uncategorized/gartner-magic-quadrant-for-voice-of-the-customer-voc-platforms-2025-the-rundown/">CX Today — Gartner MQ VoC 2025</a> <a href="#section-4" title="返回正文">↑</a></li>
+<li id="S324"><strong>S324</strong> — <a href="https://www.cxtoday.com/customer-analytics-intelligence/gartner-magic-quadrant-voc-platforms-2026/">CX Today — Gartner MQ VoC 2026</a> <a href="#section-4" title="返回正文">↑</a></li>
+<li id="S325"><strong>S325</strong> — <a href="https://info.idc.com/futurescape-generative-ai-2025-predictions.html">IDC FutureScape 生成式 AI 2025</a> <a href="#section-4" title="返回正文">↑</a></li>
+<li id="S326"><strong>S326</strong> — <a href="https://my.idc.com/getdoc.jsp?containerId=prUS53765225">IDC — 智能体 AI</a> <a href="#section-4" title="返回正文">↑</a></li>
+<li id="S327"><strong>S327</strong> — <a href="https://my.idc.com/getdoc.jsp?containerId=prUS53290725">IDC — 2030 年 AI 影响 22.3 万亿</a> <a href="#section-4" title="返回正文">↑</a></li>
+<li id="S328"><strong>S328</strong> — <a href="https://www.deloitte.com/global/en/about/recognition/analyst-relations/idc-marketscape-worldwide-artificial-intelligence-services-vendor-assessment.html">IDC MarketScape AI 服务 2025</a> <a href="#section-4" title="返回正文">↑</a></li>
+<li id="S329"><strong>S329</strong> — <a href="https://www.mrs.org.uk/standards/ai-regulation">MRS BEST 生成式 AI 框架</a> <a href="#section-4" title="返回正文">↑</a></li>
+<li id="S330"><strong>S330</strong> — <a href="https://committees.parliament.uk/writtenevidence/124496/pdf/">MRS — 英国议会证据 (1)</a> <a href="#section-4" title="返回正文">↑</a></li>
+<li id="S331"><strong>S331</strong> — <a href="https://committees.parliament.uk/writtenevidence/131013/pdf/">MRS — 英国议会证据 (2)</a> <a href="#section-4" title="返回正文">↑</a></li>
+<li id="S332"><strong>S332</strong> — <a href="https://www.research-live.com/article/news/mrs-publishes-ai-guidance/id/5119723">Research-Live — MRS AI 指引</a> <a href="#section-4" title="返回正文">↑</a></li>
+<li id="S333"><strong>S333</strong> — <a href="https://5593723.fs1.hubspotusercontent-na1.net/hubfs/5593723/Market%20Research%20Trends%202025/Market%20Research%20Trends%202025%20-%20Rival%20Technologies%20and%20Reach3%20Insights.pdf">Rival/Reach3 — 2025 MR 趋势</a> <a href="#section-4" title="返回正文">↑</a></li>
+<li id="S334"><strong>S334</strong> — <a href="https://www.prnewswire.com/news-releases/rival-groups-2026-market-research-trends-report-covers-ai-in-insights-synthetic-respondents-evolving-qualitative-research-and-more-302633126.html">Rival 2026 趋势报告 — PRNewswire</a> <a href="#section-4" title="返回正文">↑</a></li>
+<li id="S335"><strong>S335</strong> — <a href="https://sloanreview.mit.edu/article/gain-consumer-insight-with-generative-ai/">MIT SMR — 生成式 AI 获取消费者洞察</a> <a href="#section-4" title="返回正文">↑</a></li>
+<li id="S336"><strong>S336</strong> — <a href="https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai">麦肯锡 QuantumBlack — 2025 AI 现状</a> <a href="#section-4" title="返回正文">↑</a></li>
+<li id="S337"><strong>S337</strong> — <a href="https://www.twobirds.com/en/insights/2026/china/china-data-protection-and-cybersecurity-annual-review-of-2025-and-outlook-for-2026">Bird &amp; Bird — 中国 2025–26 数据保护与网络安全</a> <a href="#section-4" title="返回正文">↑</a></li>
+<li id="S338"><strong>S338</strong> — <a href="https://practiceguides.chambers.com/practice-guides/data-protection-privacy-2026/china/trends-and-developments">Chambers — 中国 DPP 2026</a> <a href="#section-4" title="返回正文">↑</a></li>
+<li id="S339"><strong>S339</strong> — <a href="https://www.dlapiperdataprotection.com/index.html?c=CN">DLA Piper — 中国数据保护</a> <a href="#section-4" title="返回正文">↑</a></li>
+<li id="S340"><strong>S340</strong> — <a href="https://www.china-briefing.com/doing-business-guide/china/company-establishment/pipl-personal-information-protection-law">China-Briefing — PIPL 指南</a> <a href="#section-4" title="返回正文">↑</a></li>
+<li id="S341"><strong>S341</strong> — <a href="https://www.morganlewis.com/pubs/2025/10/chinas-data-outbound-rules-update-measures-for-the-certification">Morgan Lewis — 中国出境认证</a> <a href="#section-4" title="返回正文">↑</a></li>
+<li id="S342"><strong>S342</strong> — <a href="https://www.arnoldporter.com/en/perspectives/advisories/2025/11/china-issues-clarifications-cross-border-data-transfer-rules">Arnold &amp; Porter — 中国跨境</a> <a href="#section-4" title="返回正文">↑</a></li>
+<li id="S343"><strong>S343</strong> — <a href="https://www.arnoldporter.com/en/perspectives/advisories/2025/11/china-requirements-personal-information-protection-certification">Arnold &amp; Porter — 个人信息保护认证</a> <a href="#section-4" title="返回正文">↑</a></li>
+<li id="S344"><strong>S344</strong> — <a href="https://www.china-briefing.com/news/china-cross-border-data-transfer-certification/">China-Briefing — 认证办法</a> <a href="#section-4" title="返回正文">↑</a></li>
+<li id="S345"><strong>S345</strong> — <a href="https://www.whitecase.com/insight-alert/china-released-new-regulations-ease-requirements-outbound-cross-border-data-transfers">White &amp; Case — 中国出境</a> <a href="#section-4" title="返回正文">↑</a></li>
+<li id="S346"><strong>S346</strong> — <a href="https://www.kwm.com/us/en/insights/latest-thinking/chinas-cross-border-dataregime-key-points-on-personal-information-export-certification.html">金杜 — 跨境数据制度</a> <a href="#section-4" title="返回正文">↑</a></li>
+<li id="S347"><strong>S347</strong> — <a href="https://cms-lawnow.com/en/ealerts/2025/11/china-issues-measures-for-the-certification-of-the-cross-border-transfer-of-personal-information">CMS — 认证办法</a> <a href="#section-4" title="返回正文">↑</a></li>
+<li id="S348"><strong>S348</strong> — <a href="https://iapp.org/news/a/chinas-new-cross-border-data-transfer-regulations-what-you-need-to-know-and-do">IAPP — 中国跨境数据</a> <a href="#section-4" title="返回正文">↑</a></li>
+<li id="S349"><strong>S349</strong> — <a href="https://www.jdsupra.com/legalnews/the-regulatory-framework-for-cross-5929165/">JD Supra/大成 — 2025 最新</a> <a href="#section-4" title="返回正文">↑</a></li>
+<li id="S350"><strong>S350</strong> — <a href="https://riskandcompliance.freshfields.com/post/102j3jy/china-introduces-revised-cross-border-data-transfer-rules">Freshfields — 跨境修订</a> <a href="#section-4" title="返回正文">↑</a></li>
+<li id="S351"><strong>S351</strong> — <a href="https://en.wikipedia.org/wiki/Interim_Measures_for_the_Management_of_Generative_AI_Services">《生成式人工智能服务管理暂行办法》（概览）</a> <a href="#section-4" title="返回正文">↑</a></li>
+<li id="S352"><strong>S352</strong> — <a href="https://www.chinalawtranslate.com/en/generative-ai-interim/">China Law Translate — 暂行办法</a> <a href="#section-4" title="返回正文">↑</a></li>
+<li id="S353"><strong>S353</strong> — <a href="https://www.whitecase.com/insight-our-thinking/ai-watch-global-regulatory-tracker-china">White &amp; Case — AI Watch 中国</a> <a href="#section-4" title="返回正文">↑</a></li>
+<li id="S354"><strong>S354</strong> — <a href="https://practiceguides.chambers.com/practice-guides/artificial-intelligence-2025/china">Chambers — 2025 中国 AI</a> <a href="#section-4" title="返回正文">↑</a></li>
+<li id="S355"><strong>S355</strong> — <a href="https://www.globallegalinsights.com/practice-areas/ai-machine-learning-and-big-data-laws-and-regulations/china/">GLI — 中国 AI/ML/大数据 2025</a> <a href="#section-4" title="返回正文">↑</a></li>
+<li id="S356"><strong>S356</strong> — <a href="https://securiti.ai/china-ai-regulatory-landscape/">Securiti — 2025 中国 AI</a> <a href="#section-4" title="返回正文">↑</a></li>
+<li id="S357"><strong>S357</strong> — <a href="https://iapp.org/resources/article/global-ai-governance-china">IAPP — 全球 AI 治理 中国</a> <a href="#section-4" title="返回正文">↑</a></li>
+<li id="S358"><strong>S358</strong> — <a href="https://www.insideprivacy.com/international/china/china-releases-new-labeling-requirements-for-ai-generated-content/">Covington — 中国 AI 内容标识</a> <a href="#section-4" title="返回正文">↑</a></li>
+<li id="S359"><strong>S359</strong> — <a href="https://www.technologyslegaledge.com/2025/03/china-released-new-measures-for-labelling-ai-generated-and-synthetic-content/">Tech Legal Edge — 标识办法</a> <a href="#section-4" title="返回正文">↑</a></li>
+<li id="S360"><strong>S360</strong> — <a href="https://iclg.com/practice-areas/telecoms-media-and-internet-laws-and-regulations/03-china-s-key-developments-in-artificial-intelligence-governance-in-2025">ICLG — 2025 中国 AI</a> <a href="#section-4" title="返回正文">↑</a></li>
+<li id="S361"><strong>S361</strong> — <a href="https://www.chinalawtranslate.com/en/chatbot-measures-draft/">CLT — 拟人化 AI 草案</a> <a href="#section-4" title="返回正文">↑</a></li>
+<li id="S362"><strong>S362</strong> — <a href="https://www.globaltimes.cn/page/202512/1351628.shtml">环球时报 — 聊天机器人办法</a> <a href="#section-4" title="返回正文">↑</a></li>
+<li id="S363"><strong>S363</strong> — <a href="https://www.geopolitechs.org/p/whats-in-chinas-first-drafts-rules">Geopolitechs — 中国首批草案</a> <a href="#section-4" title="返回正文">↑</a></li>
+<li id="S364"><strong>S364</strong> — <a href="https://www.lexology.com/library/detail.aspx?g=3c7273cf-8f85-4702-af70-6edf394ff1c3">Lexology — 算法备案制度</a> <a href="#section-4" title="返回正文">↑</a></li>
+<li id="S365"><strong>S365</strong> — <a href="https://www.chinalawvision.com/2025/02/digital-economy-ai/deep-synthesis-not-deepfake-how-ai-compliance-works-in-china/">China Law Vision — 深度合成</a> <a href="#section-4" title="返回正文">↑</a></li>
+<li id="S366"><strong>S366</strong> — <a href="https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai">欧盟委员会 — AI Act 框架</a> <a href="#section-4" title="返回正文">↑</a></li>
+<li id="S367"><strong>S367</strong> — <a href="https://artificialintelligenceact.eu/implementation-timeline/">AI Act 实施时间表</a> <a href="#section-4" title="返回正文">↑</a></li>
+<li id="S368"><strong>S368</strong> — <a href="https://digital-strategy.ec.europa.eu/en/policies/guidelines-gpai-providers">EC — GPAI 提供者指南</a> <a href="#section-4" title="返回正文">↑</a></li>
+<li id="S369"><strong>S369</strong> — <a href="https://euaiactnyc.com/blog/eu-ai-act-implementation-april-2026.html">EU AI Act NYC — 2026 年 4 月更新</a> <a href="#section-4" title="返回正文">↑</a></li>
+<li id="S370"><strong>S370</strong> — <a href="https://www.modulos.ai/blog/is-the-eu-ai-act-delayed/">Modulos — AI Act 是否延期</a> <a href="#section-4" title="返回正文">↑</a></li>
+<li id="S371"><strong>S371</strong> — <a href="https://www.crowell.com/en/insights/client-alerts/eu-ai-act-gdpr-and-digital-laws-changes-proposed">Crowell — Digital Omnibus 拟议改动</a> <a href="#section-4" title="返回正文">↑</a></li>
+<li id="S372"><strong>S372</strong> — <a href="https://www.edpb.europa.eu/news/news/2024/edpb-opinion-ai-models-gdpr-principles-support-responsible-ai_en">EDPB 第 28/2024 号意见 — AI 模型</a> <a href="#section-4" title="返回正文">↑</a></li>
+<li id="S373"><strong>S373</strong> — <a href="https://www.edpb.europa.eu/system/files/2024-12/edpb_opinion_202428_ai-models_en.pdf">EDPB 第 28/2024 号意见 PDF</a> <a href="#section-4" title="返回正文">↑</a></li>
+<li id="S374"><strong>S374</strong> — <a href="https://privacymatters.dlapiper.com/2025/01/eu-edpb-opinion-on-ai-provides-important-guidance-though-many-questions-remain/">DLA Piper — EDPB AI 意见</a> <a href="#section-4" title="返回正文">↑</a></li>
+<li id="S375"><strong>S375</strong> — <a href="https://iapp.org/news/a/edpb-opinion-sheds-light-on-lawful-ai-training-dpa-discretion">IAPP — EDPB AI 训练意见</a> <a href="#section-4" title="返回正文">↑</a></li>
+<li id="S376"><strong>S376</strong> — <a href="https://www.kennedyslaw.com/en/thought-leadership/article/2026/the-2025-european-commission-eu-digital-omnibus-package-the-e-privacy-directive/">Kennedys — Digital Omnibus / ePrivacy</a> <a href="#section-4" title="返回正文">↑</a></li>
+<li id="S377"><strong>S377</strong> — <a href="https://www.osano.com/articles/eprivacy-guide">Osano — ePrivacy 指南</a> <a href="#section-4" title="返回正文">↑</a></li>
+<li id="S378"><strong>S378</strong> — <a href="https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-generative-artificial-intelligence">NIST AI RMF 生成式 AI 简介</a> <a href="#section-4" title="返回正文">↑</a></li>
+<li id="S379"><strong>S379</strong> — <a href="https://www.whitehouse.gov/presidential-actions/2025/12/eliminating-state-law-obstruction-of-national-artificial-intelligence-policy/">白宫 — 2025 年 12 月行政令</a> <a href="#section-4" title="返回正文">↑</a></li>
+<li id="S380"><strong>S380</strong> — <a href="https://www.sidley.com/en/insights/newsupdates/2025/12/unpacking-the-december-11-2025-executive-order">Sidley Austin — 2025 年 12 月 EO</a> <a href="#section-4" title="返回正文">↑</a></li>
+<li id="S381"><strong>S381</strong> — <a href="https://cppa.ca.gov/announcements/2025/20250923.html">CPPA — 2025 年 9 月公告</a> <a href="#section-4" title="返回正文">↑</a></li>
+<li id="S382"><strong>S382</strong> — <a href="https://www.skadden.com/insights/publications/2025/10/california-finalizes-cppa-regulations">Skadden — 加州 ADMT</a> <a href="#section-4" title="返回正文">↑</a></li>
+<li id="S383"><strong>S383</strong> — <a href="https://leg.colorado.gov/bills/sb24-205">科罗拉多 SB24-205</a> <a href="#section-4" title="返回正文">↑</a></li>
+<li id="S384"><strong>S384</strong> — <a href="https://www.cooley.com/news/insight/2026/2026-04-24-state-ai-laws-where-are-they-now">Cooley — 2026 年 4 月各州 AI 法</a> <a href="#section-4" title="返回正文">↑</a></li>
+<li id="S385"><strong>S385</strong> — <a href="https://github.com/CLUEbenchmark/SuperCLUE">SuperCLUE 基准</a> <a href="#section-4" title="返回正文">↑</a></li>
+<li id="S386"><strong>S386</strong> — <a href="https://news.aibase.com/news/26656">aibase — 豆包顶级</a> <a href="#section-4" title="返回正文">↑</a></li>
+<li id="S387"><strong>S387</strong> — <a href="https://chinai.substack.com/p/chinai-224-comparing-chinese-large">ChinAI #224 — 对比中国大模型</a> <a href="#section-4" title="返回正文">↑</a></li>
+<li id="S388"><strong>S388</strong> — <a href="https://arxiv.org/abs/2504.00289">arXiv 2504.00289 — 中国模型 / 中文语言</a> <a href="#section-4" title="返回正文">↑</a></li>
+<li id="S389"><strong>S389</strong> — <a href="https://arxiv.org/html/2408.16756v2">arXiv 2408.16756 — 大模型粤语处理</a> <a href="#section-4" title="返回正文">↑</a></li>
+<li id="S390"><strong>S390</strong> — <a href="https://aclanthology.org/2025.findings-naacl.253.pdf">NAACL Findings 2025 — 粤语</a> <a href="#section-4" title="返回正文">↑</a></li>
+<li id="S391"><strong>S391</strong> — <a href="https://arxiv.org/html/2503.12440">HKCanto-Eval（arXiv 2503.12440）</a> <a href="#section-4" title="返回正文">↑</a></li>
+<li id="S392"><strong>S392</strong> — <a href="https://github.com/openai/whisper/discussions/277">Whisper 讨论 #277 — 粤语</a> <a href="#section-4" title="返回正文">↑</a></li>
+<li id="S393"><strong>S393</strong> — <a href="https://benchlm.ai/blog/posts/best-chinese-llm">BenchLM — 2026 最佳中文大模型</a> <a href="#section-4" title="返回正文">↑</a></li>
+<li id="S394"><strong>S394</strong> — <a href="https://artificialanalysis.ai/leaderboards/models">Artificial Analysis 排行榜</a> <a href="#section-4" title="返回正文">↑</a></li>
+<li id="S395"><strong>S395</strong> — <a href="https://www.technologyreview.com/2026/04/21/1135658/china-open-source-models-ai-artificial-intelligence/">MIT Tech Review — 中国押注开源</a> <a href="#section-4" title="返回正文">↑</a></li>
+<li id="S396"><strong>S396</strong> — <a href="https://carnegieendowment.org/research/2026/03/chinas-ai-empowered-censorship-strengths-and-limitations">Carnegie — 中国 AI 内容审核</a> <a href="#section-4" title="返回正文">↑</a></li>
+<li id="S397"><strong>S397</strong> — <a href="https://essfeed.com/top-10-ai-moderation-companies-in-china-2025/">2025 中国十大 AI 内容审核公司</a> <a href="#section-4" title="返回正文">↑</a></li>
+<li id="S398"><strong>S398</strong> — <a href="https://eu.36kr.com/en/p/3362475871488004">36Kr — 2025 中国 AI 眼镜报告</a> <a href="#section-4" title="返回正文">↑</a></li>
+</ol>
+</div>
+</details>
+
+<details class="appendix">
+<summary>XR 与硬件专项（Phase 5 收官层 — 60 条来源）</summary>
+<div class="src-list">
+<ol>
+<li id="S399"><strong>S399</strong> — <a href="https://medium.com/xrpractices/usability-testing-for-xr-products-907e6083a5a1">XRPractices — XR 可用性测试</a> <a href="#section-5" title="返回正文">↑</a></li>
+<li id="S400"><strong>S400</strong> — <a href="https://www.tobii.com/products/integration/xr-headsets">Tobii — AR/VR/MR 眼动追踪</a> <a href="#section-5" title="返回正文">↑</a></li>
+<li id="S401"><strong>S401</strong> — <a href="https://imotions.com/blog/learning/product-guides/5-best-vr-headsets/">iMotions — 2026 年 5 大 VR 头显</a> <a href="#section-5" title="返回正文">↑</a></li>
+<li id="S402"><strong>S402</strong> — <a href="https://imotions.com/blog/learning/product-guides/multimodality-in-imotions-software/">iMotions — 多模态指南</a> <a href="#section-5" title="返回正文">↑</a></li>
+<li id="S403"><strong>S403</strong> — <a href="https://pupil-labs.com/products/vr-ar">Pupil Labs — VR &amp; AR 眼动追踪</a> <a href="#section-5" title="返回正文">↑</a></li>
+<li id="S404"><strong>S404</strong> — <a href="https://pupil-labs.com/releases">Pupil Labs — 软件版本</a> <a href="#section-5" title="返回正文">↑</a></li>
+<li id="S405"><strong>S405</strong> — <a href="https://github.com/pupil-labs/hmd-eyes">Pupil Labs hmd-eyes（GitHub）</a> <a href="#section-5" title="返回正文">↑</a></li>
+<li id="S406"><strong>S406</strong> — <a href="https://www.meta.com/blog/connect-2025-day-2-keynote-recap-vr-development-use-cases-wearable-device-access-toolkit/">Meta Connect 2025 第二日主题</a> <a href="#section-5" title="返回正文">↑</a></li>
+<li id="S407"><strong>S407</strong> — <a href="https://developers.meta.com/horizon/documentation/native/android/ts-mqdh/">Meta Quest 开发者中心</a> <a href="#section-5" title="返回正文">↑</a></li>
+<li id="S408"><strong>S408</strong> — <a href="https://developers.meta.com/horizon/resources/playtest-planning-survey-script/">Meta — VR 游戏测试计划与问卷脚本</a> <a href="#section-5" title="返回正文">↑</a></li>
+<li id="S409"><strong>S409</strong> — <a href="http://ieeevr.org/2025/contribute/papers/">IEEE VR 2025 论文</a> <a href="#section-5" title="返回正文">↑</a></li>
+<li id="S410"><strong>S410</strong> — <a href="https://ieeexplore.ieee.org/document/10585501/">StudyVR（IEEE VR 2024）</a> <a href="#section-5" title="返回正文">↑</a></li>
+<li id="S411"><strong>S411</strong> — <a href="https://dl.acm.org/doi/full/10.1145/3706598.3713461">CHI 2025 — Online-EYE</a> <a href="#section-5" title="返回正文">↑</a></li>
+<li id="S412"><strong>S412</strong> — <a href="https://dl.acm.org/doi/10.1145/3706598.3714224">CHI 2025 — XR 中的 LLM 集成</a> <a href="#section-5" title="返回正文">↑</a></li>
+<li id="S413"><strong>S413</strong> — <a href="https://www.researchgate.net/publication/390671238_Proceedings_of_the_Purposeful_XR_Workshop_for_CHI_2025">CHI 2025 — Purposeful XR 研讨会</a> <a href="#section-5" title="返回正文">↑</a></li>
+<li id="S414"><strong>S414</strong> — <a href="https://dl.acm.org/doi/10.1145/3715669.3725880">ETRA 2025 — 眼动 + 观察田野研究</a> <a href="#section-5" title="返回正文">↑</a></li>
+<li id="S415"><strong>S415</strong> — <a href="https://dl.acm.org/doi/10.1145/3715669.3725881">ETRA 2025 — 注视点体可视化</a> <a href="#section-5" title="返回正文">↑</a></li>
+<li id="S416"><strong>S416</strong> — <a href="https://uist.acm.org/2025/papers/">UIST 2025 议程</a> <a href="#section-5" title="返回正文">↑</a></li>
+<li id="S417"><strong>S417</strong> — <a href="https://lab.plopes.org/published/2025-UIST-VRSideEffects.pdf">Cheymol &amp; Lopes — VR 副作用（UIST 2025）</a> <a href="#section-5" title="返回正文">↑</a></li>
+<li id="S418"><strong>S418</strong> — <a href="https://arxiv.org/html/2501.13778v2">arXiv — 可解释 XR（LLM 辅助）</a> <a href="#section-5" title="返回正文">↑</a></li>
+<li id="S419"><strong>S419</strong> — <a href="https://arxiv.org/html/2412.17490v1">arXiv — VR 数据采集工具包</a> <a href="#section-5" title="返回正文">↑</a></li>
+<li id="S420"><strong>S420</strong> — <a href="https://arxiv.org/html/2507.18252v1">arXiv — 多模态行为模式</a> <a href="#section-5" title="返回正文">↑</a></li>
+<li id="S421"><strong>S421</strong> — <a href="https://arxiv.org/html/2502.07598v1">arXiv — XR 多模态自然交互</a> <a href="#section-5" title="返回正文">↑</a></li>
+<li id="S422"><strong>S422</strong> — <a href="https://arxiv.org/html/2508.12268v2">arXiv — iTrace（Vision Pro 点击式视线）</a> <a href="#section-5" title="返回正文">↑</a></li>
+<li id="S423"><strong>S423</strong> — <a href="https://arxiv.org/html/2508.00097v1">arXiv — XRoboToolkit 远程操作</a> <a href="#section-5" title="返回正文">↑</a></li>
+<li id="S424"><strong>S424</strong> — <a href="https://arxiv.org/html/2507.18877v1">arXiv — VR 协同具身研究综述</a> <a href="#section-5" title="返回正文">↑</a></li>
+<li id="S425"><strong>S425</strong> — <a href="https://onlinelibrary.wiley.com/doi/10.1111/jcal.70112">Wiley — 多用户 VR 学习中的协作</a> <a href="#section-5" title="返回正文">↑</a></li>
+<li id="S426"><strong>S426</strong> — <a href="https://link.springer.com/article/10.1007/s10055-025-01280-4">Springer — 协作 VR 工程教育综述</a> <a href="#section-5" title="返回正文">↑</a></li>
+<li id="S427"><strong>S427</strong> — <a href="https://www.apple.com/newsroom/2025/05/apple-unveils-powerful-accessibility-features-coming-later-this-year/">苹果 Newsroom — 无障碍功能</a> <a href="#section-5" title="返回正文">↑</a></li>
+<li id="S428"><strong>S428</strong> — <a href="https://www.frontiersin.org/journals/computer-science/articles/10.3389/fcomp.2025.1591289/full">Frontiers — 空间计算 3D 内容（Vision Pro）</a> <a href="#section-5" title="返回正文">↑</a></li>
+<li id="S429"><strong>S429</strong> — <a href="https://www.frontiersin.org/journals/virtual-reality/articles/10.3389/frvir.2023.1198024/full">Frontiers — 社交 VR 中的虚拟主持人</a> <a href="#section-5" title="返回正文">↑</a></li>
+<li id="S430"><strong>S430</strong> — <a href="https://www.frontiersin.org/journals/digital-health/articles/10.3389/fdgth.2025.1740557/full">Frontiers — 医学教育中的 AI-XR</a> <a href="#section-5" title="返回正文">↑</a></li>
+<li id="S431"><strong>S431</strong> — <a href="https://developer.picoxr.com/document/unity/eye-tracking/">PICO 开发者 — 眼动追踪</a> <a href="#section-5" title="返回正文">↑</a></li>
+<li id="S432"><strong>S432</strong> — <a href="https://developer.picoxr.com/document/unreal/face-tracking/">PICO 开发者 — 面部追踪（Unreal）</a> <a href="#section-5" title="返回正文">↑</a></li>
+<li id="S433"><strong>S433</strong> — <a href="https://developer-cn.picoxr.com/en/news/">PICO 开发者新闻</a> <a href="#section-5" title="返回正文">↑</a></li>
+<li id="S434"><strong>S434</strong> — <a href="https://www.picoxr.com/global/products/pico4e">PICO Global — Pico 4 Ultra Enterprise</a> <a href="#section-5" title="返回正文">↑</a></li>
+<li id="S435"><strong>S435</strong> — <a href="https://www.uctoday.com/immersive-workplace-xr-tech/the-metaverse-is-dead-pico-thinks-enterprise-xr-is-just-getting-started/">UC Today — Pico 企业 XR</a> <a href="#section-5" title="返回正文">↑</a></li>
+<li id="S436"><strong>S436</strong> — <a href="https://medium.com/data-science-edge/stanfordxr-winner-our-private-mixed-reality-diabetes-app-built-on-securemr-and-pico-xr-64f0f29155f5">斯坦福 XR 黑客松 — SecureMR</a> <a href="#section-5" title="返回正文">↑</a></li>
+<li id="S437"><strong>S437</strong> — <a href="https://skarredghost.com/2025/03/03/picotionai-ai-mr-camera-access/">Skarred Ghost — PicotionAI</a> <a href="#section-5" title="返回正文">↑</a></li>
+<li id="S438"><strong>S438</strong> — <a href="https://developer.varjo.com/docs/get-started/eye-tracking-with-varjo-headset">Varjo — 眼动追踪文档</a> <a href="#section-5" title="返回正文">↑</a></li>
+<li id="S439"><strong>S439</strong> — <a href="https://varjo.com/blog/beyond-foveation-evolving-the-role-of-eye-tracking-at-varjo">Varjo — 超越注视点</a> <a href="#section-5" title="返回正文">↑</a></li>
+<li id="S440"><strong>S440</strong> — <a href="https://imotions.com/products/hardware/varjo-xr-4/">iMotions — Varjo XR-4</a> <a href="#section-5" title="返回正文">↑</a></li>
+<li id="S441"><strong>S441</strong> — <a href="https://idtechwire.com/varjo-and-vrai-partner-to-bring-biometric-performance-analytics-to-military-xr-training/">ID Tech — Varjo + VRAI 军训</a> <a href="#section-5" title="返回正文">↑</a></li>
+<li id="S442"><strong>S442</strong> — <a href="https://www.tobii.com/products/software/behavior-research-software/tobii-pro-lab/multimodal-research-solutions">Tobii Pro Lab — 多模态方案</a> <a href="#section-5" title="返回正文">↑</a></li>
+<li id="S443"><strong>S443</strong> — <a href="https://connect.tobii.com/s/article/How-to-export-data-from-Tobii-Pro-Lab?language=en_US">Tobii Connect — Pro Lab 数据导出</a> <a href="#section-5" title="返回正文">↑</a></li>
+<li id="S444"><strong>S444</strong> — <a href="https://www.worldviz.com/vizard-virtual-reality-software">WorldViz — Vizard / SightLab VR Pro</a> <a href="#section-5" title="返回正文">↑</a></li>
+<li id="S445"><strong>S445</strong> — <a href="https://www.prnewswire.com/news-releases/worldviz-vr-releases-ai-enabled-virtual-reality-software-package-for-academic-researchers-302300797.html">WorldViz — 面向学术的 AI VR</a> <a href="#section-5" title="返回正文">↑</a></li>
+<li id="S446"><strong>S446</strong> — <a href="https://looxidlink.looxidlabs.com/">Looxid Link</a> <a href="#section-5" title="返回正文">↑</a></li>
+<li id="S447"><strong>S447</strong> — <a href="https://www.frontiersin.org/articles/10.3389/frvir.2022.781218/full">Frontiers — emteqPRO 生物特征 VR</a> <a href="#section-5" title="返回正文">↑</a></li>
+<li id="S448"><strong>S448</strong> — <a href="https://ixdf.org/literature/article/ai-vs-researched-personas">IxDF — AI 角色对比研究角色</a> <a href="#section-5" title="返回正文">↑</a></li>
+<li id="S449"><strong>S449</strong> — <a href="https://uxpsychology.substack.com/p/the-problem-with-ai-generated-personas">UX Psychology — AI 生成角色</a> <a href="#section-5" title="返回正文">↑</a></li>
+<li id="S450"><strong>S450</strong> — <a href="https://outset.ai/platform">Outset 平台</a> <a href="#section-5" title="返回正文">↑</a></li>
+<li id="S451"><strong>S451</strong> — <a href="https://outset.ai/privacy-policy">Outset 隐私政策</a> <a href="#section-5" title="返回正文">↑</a></li>
+<li id="S452"><strong>S452</strong> — <a href="https://listenlabs.ai/articles/best-ai-research-assistant-enterprise/">Listen Labs — 最佳 AI 研究助手</a> <a href="#section-5" title="返回正文">↑</a></li>
+<li id="S453"><strong>S453</strong> — <a href="https://www.notably.ai/features/research-repository">Notably — 研究知识库</a> <a href="#section-5" title="返回正文">↑</a></li>
+<li id="S454"><strong>S454</strong> — <a href="https://condens.io/research-repository/">Condens — 研究知识库</a> <a href="#section-5" title="返回正文">↑</a></li>
+<li id="S455"><strong>S455</strong> — <a href="https://help.usertesting.com/hc/en-us/articles/11880405753885-Custom-confidentiality-terms">UserTesting — 自定义保密条款</a> <a href="#section-5" title="返回正文">↑</a></li>
+<li id="S456"><strong>S456</strong> — <a href="https://dscout.com/platform/methods/diary-studies">dscout — 日记研究</a> <a href="#section-5" title="返回正文">↑</a></li>
+<li id="S457"><strong>S457</strong> — <a href="https://www.simonsaysai.com/on-premise-ai-transcription">Simon Says — 私有部署 AI 转写</a> <a href="#section-5" title="返回正文">↑</a></li>
+<li id="S458"><strong>S458</strong> — <a href="https://github.com/FunAudioLLM/Fun-ASR">FunAudioLLM Fun-ASR（阿里）</a> <a href="#section-5" title="返回正文">↑</a></li>
+<li id="S459"><strong>S459</strong> — <a href="https://huggingface.co/jonatasgrosman/whisper-large-zh-cv11">Hugging Face — whisper-large-zh-cv11</a> <a href="#section-5" title="返回正文">↑</a></li>
+<li id="S460"><strong>S460</strong> — <a href="https://www.isca-archive.org/interspeech_2025/wu25m_interspeech.pdf">Interspeech 2025 — 普通话-英语 ASR</a> <a href="#section-5" title="返回正文">↑</a></li>
+<li id="S461"><strong>S461</strong> — <a href="https://arxiv.org/html/2506.05796v1">arXiv — 区分说话人多人 ASR</a> <a href="#section-5" title="返回正文">↑</a></li>
+<li id="S462"><strong>S462</strong> — <a href="https://www.skyflow.com/post/china-data-residency-pipl-compliance">Skyflow — 中国数据驻留 PIPL</a> <a href="#section-5" title="返回正文">↑</a></li>
+<li id="S463"><strong>S463</strong> — <a href="https://www.arnoldporter.com/en/perspectives/advisories/2025/10/china-data-privacy-enforcement-cross-border-data-transfer">Arnold &amp; Porter — 中国数据保护执法</a> <a href="#section-5" title="返回正文">↑</a></li>
+<li id="S464"><strong>S464</strong> — <a href="https://www.globalprivacyblog.com/2025/05/data-protection-compliance-audits-to-take-effect-in-china-in-2025/">Global Privacy Blog — 中国数据保护审计</a> <a href="#section-5" title="返回正文">↑</a></li>
+<li id="S465"><strong>S465</strong> — <a href="https://www.caixinglobal.com/2026-04-02/bytedances-volcengine-powers-ai-growth-with-openclaw-partnership-102430344.html">财新 — 字节火山引擎 OpenClaw</a> <a href="#section-5" title="返回正文">↑</a></li>
+<li id="S466"><strong>S466</strong> — <a href="https://en.tmtpost.com/post/7645516">TMTPost — 火山引擎 AI 服务</a> <a href="#section-5" title="返回正文">↑</a></li>
+<li id="S467"><strong>S467</strong> — <a href="https://www.huawei.com/en/news/2019/4/huawei-vr-openlab-partners-dual-g-cloud-vr-initiative">华为 — VR OpenLab 双 G</a> <a href="#section-5" title="返回正文">↑</a></li>
+<li id="S468"><strong>S468</strong> — <a href="https://www.mdpi.com/2078-2489/16/6/430">MDPI Information — VR 网络安全风险</a> <a href="#section-5" title="返回正文">↑</a></li>
+<li id="S469"><strong>S469</strong> — <a href="https://arxiv.org/html/2509.06368v1">arXiv — 以开发者为中心的 XR 安全与隐私威胁</a> <a href="#section-5" title="返回正文">↑</a></li>
+<li id="S470"><strong>S470</strong> — <a href="https://link.springer.com/article/10.3758/s13428-022-02051-8">Springer — VR 手势追踪精度（Quest 2）</a> <a href="#section-5" title="返回正文">↑</a></li>
+<li id="S471"><strong>S471</strong> — <a href="https://www.nature.com/articles/s41598-025-91552-5">Nature 子刊 — Quest 2 手部运动学</a> <a href="#section-5" title="返回正文">↑</a></li>
+<li id="S472"><strong>S472</strong> — <a href="https://pubmed.ncbi.nlm.nih.gov/40053653/">PubMed — Quest Pro/3 无标记手势追踪</a> <a href="#section-5" title="返回正文">↑</a></li>
+<li id="S473"><strong>S473</strong> — <a href="https://link.springer.com/article/10.1007/s10055-023-00931-8">Springer VR — 头显眼动注视点渲染</a> <a href="#section-5" title="返回正文">↑</a></li>
+<li id="S474"><strong>S474</strong> — <a href="https://developers.meta.com/horizon/documentation/unity/unity-eye-tracked-foveated-rendering/">Meta — 眼动注视点渲染</a> <a href="#section-5" title="返回正文">↑</a></li>
+<li id="S475"><strong>S475</strong> — <a href="https://link.springer.com/article/10.1007/s10055-023-00903-y">Springer VR — VR 眼动综述</a> <a href="#section-5" title="返回正文">↑</a></li>
+<li id="S476"><strong>S476</strong> — <a href="https://www.sciencedirect.com/science/article/pii/S2096579625000580">ScienceDirect — VR 高效渲染综述</a> <a href="#section-5" title="返回正文">↑</a></li>
+<li id="S477"><strong>S477</strong> — <a href="https://tech.facebook.com/reality-labs/">Tech at Meta — Reality Labs</a> <a href="#section-5" title="返回正文">↑</a></li>
+<li id="S478"><strong>S478</strong> — <a href="https://www.meta.com/blog/inside-reality-labs-meet-the-team-thats-bringing-touch-to-the-digital-world/">Meta — Reality Labs 触觉</a> <a href="#section-5" title="返回正文">↑</a></li>
+<li id="S479"><strong>S479</strong> — <a href="https://www.meta.com/blog/reality-labs-surface-emg-research-nature-publication-ar-glasses-orion/">Meta — 表面 EMG Nature 论文</a> <a href="#section-5" title="返回正文">↑</a></li>
+<li id="S480"><strong>S480</strong> — <a href="https://link.springer.com/article/10.3758/s13428-025-02750-y">Springer — VR 研究中的影像应用</a> <a href="#section-5" title="返回正文">↑</a></li>
+<li id="S481"><strong>S481</strong> — <a href="https://lumivero.com/resources/blog/state-of-ai-in-qualitative-research/">Lumivero — 2025 定性研究中 AI 现状</a> <a href="#section-5" title="返回正文">↑</a></li>
+<li id="S482"><strong>S482</strong> — <a href="https://www.stravito.com/resources/best-ux-research-repository-tools/">Stravito — 2026 最佳 UX 知识库</a> <a href="#section-5" title="返回正文">↑</a></li>
+<li id="S483"><strong>S483</strong> — <a href="https://www.usercall.co/post/top-12-qualitative-study-coding-software-tools-in-2025">UserCall — 2026 顶级定性编码工具</a> <a href="#section-5" title="返回正文">↑</a></li>
+<li id="S484"><strong>S484</strong> — <a href="https://www.tomsguide.com/computing/virtual-reality/samsung-galaxy-xr-vs-apple-vision-pro-m5-vs-meta-quest-3">Tom's Guide — Galaxy XR vs Vision Pro vs Quest 3</a> <a href="#section-5" title="返回正文">↑</a></li>
+<li id="S485"><strong>S485</strong> — <a href="https://www.uploadvr.com/pico-4-enterprise-announced/">UploadVR — Pico 4 Enterprise 眼+面追踪</a> <a href="#section-5" title="返回正文">↑</a></li>
+<li id="S486"><strong>S486</strong> — <a href="https://www.roadtovr.com/pico-4-pro-enterprise-eye-tracking-face/">Road to VR — Pico 4 Pro Enterprise</a> <a href="#section-5" title="返回正文">↑</a></li>
+<li id="S487"><strong>S487</strong> — <a href="https://smarteye.se/smart-eye-at-ces-2025/">Smart Eye CES 2025</a> <a href="#section-5" title="返回正文">↑</a></li>
+<li id="S488"><strong>S488</strong> — <a href="https://crkdongle.com/tobii-pro-lab-24-21/">Tobii Pro Lab 24.21 评测</a> <a href="#section-5" title="返回正文">↑</a></li>
+<li id="S489"><strong>S489</strong> — <a href="http://www.researchinchina.com/Htmls/Report/2025/77079.html">ResearchInChina — 2025 汽车 XR</a> <a href="#section-5" title="返回正文">↑</a></li>
+<li id="S490"><strong>S490</strong> — <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10651722/">PMC — Vision Pro 心理学研究</a> <a href="#section-5" title="返回正文">↑</a></li>
+<li id="S491"><strong>S491</strong> — <a href="https://www.imveurope.com/article/could-imaging-enabled-eye-tracking-tech-drive-mass-adoption-virtual-reality">IMVE — Vision Pro 眼动追踪</a> <a href="#section-5" title="返回正文">↑</a></li>
+<li id="S492"><strong>S492</strong> — <a href="https://github.com/picoxr/EyeTrackingDemo">PICO XR — EyeTrackingDemo（GitHub）</a> <a href="#section-5" title="返回正文">↑</a></li>
+<li id="S493"><strong>S493</strong> — <a href="https://developer.picoxr.com/">PICO 开发者资源</a> <a href="#section-5" title="返回正文">↑</a></li>
+<li id="S494"><strong>S494</strong> — <a href="https://www.uctoday.com/immersive-workplace-xr-tech/are-xr-workspaces-creating-risks-your-security-cant-handle/">UC Today — XR 工作区安全</a> <a href="#section-5" title="返回正文">↑</a></li>
+</ol>
+</div>
+</details>
+
+<p style="margin-top:18px; font-size:11px; color:var(--muted);">六个附录分组合计约 400 条独立 URL。正文引用为精选子集；附录依据本项目置信度标签机制保留完整证据链。</p>
+
+</div>
+</body>
+</html>
